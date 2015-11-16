@@ -112,20 +112,71 @@ public class OSRM {
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");
         }
+        request.deleteCharAt(request.length() - 1);
         String response = sendRequest(request.toString());
-        return new ArrayList<List<Integer>>();
+        
+        List<List<Integer>> distanceTable = new ArrayList<List<Integer>>();
+        JsonReader reader = new JsonReader(new StringReader(response));
+        try {
+            reader.beginObject();
+            while (reader.hasNext()) {
+                String key = reader.nextName();
+                if (key.equals("distance_table")) {
+                    reader.beginArray();
+                    while (reader.hasNext()) {
+                        List<Integer> distances = new ArrayList<Integer>();
+                        reader.beginArray();
+                        while (reader.hasNext()) {
+                            distances.add(new Integer(reader.nextInt()));
+                        }
+                        reader.endArray();
+                        distanceTable.add(distances);
+                    }
+                    reader.endArray();
+                }
+            }
+            reader.endObject();
+            reader.close();
+        } catch (IOException e) {
+            Logger.error("OSRM", "Failed to parse the \"table\" response: " + e.getMessage());
+            Logger.error(Logger.stackTraceToString(e));
+        }
+        return distanceTable;
     }
 
     public static void match() {
         // FIXME
     }
 
-    public static void trip(Coordinate[] locations) {
+    public static List<Route> trip(Coordinate[] locations) {
         StringBuilder request = new StringBuilder("trip?");
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");
         }
+        request.deleteCharAt(request.length() - 1);
         String response = sendRequest(request.toString());
+        
+        List<Route> trips = new ArrayList<Route>();
+        JsonReader reader = new JsonReader(new StringReader(response));
+        try {
+            reader.beginObject();
+            while (reader.hasNext()) {
+                String key = reader.nextName();
+                if (key.equals("trips")) {
+                    reader.beginArray();
+                    while (reader.hasNext()) {
+                        trips.add(Route.fromJsonReader(reader));
+                    }
+                    reader.endArray();
+                }
+            }
+            reader.endObject();
+            reader.close();
+        } catch (IOException e) {
+            Logger.error("OSRM", "Failed to parse the \"table\" response: " + e.getMessage());
+            Logger.error(Logger.stackTraceToString(e));
+        }
+        return trips;
     }
     
     private static String sendRequest(String request) {

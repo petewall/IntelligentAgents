@@ -33,6 +33,15 @@ public class Route {
                 reader.nextBoolean();
             }
             
+            // PERMUTATION (ignored for now)
+            else if (key.equals("permutation")) {
+                reader.beginArray();
+                while (reader.hasNext()) {
+                    reader.nextInt();
+                }
+                reader.endArray();
+            }
+            
             // ROUTE GEOMETRY (ignored for now)
             else if (key.equals("route_geometry")) {
                 reader.nextString();
@@ -126,6 +135,10 @@ public class Route {
                     }
                 }
                 reader.endObject();
+            }
+            
+            else {
+                Logger.error("Unkown key: " + key);
             }
         }
         reader.endObject();
