@@ -5,14 +5,36 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import edu.umn.kylepete.Coordinate;
+import edu.umn.kylepete.NamedCoordinate;
 import edu.umn.kylepete.OSRM;
+import edu.umn.kylepete.Route;
 
 public class ORSMTest {
     
-    private Coordinate empireState = new Coordinate(40.748433, -73.985656);
+    private Coordinate empireState = new NamedCoordinate("The Empire State building", 40.748433, -73.985656);
+    private Coordinate madisonSquareGarden = new NamedCoordinate("Madison Square Garden", 40.750556, -73.993611);
 
     @Test
     public void testLocate() {
-        OSRM.locate(empireState);
+        Coordinate location = OSRM.locate(empireState);
+        assertNotNull(location);
+        assertTrue(location.distance(empireState) < 100);
+    }
+
+    @Test
+    public void testNearest() {
+        NamedCoordinate location = OSRM.nearest(empireState);
+        assertNotNull(location);
+        assertEquals("West 33rd Street", location.name);
+        assertTrue(location.distance(empireState) < 100);
+    }
+    
+    @Test
+    public void testViaRoute() {
+        Coordinate[] locations = { empireState, madisonSquareGarden };
+        Route route = OSRM.viaRoute(locations);
+        assertTrue(route.distance < 1500);
+        assertTrue(route.time < 120);
+        assertNotNull(route);
     }
 }
