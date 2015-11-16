@@ -6,5 +6,5 @@
 for arg in "$@"; do
     log="$arg.log"
     echo "Processing $arg in the background. Results in $log"
-    python kyle.py "$arg" &> "$log" &
+    python importTripsToDB.py "$arg" &> "$log" &
 done
