@@ -12,6 +12,12 @@ import java.util.List;
 
 import com.google.gson.stream.JsonReader;
 
+/**
+ * Send requests to an OSRM server
+ * API from https://github.com/Project-OSRM/osrm-backend/wiki/Server-api
+ * @author pwall
+ *
+ */
 public class OSRM {
     private static String hostname = "192.168.0.100";
     private static int port = 5000;

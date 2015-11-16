@@ -15,6 +15,10 @@ public class Vehicle extends Thread {
         this.capacity = capacity;
     }
     
+    public int getCapacity() {
+        return this.capacity;
+    }
+    
     public void run() {
         running = true;
         while (running) {
@@ -22,8 +26,7 @@ public class Vehicle extends Thread {
                 try {
                     activeRequest = Requests.assignNearestToMe(this);
                 } catch (NoRequestsException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    Logger.debug("Vehicle " + this.getName(), "No requests available");
                 }
             }
         }

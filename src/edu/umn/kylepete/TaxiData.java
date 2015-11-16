@@ -2,6 +2,8 @@ package edu.umn.kylepete;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Properties;
@@ -28,6 +30,15 @@ public class TaxiData {
      * @return
      */
     public int getStartTime() {
+        try {
+            PreparedStatement statement = conn.prepareStatement("SELECT MIN(pickup_datetime) FROM trip");
+            ResultSet result = statement.executeQuery();
+            statement.close();
+            return result.getInt(0);
+        } catch (SQLException e) {
+            Logger.error("DB", "SQL execption: " + e.getMessage());
+            Logger.error(Logger.stackTraceToString(e));
+        }
         return 0;
     }
     
