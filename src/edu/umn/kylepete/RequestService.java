@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Requests {
+public class RequestService {
     @SuppressWarnings("serial")
     public static class NoRequestsException extends Exception {};
     
