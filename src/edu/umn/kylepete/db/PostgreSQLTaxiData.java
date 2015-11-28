@@ -56,4 +56,8 @@ public class PostgreSQLTaxiData extends TaxiData {
     public List<Request> getRequests(long startTime, long endTime) {
         return new ArrayList<Request>();
     }
+    
+    public Request getNextRequest() {
+        return null;
+    }
 }

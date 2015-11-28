@@ -19,7 +19,8 @@ import com.google.gson.stream.JsonReader;
  *
  */
 public class OSRM {
-    private static String hostname = "192.168.0.100";
+//    private static String hostname = "192.168.0.100";
+    private static String hostname = "home.petewall.net";
     private static int port = 5000;
     
     public static Coordinate locate(Coordinate location) {
@@ -86,8 +87,13 @@ public class OSRM {
         }
         return new NamedCoordinate(name, mappedLocation);
     }
-    
-    public static Route viaRoute(Coordinate[] locations) {
+
+    public static Route viaRoute(Coordinate... locations) {
+        /*
+        Route route = new Route();
+        route.time = 60 * 5;
+        
+        /*/
         StringBuilder request = new StringBuilder("viaroute?alt=false&");
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");
@@ -109,11 +115,10 @@ public class OSRM {
         if (route.status != 0) {
             Logger.error("OSRM", "Non-zero status for viaroute: " + status + "  Locations were " + locations);
         }
-        
         return route;
     }
     
-    public static List<List<Integer>> table(Coordinate[] locations) {
+    public static List<List<Integer>> table(Coordinate... locations) {
         StringBuilder request = new StringBuilder("table?");
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");
@@ -154,7 +159,7 @@ public class OSRM {
         // FIXME
     }
 
-    public static List<Route> trip(Coordinate[] locations) {
+    public static List<Route> trip(Coordinate... locations) {
         StringBuilder request = new StringBuilder("trip?");
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");

@@ -18,13 +18,15 @@ import edu.umn.kylepete.Request;
 public class MockTaxiData extends TaxiData {
     
     private File file;
+    private int requestIndex;
     private List<Request> requests;
     private SimpleDateFormat dateFormat;
-    
+
     public MockTaxiData() {
         file = new File("/Users/pwall/src/IntelligentAgents/db/1000.csv");
         dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Logger.info("MockTaxiData", "Parsing data file " + file.getName());
+        requestIndex = 0;
         readDataFile();
         Logger.info("MockTaxiData", "Parsing done.  Found " + requests.size() + " records");
     }
@@ -47,7 +49,7 @@ public class MockTaxiData extends TaxiData {
             double startLatitude = Double.parseDouble(parts[11]);
             double endLongitude = Double.parseDouble(parts[12]);
             double endLatitude = Double.parseDouble(parts[13]);
-                    
+
             return new Request(pickupDate, new Coordinate(startLatitude, startLongitude), new Coordinate(endLatitude, endLongitude), passengers);
         } catch (ParseException e) {
             Logger.error("", "Failed to parse date: " + parts[5]);
@@ -77,6 +79,14 @@ public class MockTaxiData extends TaxiData {
     @Override
     public long getStartTime() { 
         return requests.get(0).getTime().getTime();
+    }
+    
+    public Request getNextRequest() {
+        requestIndex += 50;
+        if (requestIndex < requests.size()) {
+            return requests.get(requestIndex);
+        }
+        return null;
     }
 
     @Override

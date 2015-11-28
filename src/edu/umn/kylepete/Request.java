@@ -30,4 +30,8 @@ public class Request {
     public int getNumberOfPassengers() {
         return passengers;
     }
+    
+    public String toString() {
+        return "Request: " + passengers + " passenger(s) from " + pickup + " to " + dropoff;
+    }
 }

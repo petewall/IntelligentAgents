@@ -23,4 +23,7 @@ public abstract class TaxiData {
      * @return
      */
     public abstract List<Request> getRequests(long startTime, long endTime);
+    
+    public abstract Request getNextRequest();
+
 }

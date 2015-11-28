@@ -2,14 +2,16 @@ package edu.umn.kylepete;
 
 import edu.umn.kylepete.RequestService.NoRequestsException;
 
-public class Vehicle extends Thread implements RequestListener {
+public class Vehicle implements RequestListener {
+    private String name;
     private String type;
     private int capacity;
-    private boolean running;
     private Coordinate currentLocation;
     private Request activeRequest;
-    private Status state;
-    
+    private Status status;
+    private long currentTime;
+    private long expectedTime;
+
     public enum Status {
         WAITING,    // Waiting for a request
         PICKING_UP, // Driving to pick up a request
@@ -17,51 +19,104 @@ public class Vehicle extends Thread implements RequestListener {
     }
     
     public Vehicle(String name, String type, int capacity, Coordinate startingLocation) {
-        super(name);
+        //super(name);
+        this.name = name;
         this.type = type;
         this.capacity = capacity;
         this.currentLocation = startingLocation;
+        this.status = Status.WAITING;
         RequestService.getInstance().addRequestListener(this);
+    }
+    
+    public String getName() {
+        return this.name;
     }
 
     public int getCapacity() {
         return this.capacity;
     }
-
-    public void run() {
-        running = true;
-        state = Status.WAITING;
-        while (running) {
-            if (activeRequest == null) {
-                try {
-                    Request newRequest = RequestService.getInstance().assignNearestToMe(this);
-                    if (newRequest == null) {
-                        state = Status.WAITING;
-                    } else {
-                        activeRequest = newRequest;
-                        state = Status.PICKING_UP;
-                    }
-                } catch (NoRequestsException e) {
-                    Logger.debug("Vehicle " + this.getName(), "No requests available");
-                }
-            }
+    
+    private void driveToRequest() {
+        status = Status.PICKING_UP;
+        Route route = OSRM.viaRoute(currentLocation, activeRequest.getPickupLocation());
+        expectedTime = currentTime + route.time;
+    }
+    
+    private void deliverRequest() {
+        status = Status.DRIVING;
+        Route route = OSRM.viaRoute(currentLocation, activeRequest.getDropoffLocation());
+        expectedTime = currentTime + route.time;
+    }
+    
+    private void findRequest() {
+        try {
+            status = Status.WAITING;
+            Request newRequest = RequestService.getInstance().assignNearestToMe(this);
+            activeRequest = newRequest;
+            driveToRequest();
+        } catch (NoRequestsException e) {
+            Logger.debug("Vehicle " + this.getName(), "No requests available");
         }
     }
 
-    public void newRequest(RequestEvent event) {
+    private void advanceClock(long newTime) {
+        if (status == Status.PICKING_UP) {
+            if (newTime > expectedTime) {
+                currentTime = expectedTime;
+                currentLocation = activeRequest.getPickupLocation();
+                deliverRequest();
+            }
+        }
         
+        if (status == Status.DRIVING) {
+            if (newTime > expectedTime) {
+                currentTime = expectedTime;
+                currentLocation = activeRequest.getDropoffLocation();
+                activeRequest = null;
+                findRequest();
+                advanceClock(newTime);
+            }
+        }
+        currentTime = newTime;
+    }
+
+    public void newRequest(Request newRequest) {
+        advanceClock(newRequest.getTime().getTime());
+        switch (this.status) {
+        case WAITING:
+            try {
+                RequestService.getInstance().assignRequest(newRequest, this);
+                activeRequest = newRequest;
+                driveToRequest();
+            } catch (NoRequestsException e) {
+                Logger.debug("Vehicle " + this.getName(), "Somebody else must have picked up this request");
+            }
+            return;
+        case PICKING_UP:
+            return;
+        case DRIVING:
+            return;
+        }
+    }
+
+    public Status getStatus() {
+        return this.status;
     }
     
     public void startSimulation() {
-        this.start();
+        findRequest();
     }
     
     public void stopSimulating() {
-        running = false;
+        
+    }
+    
+    public long getTime() {
+        return currentTime;
     }
     
     public String toString() {
-        return this.getName() + "(" + type + ")";
+        return this.getName() + "(" + status + ")";
     }
 
     public Coordinate getLocation() {

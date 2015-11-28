@@ -1,5 +1,8 @@
 package edu.umn.kylepete;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -9,7 +12,8 @@ public class TaxiSystem {
     /**
      * Eventually, we may want to run this dynamically
      */
-    private int numberOfVehicles = 5;
+    private int numberOfVehicles = 4;
+    private long currentTime = 0;
     
     public TaxiSystem() {
         this.vehicles = new HashSet<Vehicle>();
@@ -23,8 +27,42 @@ public class TaxiSystem {
         for (Vehicle vehicle : vehicles) {
             vehicle.startSimulation();
         }
+        while (true) {
+            printState();
+            String command = inputString();
+            if (command.equals("q")) {
+                stop();
+                System.exit(0);
+            }
+            currentTime = RequestService.getInstance().getNext();
+        }
+    }
+    
+    public void stop() {
+        for (Vehicle vehicle : vehicles) {
+            vehicle.stopSimulating();
+        }
     }
 
+    private void printState() {
+        System.out.println(RequestService.getInstance().toString());
+        for (Vehicle vehicle : vehicles) {
+            System.out.println(vehicle.toString());
+        }
+    }
+
+    public static String inputString() {
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("> ");
+        
+        try {
+            return input.readLine();
+        } catch (IOException e) {
+            Logger.warning(Logger.stackTraceToString(e));
+            return inputString();
+        }
+    }
+    
     public static void main(String[] args) {
         TaxiSystem system = new TaxiSystem();
         system.start();
