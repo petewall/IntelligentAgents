@@ -13,7 +13,6 @@ public class TaxiSystem {
      * Eventually, we may want to run this dynamically
      */
     private int numberOfVehicles = 4;
-    private long currentTime = 0;
     
     public TaxiSystem() {
         this.vehicles = new HashSet<Vehicle>();
@@ -34,7 +33,7 @@ public class TaxiSystem {
                 stop();
                 System.exit(0);
             }
-            currentTime = RequestService.getInstance().getNext();
+            RequestService.getInstance().getNext();
         }
     }
     

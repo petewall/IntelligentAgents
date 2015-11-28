@@ -51,7 +51,7 @@ public class RequestService {
         }
         throw new NoRequestsException();
     }
-    
+
     public synchronized Request getNearestToMe(Vehicle vehicle) throws NoRequestsException {
         if (activeRequests.size() == 0) {
             throw new NoRequestsException();

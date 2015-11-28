@@ -89,11 +89,6 @@ public class OSRM {
     }
 
     public static Route viaRoute(Coordinate... locations) {
-        /*
-        Route route = new Route();
-        route.time = 60 * 5;
-        
-        /*/
         StringBuilder request = new StringBuilder("viaroute?alt=false&");
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");
