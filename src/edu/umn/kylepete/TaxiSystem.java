@@ -23,23 +23,13 @@ public class TaxiSystem {
     }
     
     public void start() {
-        for (Vehicle vehicle : vehicles) {
-            vehicle.startSimulation();
-        }
         while (true) {
             printState();
             String command = inputString();
             if (command.equals("q")) {
-                stop();
                 System.exit(0);
             }
             RequestService.getInstance().getNext();
-        }
-    }
-    
-    public void stop() {
-        for (Vehicle vehicle : vehicles) {
-            vehicle.stopSimulating();
         }
     }
 

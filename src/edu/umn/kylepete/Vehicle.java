@@ -4,7 +4,6 @@ import edu.umn.kylepete.RequestService.NoRequestsException;
 
 public class Vehicle implements RequestListener {
     private String name;
-    private String type;
     private int capacity;
     private Coordinate currentLocation;
     private Request activeRequest;
@@ -17,17 +16,15 @@ public class Vehicle implements RequestListener {
         PICKING_UP, // Driving to pick up a request
         DRIVING     // Driving a request to the destination
     }
-    
+
     public Vehicle(String name, String type, int capacity, Coordinate startingLocation) {
-        //super(name);
         this.name = name;
-        this.type = type;
         this.capacity = capacity;
         this.currentLocation = startingLocation;
         this.status = Status.WAITING;
         RequestService.getInstance().addRequestListener(this);
     }
-    
+
     public String getName() {
         return this.name;
     }
@@ -35,19 +32,19 @@ public class Vehicle implements RequestListener {
     public int getCapacity() {
         return this.capacity;
     }
-    
+
     private void driveToRequest() {
         status = Status.PICKING_UP;
         Route route = OSRM.viaRoute(currentLocation, activeRequest.getPickupLocation());
         expectedTime = currentTime + route.time;
     }
-    
+
     private void deliverRequest() {
         status = Status.DRIVING;
         Route route = OSRM.viaRoute(currentLocation, activeRequest.getDropoffLocation());
         expectedTime = currentTime + route.time;
     }
-    
+
     private void findRequest() {
         try {
             status = Status.WAITING;
@@ -103,20 +100,12 @@ public class Vehicle implements RequestListener {
         return this.status;
     }
     
-    public void startSimulation() {
-        findRequest();
-    }
-    
-    public void stopSimulating() {
-        
-    }
-    
     public long getTime() {
         return currentTime;
     }
     
     public String toString() {
-        return this.getName() + "(" + status + ")";
+        return this.getName() + " (" + status + ")";
     }
 
     public Coordinate getLocation() {
