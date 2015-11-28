@@ -7,24 +7,52 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import edu.umn.kylepete.db.MockTaxiData;
+import edu.umn.kylepete.db.TaxiData;
+
 public class RequestService {
     @SuppressWarnings("serial")
     public static class NoRequestsException extends Exception {};
     
-    private static Set<Request> activeRequests = new HashSet<Request>();
-    private static Map<Vehicle, Request> assignedRequests = new HashMap<Vehicle, Request>();
+    private TaxiData db;
+    private Set<Request> activeRequests;
+    private Map<Vehicle, Request> assignedRequests;
+    private Set<RequestListener> listeners;
+    private static RequestService instance = null;
 
-    public synchronized static Request getNearest(Coordinate position) {
+    private RequestService() {
+        this.db = new MockTaxiData();
+        this.activeRequests = new HashSet<Request>();
+        this.assignedRequests = new HashMap<Vehicle, Request>();
+        this.listeners = new HashSet<RequestListener>();
+    }
+
+    public static synchronized RequestService getInstance() {
+        if (instance == null) {
+            instance = new RequestService();
+        }
+        return instance;
+    }
+    
+    public void addRequestListener(RequestListener listener) {
+        this.listeners.add(listener);
+    }
+    
+    public void removeRequestListener(RequestListener listener) {
+        this.listeners.remove(listener);
+    }
+    
+    public synchronized Request getNearest(Coordinate position) {
         return activeRequests.iterator().next();
     }
     
-    public synchronized static Request assignRequest(Request request, Vehicle vehicle) {
+    public synchronized Request assignRequest(Request request, Vehicle vehicle) {
         activeRequests.remove(request);
         assignedRequests.put(vehicle, request);
         return request;
     }
     
-    public synchronized static Request getNearestToMe(Vehicle vehicle) throws NoRequestsException {
+    public synchronized Request getNearestToMe(Vehicle vehicle) throws NoRequestsException {
         if (activeRequests.size() == 0) {
             throw new NoRequestsException();
         }
@@ -57,7 +85,7 @@ public class RequestService {
         return requests[smallestIndex];
     }
 
-    public synchronized static Request assignNearestToMe(Vehicle vehicle) throws NoRequestsException {
+    public synchronized Request assignNearestToMe(Vehicle vehicle) throws NoRequestsException {
         return assignRequest(getNearestToMe(vehicle), vehicle);
     }
 }

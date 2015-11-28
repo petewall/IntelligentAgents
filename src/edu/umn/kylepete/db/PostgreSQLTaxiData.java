@@ -1,19 +1,22 @@
-package edu.umn.kylepete;
+package edu.umn.kylepete.db;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
-public class TaxiData {
-    private Connection conn;
+import edu.umn.kylepete.Logger;
+import edu.umn.kylepete.Request;
+
+public class PostgreSQLTaxiData extends TaxiData {
+    Connection conn;
     
-    public TaxiData() {
+    public PostgreSQLTaxiData() {
         try {
             String url = "jdbc:postgresql://192.168.0.100/taxidata";
             Properties props = new Properties();
@@ -25,7 +28,7 @@ public class TaxiData {
             Logger.error(Logger.stackTraceToString(e));
         }
     }
-
+    
     /**
      * Get the earliest time in the DB
      * @return
@@ -43,16 +46,14 @@ public class TaxiData {
         }
         return 0;
     }
-    
+
     /**
      * Get all of the requests between a given time period
      * @param startTime
      * @param endTime
      * @return
      */
-    public ArrayList<Request> getRequests(int startTime, int endTime) {
+    public List<Request> getRequests(long startTime, long endTime) {
         return new ArrayList<Request>();
     }
-    
-
 }
