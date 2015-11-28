@@ -23,7 +23,7 @@ public class MockTaxiData extends TaxiData {
     private SimpleDateFormat dateFormat;
 
     public MockTaxiData() {
-        file = new File("/Users/pwall/src/IntelligentAgents/db/1000.csv");
+        file = new File("db/1000.csv");
         dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Logger.info("MockTaxiData", "Parsing data file " + file.getName());
         requestIndex = 0;
