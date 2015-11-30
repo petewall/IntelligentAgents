@@ -8,24 +8,23 @@ import java.util.Queue;
 
 public class EnvironmentTime {
 	
-	private Long curTime;
-	private Map<Long, Queue<TimeListener>> listeners;
+	private static Long curTime;
+	private static Map<Long, Queue<TimeListener>> listeners = new HashMap<Long, Queue<TimeListener>>();
 	
-	public EnvironmentTime(Date startTime){
-		listeners = new HashMap<Long, Queue<TimeListener>>();
+	public static void initializeTime(Date startTime){
 		curTime = startTime.getTime();
 	}
 
-	public Date getCurTime(){
+	public static Date getCurTime(){
 		return new Date(curTime);
 	}
 	
-	public void advanceTime(){
+	public static void advanceTime(){
 		curTime++;
 		executeListeners();
 	}
 	
-	private void executeListeners(){
+	private static void executeListeners(){
 		Queue<TimeListener> queue = listeners.get(curTime);
 		if(queue != null){
 			TimeListener listener = queue.poll();
@@ -36,12 +35,12 @@ public class EnvironmentTime {
 		}
 	}
 	
-	private void excecuteListener(TimeListener listener) {
+	private static void excecuteListener(TimeListener listener) {
 		// TODO start a new thread?
 		listener.ariveAtTime();
 	}
 
-	public void waitForTime(Date time, TimeListener callback){
+	public static void waitForTime(Date time, TimeListener callback){
 		Long key = new Long(time.getTime());
 		if(key >= curTime && callback != null){
 			Queue<TimeListener> queue = listeners.get(key);
