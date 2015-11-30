@@ -2,7 +2,7 @@ package edu.umn.kylepete.db;
 
 import java.util.List;
 
-import edu.umn.kylepete.Request;
+import edu.umn.kylepete.env.Request;
 
 public abstract class TaxiData {
 

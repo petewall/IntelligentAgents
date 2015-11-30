@@ -7,6 +7,11 @@ import java.util.Set;
 
 import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;
+import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.OSRM;
+import edu.umn.kylepete.env.Request;
+import edu.umn.kylepete.env.RequestListener;
+import edu.umn.kylepete.env.Vehicle;
 
 public class RequestService {
     @SuppressWarnings("serial")

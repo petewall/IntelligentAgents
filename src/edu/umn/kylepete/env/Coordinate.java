@@ -1,4 +1,4 @@
-package edu.umn.kylepete;
+package edu.umn.kylepete.env;
 
 /**
  * Encapsulates a latitude and a longitudes as a coordinate.

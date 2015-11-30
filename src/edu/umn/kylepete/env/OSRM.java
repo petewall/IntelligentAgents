@@ -1,4 +1,4 @@
-package edu.umn.kylepete;
+package edu.umn.kylepete.env;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.stream.JsonReader;
+
+import edu.umn.kylepete.Logger;
 
 /**
  * Send requests to an OSRM server

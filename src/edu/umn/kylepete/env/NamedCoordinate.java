@@ -1,4 +1,4 @@
-package edu.umn.kylepete;
+package edu.umn.kylepete.env;
 
 public class NamedCoordinate extends Coordinate {
     public String name;

@@ -1,5 +1,7 @@
-package edu.umn.kylepete;
+package edu.umn.kylepete.env;
 
+import edu.umn.kylepete.Logger;
+import edu.umn.kylepete.RequestService;
 import edu.umn.kylepete.RequestService.NoRequestsException;
 
 public class Vehicle implements RequestListener {

@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 import edu.umn.kylepete.Logger;
-import edu.umn.kylepete.Request;
+import edu.umn.kylepete.env.Request;
 
 public class PostgreSQLTaxiData extends TaxiData {
     Connection conn;

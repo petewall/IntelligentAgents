@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Set;
 
+import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.Vehicle;
+
 public class TaxiSystem {
     private Set<Vehicle> vehicles;
 

@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import edu.umn.kylepete.Coordinate;
+import edu.umn.kylepete.env.Coordinate;
 
 public class CoordinateTest {
 

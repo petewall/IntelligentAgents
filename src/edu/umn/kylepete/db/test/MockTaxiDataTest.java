@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.junit.Test;
 
-import edu.umn.kylepete.Request;
 import edu.umn.kylepete.db.MockTaxiData;
+import edu.umn.kylepete.env.Request;
 
 public class MockTaxiDataTest {
 

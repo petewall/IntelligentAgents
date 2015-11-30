@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import edu.umn.kylepete.Coordinate;
 import edu.umn.kylepete.Logger;
-import edu.umn.kylepete.Request;
+import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.Request;
 
 public class MockTaxiData extends TaxiData {
     

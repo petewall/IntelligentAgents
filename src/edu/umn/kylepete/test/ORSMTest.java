@@ -6,10 +6,10 @@ import java.util.List;
 
 import org.junit.Test;
 
-import edu.umn.kylepete.Coordinate;
-import edu.umn.kylepete.NamedCoordinate;
-import edu.umn.kylepete.OSRM;
-import edu.umn.kylepete.Route;
+import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.NamedCoordinate;
+import edu.umn.kylepete.env.OSRM;
+import edu.umn.kylepete.env.Route;
 
 public class ORSMTest {
     
