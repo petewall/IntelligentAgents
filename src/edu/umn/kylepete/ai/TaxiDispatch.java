@@ -15,12 +15,16 @@ public class TaxiDispatch implements RequestListener{
 	
 	private Queue<Request> requestQueue;
 	
-	public TaxiDispatch(List<TaxiAgent> taxis){
-		waitingTaxis = new ArrayList<TaxiAgent>(taxis);
+	public TaxiDispatch(){
+		waitingTaxis = new ArrayList<TaxiAgent>();
 		busyTaxis = new ArrayList<TaxiAgent>();
 		requestQueue = new LinkedList<>();
 	}
 
+	public void addTaxi(TaxiAgent taxi){
+		waitingTaxis.add(taxi);
+	}
+	
 	@Override
 	public void newRequest(Request event) {
 		requestQueue.add(event);
