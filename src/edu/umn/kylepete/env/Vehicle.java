@@ -40,7 +40,6 @@ public class Vehicle implements TimeListener {
     	EnvironmentTime.waitForTime(expectedTime, this);
     }
 
-	@Override
 	public void ariveAtTime() {
 		this.status = Status.PARKED;
 		VehicleListener callback = currentListener;

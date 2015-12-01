@@ -15,6 +15,7 @@ import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.RequestGenerator;
 import edu.umn.kylepete.env.Vehicle;
+import edu.umn.kylepete.stats.RequestStats;
 
 public class TaxiSystem {
     private Set<Vehicle> vehicles;
@@ -22,10 +23,13 @@ public class TaxiSystem {
     /**
      * Eventually, we may want to run this dynamically
      */
-    private int numberOfVehicles = 4;
-    private RequestGenerator requestGenerator = new RequestGenerator(new MockTaxiData());
+    private int numberOfVehicles = 50;
+    private TaxiData db;
+    private RequestGenerator requestGenerator;
     
     public TaxiSystem() {
+        db = new MockTaxiData();
+        requestGenerator = new RequestGenerator(db);
         this.vehicles = new HashSet<Vehicle>();
         for (int i = 0; i < numberOfVehicles; ++i) {
             Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", 4, new Coordinate(40.748433, -73.985656));
@@ -34,23 +38,20 @@ public class TaxiSystem {
     }
     
     public void start() {
-    	EnvironmentTime.initializeTime(new Date(1357020000000L - 2));
+    	EnvironmentTime.initializeTime(new Date(db.getStartTime() - 2L));
     	TaxiDispatch dispatch = new TaxiDispatch();
-    	for(Vehicle vehicle : vehicles){
+    	for (Vehicle vehicle : vehicles) {
     		dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
     	}
     	requestGenerator.addRequestListener(dispatch);
     	requestGenerator.generateRequests();
     	
         while (true) {
-//            printState();
-//            String command = inputString();
-//            if (command.equals("q")) {
-//                System.exit(0);
-//            }
-            EnvironmentTime.advanceTime();
-            //RequestService.getInstance().getNext();
+            if (!EnvironmentTime.advanceTime()) {
+                break;
+            }
         }
+        RequestStats.report();
     }
 
     private void printState() {

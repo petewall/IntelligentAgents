@@ -5,7 +5,7 @@ import java.util.List;
 
 import edu.umn.kylepete.db.TaxiData;
 
-public class RequestGenerator{
+public class RequestGenerator {
 
     private TaxiData db;
     List<RequestListener> requestListeners;
@@ -42,7 +42,6 @@ public class RequestGenerator{
 			this.request = r;
 		}
 
-		@Override
 		public void ariveAtTime() {
 			triggerRequest(request);
 		}

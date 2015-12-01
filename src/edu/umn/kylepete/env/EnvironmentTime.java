@@ -19,20 +19,25 @@ public class EnvironmentTime {
 		return new Date(curTime);
 	}
 	
-	public static void advanceTime(){
+	public static boolean advanceTime(){
 		curTime++;
-		executeListeners();
+		return executeListeners();
 	}
 	
-	private static void executeListeners(){
+	private static boolean executeListeners(){
+	    if (listeners.size() == 0) { // Nothing else to do
+	        return false;
+	    }
 		Queue<TimeListener> queue = listeners.get(curTime);
-		if(queue != null){
+		if (queue != null) {
 			TimeListener listener = queue.poll();
-			while(listener != null){
+			while (listener != null) {
 				excecuteListener(listener);
 				listener = queue.poll();
 			}
+			listeners.remove(curTime);
 		}
+		return true;
 	}
 	
 	private static void excecuteListener(TimeListener listener) {

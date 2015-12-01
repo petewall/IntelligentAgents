@@ -82,7 +82,7 @@ public class MockTaxiData extends TaxiData {
     }
     
     public Request getNextRequest() {
-        requestIndex += 50; // FIXME: Get some variety by skipping a few
+        requestIndex += 10; // FIXME: Get some variety by skipping a few
         if (requestIndex < requests.size()) {
             return requests.get(requestIndex);
         }

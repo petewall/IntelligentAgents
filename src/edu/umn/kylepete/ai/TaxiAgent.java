@@ -2,9 +2,11 @@ package edu.umn.kylepete.ai;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.Request;
 import edu.umn.kylepete.env.Vehicle;
 import edu.umn.kylepete.env.VehicleListener;
+import edu.umn.kylepete.stats.RequestStats;
 
 public class TaxiAgent implements VehicleListener {
 	
@@ -30,17 +32,18 @@ public class TaxiAgent implements VehicleListener {
 		return this.status;
 	}
 	
-	@Override
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
-		if(status == Status.PICKING_UP){
+		if (status == Status.PICKING_UP) {
 			status = Status.DRIVING;
 			Logger.debug(vehicle.toString() + " --> " + status);
 			this.vehicle.driveToLoc(currentRequest.getDropoffLocation(), this);
-		}else if(status == Status.DRIVING){
+            RequestStats.addIdleTime((EnvironmentTime.getCurTime().getTime() - currentRequest.getTime().getTime()) / 1000);
+		} else if (status == Status.DRIVING) {
 			status = Status.WAITING;
 			Logger.debug(vehicle.toString() + " --> " + status);
 			currentRequest = null;
 			dispatch.requestComplete(this);
+            RequestStats.requestFulfilled();
 		}
 	}
 	
