@@ -27,7 +27,7 @@ public class OSRM {
     
     public static Coordinate locate(Coordinate location) {
         String response = sendRequest("locate?loc=" + location.latitude + "," + location.longitude);
-        
+
         int status = 1;
         Coordinate mappedLocation = null;
         JsonReader reader = new JsonReader(new StringReader(response));
