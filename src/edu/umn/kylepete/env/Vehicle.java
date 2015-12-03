@@ -5,22 +5,17 @@ import java.util.Date;
 public class Vehicle implements TimeListener {
     private String name;
     private int capacity;
-    private Status status;
+    private boolean driving;
     private Coordinate currentLocation;
     private Route currentRoute;
     private Coordinate currentDestination;
     private VehicleListener currentListener;
 
-    public enum Status {
-        PARKED,     // Parked waiting for the next direction
-        DRIVING     // Driving to a destination
-    }
-
     public Vehicle(String name, String type, int capacity, Coordinate startingLocation) {
         this.name = name;
         this.capacity = capacity;
         this.currentLocation = startingLocation;
-        this.status = Status.PARKED;
+        this.driving = false;
     }
 
     public String getName() {
@@ -32,7 +27,7 @@ public class Vehicle implements TimeListener {
     }
     
     public void driveToLoc(Coordinate loc, VehicleListener callback){
-    	this.status = Status.DRIVING;
+    	this.driving = true;
     	currentListener = callback;
     	currentRoute = OSRM.viaRoute(currentLocation, loc);
     	currentDestination = loc;
@@ -41,7 +36,7 @@ public class Vehicle implements TimeListener {
     }
 
 	public void ariveAtTime() {
-		this.status = Status.PARKED;
+		this.driving = false;
 		VehicleListener callback = currentListener;
 		currentListener = null;
 		currentLocation = currentDestination;
@@ -51,23 +46,27 @@ public class Vehicle implements TimeListener {
 	}
 
 	public void cancelCurrentRoute(){
-		this.status = Status.PARKED;
+		this.driving = false;
 		currentLocation = getLocation();
 		currentRoute = null;
 		currentDestination = null;
 		currentListener = null; // TODO should we notify the listener of the cancel?
 	}
 	
-    public Status getStatus() {
-        return this.status;
+    public boolean isDriving() {
+        return this.driving;
     }
     
     public String toString() {
-        return this.getName() + " (" + status + ")";
+    	String drivingStr = "PARKED";
+    	if(driving){
+    		drivingStr = "DRIVING";
+    	}
+        return this.getName() + " (" + drivingStr + ")";
     }
 
     public Coordinate getLocation() {
-    	if(this.status == Status.DRIVING){
+    	if(this.driving){
     		// TODO estimate current location between currentLocation and currentDestination
     		return this.currentLocation;
     	}else{
