@@ -46,7 +46,7 @@ public class TaxiAgent implements VehicleListener {
             RequestStats.requestFulfilled();
 		}
 	}
-	
+
 	public void fulfillRequest(Request request){
 		currentRequest = request;
 		status = Status.PICKING_UP;
