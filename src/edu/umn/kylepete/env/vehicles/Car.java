@@ -4,6 +4,11 @@ import edu.umn.kylepete.env.Coordinate;
 
 public class Car extends Vehicle {
     public Car(String name, Coordinate startingLocation) {
-        super(name, "Car", 4, startingLocation);
+        super(name, startingLocation);
+    }
+
+    @Override
+    public int getCapacity() {
+        return 4;
     }
 }

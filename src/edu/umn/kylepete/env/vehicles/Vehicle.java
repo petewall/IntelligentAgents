@@ -13,18 +13,16 @@ import edu.umn.kylepete.env.TimeListener;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.stats.VehicleStats;
 
-public class Vehicle implements TimeListener {
+public abstract class Vehicle implements TimeListener {
     private String name;
-    private int capacity;
     private boolean driving;
     private Date timeSince; // Used to calculate how long this car has been driving or parked
     private Coordinate currentLocation;
     private Route currentRoute;
     private VehicleListener currentListener;
 
-    public Vehicle(String name, String type, int capacity, Coordinate startingLocation) {
+    public Vehicle(String name, Coordinate startingLocation) {
         this.name = name;
-        this.capacity = capacity;
         this.currentLocation = startingLocation;
         this.driving = false;
         try {
@@ -39,9 +37,7 @@ public class Vehicle implements TimeListener {
         return this.name;
     }
 
-    public int getCapacity() {
-        return this.capacity;
-    }
+    public abstract int getCapacity();
 
     public void driveToLoc(Coordinate loc, VehicleListener callback){
         VehicleStats.addParked(EnvironmentTime.getElapsed(timeSince));
