@@ -5,6 +5,7 @@ import java.util.Date;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.TaxiSystemProperties;
+import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.stats.VehicleStats;
 
 public class Vehicle implements TimeListener {
@@ -43,8 +44,17 @@ public class Vehicle implements TimeListener {
     	this.driving = true;
     	currentListener = callback;
     	currentRoute = OSRM.viaRoute(currentLocation, loc);
-    	Date expectedTime = new Date(EnvironmentTime.getCurTime().getTime() + currentRoute.time * 1000);
-    	EnvironmentTime.waitForTime(expectedTime, this);
+		if (currentRoute.time == 0) {
+			// we are already at the location
+			ariveAtTime();
+		} else {
+			Date expectedTime = new Date(EnvironmentTime.getCurTime().getTime() + currentRoute.time * 1000);
+			try {
+				EnvironmentTime.waitForTime(expectedTime, this);
+			} catch (EnvironmentTimeException e) {
+				throw new IllegalStateException(e.getMessage(), e);
+			}
+		}
     }
 
 	public void ariveAtTime() {

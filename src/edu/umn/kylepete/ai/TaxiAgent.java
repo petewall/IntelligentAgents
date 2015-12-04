@@ -35,15 +35,15 @@ public class TaxiAgent implements VehicleListener {
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
 		if (status == Status.PICKING_UP) {
 			status = Status.DRIVING;
+			RequestStats.addIdleTime((EnvironmentTime.getCurTime().getTime() - currentRequest.getTime().getTime()) / 1000);
 			Logger.debug(vehicle.toString() + " --> " + status);
 			this.vehicle.driveToLoc(currentRequest.getDropoffLocation(), this);
-            RequestStats.addIdleTime((EnvironmentTime.getCurTime().getTime() - currentRequest.getTime().getTime()) / 1000);
 		} else if (status == Status.DRIVING) {
 			status = Status.WAITING;
+			RequestStats.requestFulfilled();
 			Logger.debug(vehicle.toString() + " --> " + status);
 			currentRequest = null;
 			dispatch.requestComplete(this);
-            RequestStats.requestFulfilled();
 		}
 	}
 
