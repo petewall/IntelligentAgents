@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.ParseException;
-import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
@@ -12,7 +11,6 @@ import edu.umn.kylepete.ai.TaxiAgent;
 import edu.umn.kylepete.ai.dispatchers.*;
 import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;
-import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.env.vehicles.Vehicle;
