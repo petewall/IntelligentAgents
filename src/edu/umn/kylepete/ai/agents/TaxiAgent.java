@@ -2,6 +2,7 @@ package edu.umn.kylepete.ai.agents;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
+import edu.umn.kylepete.auctions.Bid;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.Request;
@@ -61,5 +62,15 @@ public class TaxiAgent implements VehicleListener {
 		status = Status.PICKING_UP;
 		Logger.debug(vehicle.toString() + " --> " + status);
 		vehicle.driveToLoc(request.getPickupLocation(), this);
+	}
+	
+	public Bid getBid(Request request) {
+	    Bid bid = new Bid(this);
+	    if (request.getNumberOfPassengers() > getVehicle().getCapacity()) {
+	        bid.abstain = true;
+	    } else {
+	        bid.value = getVehicle().getLocation().distance(request.getPickupLocation());
+	    }
+	    return bid;
 	}
 }
