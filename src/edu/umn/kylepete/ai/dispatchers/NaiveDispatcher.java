@@ -19,13 +19,14 @@ public class NaiveDispatcher extends TaxiDispatch {
     }
 
     private void processRequests() {
-        while (waitingTaxis.size() > 0 && requestQueue.size() > 0) {
-            Request request = requestQueue.poll();
+        Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
+        for (Request request : requests) {
             for (TaxiAgent agent : waitingTaxis) {
                 if (agent.getVehicle().getCapacity() >= request.getNumberOfPassengers()) {
                     waitingTaxis.remove(agent);
                     busyTaxis.add(agent);
                     agent.fulfillRequest(request);
+                    requestQueue.remove(request);
                     break;
                 }
             }

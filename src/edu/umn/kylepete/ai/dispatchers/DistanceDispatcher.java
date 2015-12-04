@@ -37,13 +37,14 @@ public class DistanceDispatcher extends TaxiDispatch {
     }
 
     private void processRequests(){
-        while(waitingTaxis.size() > 0 && requestQueue.size() > 0){
-            Request request = requestQueue.poll();
+        Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
+        for (Request request : requests) {
             TaxiAgent agent = findNearestIdleTaxi(request);
             if (agent != null) {
                 waitingTaxis.remove(agent);
                 busyTaxis.add(agent);
                 agent.fulfillRequest(request);
+                requestQueue.remove(request);
             }
         }
     }
