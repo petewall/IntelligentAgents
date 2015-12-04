@@ -1,6 +1,7 @@
 package edu.umn.kylepete.ai;
 
 import edu.umn.kylepete.Logger;
+import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.Request;

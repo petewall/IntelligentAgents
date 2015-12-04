@@ -9,7 +9,8 @@ import java.util.Random;
 import java.util.Set;
 
 import edu.umn.kylepete.ai.TaxiAgent;
-import edu.umn.kylepete.ai.TaxiDispatch;
+import edu.umn.kylepete.ai.dispatchers.NaiveDispatcher;
+import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
 import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;
 import edu.umn.kylepete.env.Coordinate;
@@ -29,13 +30,13 @@ public class TaxiSystem {
 	private RequestGenerator requestGenerator;
 
 	public TaxiSystem() {
-		db = new MockTaxiData();
-		requestGenerator = new RequestGenerator(db);
+	    this.db = new MockTaxiData();
+		this.requestGenerator = new RequestGenerator(db);
 		this.vehicles = generateVehicles();
 	}
 
 	public void start() {
-		TaxiDispatch dispatch = new TaxiDispatch();
+		TaxiDispatch dispatch = new NaiveDispatcher();
 		for (Vehicle vehicle : vehicles) {
 			dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
 		}
