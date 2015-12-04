@@ -16,6 +16,7 @@ import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.RequestGenerator;
 import edu.umn.kylepete.env.Vehicle;
 import edu.umn.kylepete.stats.RequestStats;
+import edu.umn.kylepete.stats.VehicleStats;
 
 public class TaxiSystem {
     private Set<Vehicle> vehicles;
@@ -27,34 +28,36 @@ public class TaxiSystem {
         db = new MockTaxiData();
         requestGenerator = new RequestGenerator(db);
         this.vehicles = new HashSet<Vehicle>();
-        for (int i = 0; i < TaxiSystemProperties.getTaxiCount(); ++i) {
-            Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", 4, new Coordinate(40.748433, -73.985656));
-            this.vehicles.add(vehicle);
-        }
     }
     
     public void start() {
+        // Initialize the time
     	EnvironmentTime.initializeTime(new Date(db.getStartTime() - 2L));
+    	
+    	// Initialize the dispatcher
     	TaxiDispatch dispatch = new TaxiDispatch();
-    	for (Vehicle vehicle : vehicles) {
-    		dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
-    	}
+    	
+    	// Initialize the vehicles
+        for (int i = 0; i < TaxiSystemProperties.getTaxiCount(); ++i) {
+            Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", 4, new Coordinate(40.748433, -73.985656));
+            this.vehicles.add(vehicle);
+            dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
+        }
+        
+        // Initialize the request generator
     	requestGenerator.addRequestListener(dispatch);
     	requestGenerator.generateRequests();
     	
+    	// Start the simulation
         while (true) {
             if (!EnvironmentTime.advanceTime()) {
                 break;
             }
         }
+        
+        // Report the statistics
         RequestStats.report();
-    }
-
-    private void printState() {
-        System.out.println(RequestService.getInstance().toString());
-        for (Vehicle vehicle : vehicles) {
-            System.out.println(vehicle.toString());
-        }
+        VehicleStats.report();
     }
 
     public static String inputString() {

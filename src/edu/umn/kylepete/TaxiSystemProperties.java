@@ -50,11 +50,11 @@ public class TaxiSystemProperties {
 		String portStr = getRequiredProperty(OSRM_PORT);
 		return Integer.parseInt(portStr);
 	}
-	
-	public static int getTaxiCount(){
-		String numStr = getRequiredProperty(TAXI_COUNT);
-		return Integer.parseInt(numStr);
-	}
+    
+    public static int getTaxiCount(){
+        String numStr = getRequiredProperty(TAXI_COUNT);
+        return Integer.parseInt(numStr);
+    }
 	
 	private static String getRequiredProperty(String key){
 		if(props.containsKey(key)){

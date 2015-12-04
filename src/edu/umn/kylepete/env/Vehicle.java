@@ -2,13 +2,15 @@ package edu.umn.kylepete.env;
 
 import java.util.Date;
 
+import edu.umn.kylepete.stats.VehicleStats;
+
 public class Vehicle implements TimeListener {
     private String name;
     private int capacity;
     private boolean driving;
+    private Date timeSince; // Used to calculate how long this car has been driving or parked
     private Coordinate currentLocation;
     private Route currentRoute;
-    private Coordinate currentDestination;
     private VehicleListener currentListener;
 
     public Vehicle(String name, String type, int capacity, Coordinate startingLocation) {
@@ -16,6 +18,7 @@ public class Vehicle implements TimeListener {
         this.capacity = capacity;
         this.currentLocation = startingLocation;
         this.driving = false;
+        this.timeSince = EnvironmentTime.getCurTime();
     }
 
     public String getName() {
@@ -25,23 +28,25 @@ public class Vehicle implements TimeListener {
     public int getCapacity() {
         return this.capacity;
     }
-    
+
     public void driveToLoc(Coordinate loc, VehicleListener callback){
+        VehicleStats.addParked(EnvironmentTime.getElapsed(timeSince));
+        this.timeSince = EnvironmentTime.getCurTime();
     	this.driving = true;
     	currentListener = callback;
     	currentRoute = OSRM.viaRoute(currentLocation, loc);
-    	currentDestination = loc;
     	Date expectedTime = new Date(EnvironmentTime.getCurTime().getTime() + currentRoute.time * 1000);
     	EnvironmentTime.waitForTime(expectedTime, this);
     }
 
 	public void ariveAtTime() {
+        VehicleStats.addDrive(currentRoute.distance, EnvironmentTime.getElapsed(timeSince));
+        this.timeSince = EnvironmentTime.getCurTime();
 		this.driving = false;
 		VehicleListener callback = currentListener;
 		currentListener = null;
-		currentLocation = currentDestination;
+		currentLocation = currentRoute.points[currentRoute.points.length - 1];
 		currentRoute = null;
-		currentDestination = null;
 		callback.arriveAtLoc(this, currentLocation);
 	}
 
@@ -49,7 +54,6 @@ public class Vehicle implements TimeListener {
 		this.driving = false;
 		currentLocation = getLocation();
 		currentRoute = null;
-		currentDestination = null;
 		currentListener = null; // TODO should we notify the listener of the cancel?
 	}
 	

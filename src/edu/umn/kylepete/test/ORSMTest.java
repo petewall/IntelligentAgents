@@ -2,10 +2,13 @@ package edu.umn.kylepete.test;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
 import java.util.List;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
+import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.NamedCoordinate;
 import edu.umn.kylepete.env.OSRM;
@@ -16,6 +19,11 @@ public class ORSMTest {
     private Coordinate empireState = new NamedCoordinate("The Empire State building", 40.748433, -73.985656);
     private Coordinate madisonSquareGarden = new NamedCoordinate("Madison Square Garden", 40.750556, -73.993611);
     private Coordinate theMet = new NamedCoordinate("The Metropolitan Museum of Art", 40.779447, -73.96311);
+
+    @BeforeClass 
+    public static void setUpClass() throws IOException {      
+        TaxiSystemProperties.loadProperties("taxisystem.properties");
+    }
 
     @Test
     public void testLocate() {

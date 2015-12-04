@@ -24,6 +24,7 @@ public class RequestStats {
     }
     
     public static void report() {
+        System.out.println("Request Stats:");
         System.out.println("Fulfilled: " + fulfilled);
         if (idleCount > 0) {
             System.out.println("Idle: " + idleTime + " seconds.  MAX(" + maxIdle + ") MIN(" + minIdle + ") AVG(" + (idleTime / idleCount) + ")");

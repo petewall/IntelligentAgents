@@ -103,6 +103,7 @@ public class OSRM {
         JsonReader reader = new JsonReader(new StringReader(response));
         try {
             route = Route.fromJsonReader(reader);
+            route.points = locations;
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"viaroute\" response: " + e.getMessage());

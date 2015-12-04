@@ -19,6 +19,10 @@ public class EnvironmentTime {
 		return new Date(curTime);
 	}
 	
+	public static long getElapsed(Date previousTime) {
+	    return (curTime.longValue() - previousTime.getTime()) / 1000;
+	}
+	
 	public static boolean advanceTime(){
 		curTime++;
 		return executeListeners();

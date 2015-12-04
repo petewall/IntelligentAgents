@@ -9,6 +9,8 @@ import com.google.gson.stream.JsonReader;
 import edu.umn.kylepete.Logger;
 
 public class Route {
+    
+    public Coordinate[] points;
 
     // For Route instructions
     public List<RouteStep> steps;
