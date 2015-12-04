@@ -1,6 +1,6 @@
 package edu.umn.kylepete.ai.dispatchers;
 
-import edu.umn.kylepete.ai.TaxiAgent;
+import edu.umn.kylepete.ai.agents.TaxiAgent;
 import edu.umn.kylepete.env.Request;
 
 public class NaiveDispatcher extends TaxiDispatch {

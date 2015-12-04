@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.util.Random;
 import java.util.Set;
 
-import edu.umn.kylepete.ai.TaxiAgent;
+import edu.umn.kylepete.ai.agents.TaxiAgent;
 import edu.umn.kylepete.ai.dispatchers.*;
 import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;

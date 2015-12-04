@@ -1,4 +1,4 @@
-package edu.umn.kylepete.ai;
+package edu.umn.kylepete.ai.agents;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
