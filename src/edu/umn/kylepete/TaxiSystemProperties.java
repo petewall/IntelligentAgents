@@ -2,6 +2,9 @@ package edu.umn.kylepete;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 public class TaxiSystemProperties {
@@ -14,8 +17,11 @@ public class TaxiSystemProperties {
 	private static final String TAXI_COUNT = "taxi.count";
 	private static final String REQUEST_COUNT = "request.count";
 	private static final String AI_STRATEGY = "ai.strategy";
+	private static final String RANDOM_SEED = "random.seed";
+	private static final String TIME_START = "time.start";
+	private static final String TIME_END = "time.end";
 	
-	
+	private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private static String file;
 	private static Properties props = null;
 
@@ -56,9 +62,29 @@ public class TaxiSystemProperties {
         return Integer.parseInt(numStr);
     }
 	
+	public static Long getRandomSeed() {
+		String value = props.getProperty(RANDOM_SEED);
+		if(value == null || value.isEmpty()){
+			return null;
+		}else{
+			return Long.parseLong(value);
+		}
+	}
+	
+	public static Date getTimeStart() throws ParseException {
+		String value = getRequiredProperty(TIME_START);
+		return dateFormat.parse(value);
+	}
+
+	public static Date getTimeEnd() throws ParseException {
+		String value = getRequiredProperty(TIME_END);
+		return dateFormat.parse(value);
+	}
+
 	private static String getRequiredProperty(String key){
-		if(props.containsKey(key)){
-			return props.getProperty(key);
+		String value = props.getProperty(key);
+		if(value != null && !value.isEmpty()){
+			return value;
 		}else{
 			throw new IllegalStateException("Property file " + file + " does not contain the required property " + key);
 		}

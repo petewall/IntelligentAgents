@@ -1,7 +1,10 @@
 package edu.umn.kylepete.env;
 
+import java.text.ParseException;
 import java.util.Date;
 
+import edu.umn.kylepete.Logger;
+import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.stats.VehicleStats;
 
 public class Vehicle implements TimeListener {
@@ -18,7 +21,12 @@ public class Vehicle implements TimeListener {
         this.capacity = capacity;
         this.currentLocation = startingLocation;
         this.driving = false;
-        this.timeSince = EnvironmentTime.getCurTime();
+        try {
+            this.timeSince = TaxiSystemProperties.getTimeStart();
+        } catch (ParseException e) {
+            Logger.error("VEHICLE", "Failed to get the start time");
+            Logger.error("VEHICLE", Logger.stackTraceToString(e));
+        }
     }
 
     public String getName() {
