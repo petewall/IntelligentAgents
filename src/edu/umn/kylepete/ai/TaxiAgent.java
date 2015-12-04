@@ -33,6 +33,10 @@ public class TaxiAgent implements VehicleListener {
 		return this.status;
 	}
 	
+	public Vehicle getVehicle() {
+	    return vehicle;
+	}
+	
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
 		if (status == Status.PICKING_UP) {
 			status = Status.DRIVING;
