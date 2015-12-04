@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.umn.kylepete.db.TaxiData;
+import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 
 public class RequestGenerator {
 
@@ -19,7 +20,7 @@ public class RequestGenerator {
     	this.requestListeners.add(listener);
     }
     
-    public void generateRequests(){
+	public void generateRequests() throws EnvironmentTimeException {
     	Request request = db.getNextRequest();
     	// TODO need to limit this with some sort of paging and delay so we don't fill up memory
     	while(request != null){

@@ -15,6 +15,7 @@ import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
+import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.RequestGenerator;
 import edu.umn.kylepete.env.Vehicle;
@@ -35,7 +36,7 @@ public class TaxiSystem {
 		this.vehicles = generateVehicles();
 	}
 
-	public void start() {
+	public void start() throws EnvironmentTimeException {
 		TaxiDispatch dispatch = new NaiveDispatcher();
 		for (Vehicle vehicle : vehicles) {
 			dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
@@ -64,7 +65,7 @@ public class TaxiSystem {
 		}
 	}
 
-	public static void main(String[] args) throws IOException, ParseException {
+	public static void main(String[] args) throws IOException, ParseException, EnvironmentTimeException {
 		if (args.length != 1) {
 			if (args.length < 1) {
 				System.out.println("Missing property file argument.");

@@ -8,23 +8,36 @@ import java.util.Queue;
 
 public class EnvironmentTime {
 	
-	private static Long curTime;
+	@SuppressWarnings("serial")
+	public static class EnvironmentTimeException extends Exception {
+		public EnvironmentTimeException(String msg) {
+			super(msg);
+		}
+	};
+	
+	private static Long curTimeInSeconds;
 	private static Map<Long, Queue<TimeListener>> listeners = new HashMap<Long, Queue<TimeListener>>();
 	
 	public static void initializeTime(Date startTime){
-		curTime = startTime.getTime();
+		curTimeInSeconds = startTime.getTime() / 1000;
 	}
 
 	public static Date getCurTime(){
-		return new Date(curTime);
+		return new Date(curTimeInSeconds * 1000);
 	}
 	
+	/**
+	 * Get the number of seconds elapsed since the given previousTime
+	 * 
+	 * @param previousTime
+	 * @return
+	 */
 	public static long getElapsed(Date previousTime) {
-	    return (curTime.longValue() - previousTime.getTime()) / 1000;
+		return curTimeInSeconds - previousTime.getTime() / 1000;
 	}
 	
 	public static boolean advanceTime(){
-		curTime++;
+		curTimeInSeconds++;
 		return executeListeners();
 	}
 	
@@ -32,14 +45,14 @@ public class EnvironmentTime {
 	    if (listeners.size() == 0) { // Nothing else to do
 	        return false;
 	    }
-		Queue<TimeListener> queue = listeners.get(curTime);
+		Queue<TimeListener> queue = listeners.get(curTimeInSeconds);
 		if (queue != null) {
 			TimeListener listener = queue.poll();
 			while (listener != null) {
 				excecuteListener(listener);
 				listener = queue.poll();
 			}
-			listeners.remove(curTime);
+			listeners.remove(curTimeInSeconds);
 		}
 		return true;
 	}
@@ -49,15 +62,20 @@ public class EnvironmentTime {
 		listener.ariveAtTime();
 	}
 
-	public static void waitForTime(Date time, TimeListener callback){
-		Long key = new Long(time.getTime());
-		if(key >= curTime && callback != null){
-			Queue<TimeListener> queue = listeners.get(key);
-			if(queue == null){
-				queue = new LinkedList<TimeListener>();
-				listeners.put(key, queue);
-			}
-			queue.add(callback);
+	public static void waitForTime(Date time, TimeListener callback) throws EnvironmentTimeException{
+		if (callback == null) {
+			throw new EnvironmentTimeException("callback must not be null");
 		}
+		Long key = new Long(time.getTime() / 1000);
+		if (key <= curTimeInSeconds) {
+			throw new EnvironmentTimeException("Cannot waitForTime in the past");
+		}
+
+		Queue<TimeListener> queue = listeners.get(key);
+		if (queue == null) {
+			queue = new LinkedList<TimeListener>();
+			listeners.put(key, queue);
+		}
+		queue.add(callback);
 	}
 }
