@@ -35,7 +35,7 @@ public class TaxiSystem {
 	}
 
 	public void start() throws EnvironmentTimeException {
-		TaxiDispatch dispatch = new NaiveDispatcher();
+		TaxiDispatch dispatch = new DistanceDispatcher();
 		for (Vehicle vehicle : vehicles) {
 			dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
 		}

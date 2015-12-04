@@ -27,6 +27,7 @@ public class DistanceDispatcher extends TaxiDispatch {
             double distance = agent.getVehicle().getLocation().distance(locaiton);
             if (distance < nearestDistance) {
                 nearest = agent;
+                nearestDistance = distance;
             }
         }
         return nearest;
@@ -36,6 +37,7 @@ public class DistanceDispatcher extends TaxiDispatch {
         while(waitingTaxis.size() > 0 && requestQueue.size() > 0){
             Request request = requestQueue.poll();
             TaxiAgent agent = findNearestIdleTaxi(request.getPickupLocation());
+            waitingTaxis.remove(agent);
             busyTaxis.add(agent);
             agent.fulfillRequest(request);
         }
