@@ -9,14 +9,12 @@ import java.util.Random;
 import java.util.Set;
 
 import edu.umn.kylepete.ai.TaxiAgent;
-import edu.umn.kylepete.ai.dispatchers.NaiveDispatcher;
-import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
+import edu.umn.kylepete.ai.dispatchers.*;
 import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
-import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.RequestGenerator;
 import edu.umn.kylepete.env.Vehicle;
 import edu.umn.kylepete.stats.RequestStats;
@@ -93,41 +91,11 @@ public class TaxiSystem {
 		Set<Vehicle> vehicles = new HashSet<Vehicle>();
 
 		for (int i = 0; i < count; ++i) {
-			Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", nextRandomPassengerCount(), nextRandomCoordinate());
+			Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", nextRandomPassengerCount(), Coordinate.getRandomCoordinate(randomGenerator));
 			vehicles.add(vehicle);
 		}
 		return vehicles;
 	}
-
-	private static Coordinate nextRandomCoordinate() {
-
-		// Here are the min and max coordinates for the January 2013 NYC taxi trips
-		//    max_lon  |   min_lon  |  max_lat  | min_lat
-		// ------------+------------+-----------+-----------
-		//  -73.700096 | -74.049995 | 40.899994 | 40.600021
-		final double MAX_LON = -73.700096;
-		final double MIN_LON = -74.049995;
-		final double MAX_LAT = 40.899994;
-		final double MIN_LAT = 40.600021;
-
-		// we want to generate random coordinates within this range but more concentrated around the center
-		// to do this we will use a gaussian distribution
-		// we also want to make sure the coordinate is a valid road (not in the water) so we will use OSRM
-
-		double lon = nextRandomGaussian(MAX_LON, MIN_LON);
-		double lat = nextRandomGaussian(MAX_LAT, MIN_LAT);
-		Coordinate coordinate = new Coordinate(lat, lon);
-		return OSRM.locate(coordinate);
-	}
-
-	private static double nextRandomGaussian(double max, double min) {
-		// for a gaussian, 99.7% is within +/-3 standard deviations
-		// source: http://stackoverflow.com/questions/2751938/random-number-within-a-range-based-on-a-normal-distribution
-		double mean = (max + min) / 2.0;
-		double std = (max - min) / 2.0 / 3.0;
-		return (randomGenerator.nextGaussian() * std) + mean;
-	}
-
 	private static int nextRandomPassengerCount() {
 		// I found online that most taxis are required by law to only hold 4 passengers
 		// A few exceptions exist for 5 passenger minivan cabs and/or for young children
