@@ -46,6 +46,11 @@ public class TaxiSystem {
 				break;
 			}
 		}
+
+		// Report the final parked time
+		for (Vehicle vehicle : vehicles) {
+		    vehicle.reportTimeParked();
+        }
 		RequestStats.report();
 		VehicleStats.report();
 	}

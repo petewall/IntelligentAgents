@@ -38,9 +38,13 @@ public abstract class Vehicle implements TimeListener {
     }
 
     public abstract int getCapacity();
+    
+    public void reportTimeParked() {
+        VehicleStats.addParked(EnvironmentTime.getElapsed(timeSince));        
+    }
 
     public void driveToLoc(Coordinate loc, VehicleListener callback){
-        VehicleStats.addParked(EnvironmentTime.getElapsed(timeSince));
+        reportTimeParked();
         this.timeSince = EnvironmentTime.getCurTime();
     	this.driving = true;
     	currentListener = callback;
