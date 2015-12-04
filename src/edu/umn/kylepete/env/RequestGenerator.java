@@ -5,6 +5,7 @@ import java.util.List;
 
 import edu.umn.kylepete.db.TaxiData;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
+import edu.umn.kylepete.stats.RequestStats;
 
 public class RequestGenerator {
 
@@ -31,6 +32,7 @@ public class RequestGenerator {
 
     private void triggerRequest(Request request){
     	//TODO make this multi-threaded?
+        RequestStats.requestSubmitted();
     	for(RequestListener listener: this.requestListeners){
     		listener.newRequest(request);
     	}
