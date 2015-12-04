@@ -11,7 +11,7 @@ import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.Request;
 import edu.umn.kylepete.env.RequestListener;
-import edu.umn.kylepete.env.Vehicle;
+import edu.umn.kylepete.env.vehicles.Vehicle;
 
 public class RequestService {
     @SuppressWarnings("serial")

@@ -1,7 +1,6 @@
 package edu.umn.kylepete.ai.dispatchers;
 
 import edu.umn.kylepete.ai.TaxiAgent;
-import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.Request;
 
 public class DistanceDispatcher extends TaxiDispatch {
@@ -19,15 +18,19 @@ public class DistanceDispatcher extends TaxiDispatch {
         processRequests();
     }
     
-    private TaxiAgent findNearestIdleTaxi(Coordinate locaiton) {
+    private TaxiAgent findNearestIdleTaxi(Request request) {
         TaxiAgent nearest = null;
         double nearestDistance = Double.MAX_VALUE;
         
         for (TaxiAgent agent : waitingTaxis) {
-            double distance = agent.getVehicle().getLocation().distance(locaiton);
-            if (distance < nearestDistance) {
-                nearest = agent;
-                nearestDistance = distance;
+            if (agent.getVehicle().getCapacity() >= request.getNumberOfPassengers()) {
+                double distance = agent.getVehicle().getLocation().distance(request.getPickupLocation());
+                if (distance < nearestDistance) {
+                    nearest = agent;
+                    nearestDistance = distance;
+                }
+            } else {
+                System.out.println("stop me");
             }
         }
         return nearest;
@@ -36,10 +39,12 @@ public class DistanceDispatcher extends TaxiDispatch {
     private void processRequests(){
         while(waitingTaxis.size() > 0 && requestQueue.size() > 0){
             Request request = requestQueue.poll();
-            TaxiAgent agent = findNearestIdleTaxi(request.getPickupLocation());
-            waitingTaxis.remove(agent);
-            busyTaxis.add(agent);
-            agent.fulfillRequest(request);
+            TaxiAgent agent = findNearestIdleTaxi(request);
+            if (agent != null) {
+                waitingTaxis.remove(agent);
+                busyTaxis.add(agent);
+                agent.fulfillRequest(request);
+            }
         }
     }
 }

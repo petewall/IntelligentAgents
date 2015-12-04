@@ -1,10 +1,15 @@
-package edu.umn.kylepete.env;
+package edu.umn.kylepete.env.vehicles;
 
 import java.text.ParseException;
 import java.util.Date;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.TaxiSystemProperties;
+import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.EnvironmentTime;
+import edu.umn.kylepete.env.OSRM;
+import edu.umn.kylepete.env.Route;
+import edu.umn.kylepete.env.TimeListener;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.stats.VehicleStats;
 

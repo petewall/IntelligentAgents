@@ -15,8 +15,9 @@ import edu.umn.kylepete.db.TaxiData;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
+import edu.umn.kylepete.env.vehicles.Vehicle;
+import edu.umn.kylepete.env.vehicles.VehicleFactory;
 import edu.umn.kylepete.env.RequestGenerator;
-import edu.umn.kylepete.env.Vehicle;
 import edu.umn.kylepete.stats.RequestStats;
 import edu.umn.kylepete.stats.VehicleStats;
 
@@ -31,7 +32,7 @@ public class TaxiSystem {
 	public TaxiSystem() {
 	    this.db = new MockTaxiData();
 		this.requestGenerator = new RequestGenerator(db);
-		this.vehicles = generateVehicles();
+		this.vehicles = VehicleFactory.generateVehicles(randomGenerator);
 	}
 
 	public void start() throws EnvironmentTimeException {
@@ -83,31 +84,5 @@ public class TaxiSystem {
 		EnvironmentTime.initializeTime(TaxiSystemProperties.getTimeStart());
 		TaxiSystem system = new TaxiSystem();
 		system.start();
-	}
-
-	private Set<Vehicle> generateVehicles() {
-		int count = TaxiSystemProperties.getTaxiCount();
-		Logger.info("Generating " + count + " vehicles");
-		Set<Vehicle> vehicles = new HashSet<Vehicle>();
-
-		for (int i = 0; i < count; ++i) {
-			Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", nextRandomPassengerCount(), Coordinate.getRandomCoordinate(randomGenerator));
-			vehicles.add(vehicle);
-		}
-		return vehicles;
-	}
-	private static int nextRandomPassengerCount() {
-		// I found online that most taxis are required by law to only hold 4 passengers
-		// A few exceptions exist for 5 passenger minivan cabs and/or for young children
-		// http://www.nyc.gov/html/tlc/html/faq/faq_pass.shtml#3
-		// I couldn't find an exact percentage of the fleet that is minivans, but
-		// many people eluded they are currently less than 10%
-		// I'm going to go with 80% 4 passenger and 20% 6 passenger to estimate the exceptions
-
-		if (randomGenerator.nextDouble() < 0.80) {
-			return 4;
-		} else {
-			return 6;
-		}
 	}
 }

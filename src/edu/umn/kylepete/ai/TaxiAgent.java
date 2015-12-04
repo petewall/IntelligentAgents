@@ -5,8 +5,8 @@ import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.Request;
-import edu.umn.kylepete.env.Vehicle;
-import edu.umn.kylepete.env.VehicleListener;
+import edu.umn.kylepete.env.vehicles.Vehicle;
+import edu.umn.kylepete.env.vehicles.VehicleListener;
 import edu.umn.kylepete.stats.RequestStats;
 
 public class TaxiAgent implements VehicleListener {
