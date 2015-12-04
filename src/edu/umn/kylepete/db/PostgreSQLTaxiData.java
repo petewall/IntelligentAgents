@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 import edu.umn.kylepete.Logger;
+import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.env.Request;
 
 public class PostgreSQLTaxiData extends TaxiData {
@@ -18,10 +19,10 @@ public class PostgreSQLTaxiData extends TaxiData {
     
     public PostgreSQLTaxiData() {
         try {
-            String url = "jdbc:postgresql://192.168.0.100/taxidata";
+            String url = TaxiSystemProperties.getDbUrl();
             Properties props = new Properties();
-            props.setProperty("user","taxiuser");
-            props.setProperty("password","zI3WcHKFAuHx71ny7efHjifri9JmPh");
+            props.setProperty("user", TaxiSystemProperties.getDbUser());
+            props.setProperty("password",TaxiSystemProperties.getDbPassword());
             conn = DriverManager.getConnection(url, props);
         } catch (SQLException e) {
             Logger.error("DATA", "Failed to open connection: " + e.getMessage());

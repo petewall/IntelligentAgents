@@ -13,6 +13,7 @@ import java.util.List;
 import com.google.gson.stream.JsonReader;
 
 import edu.umn.kylepete.Logger;
+import edu.umn.kylepete.TaxiSystemProperties;
 
 /**
  * Send requests to an OSRM server
@@ -21,9 +22,8 @@ import edu.umn.kylepete.Logger;
  *
  */
 public class OSRM {
-//    private static String hostname = "192.168.0.100";
-    private static String hostname = "home.petewall.net";
-    private static int port = 5000;
+    private static String hostname = TaxiSystemProperties.getOsrmHost();
+    private static int port = TaxiSystemProperties.getOsrmPort();
     
     public static Coordinate locate(Coordinate location) {
         String response = sendRequest("locate?loc=" + location.latitude + "," + location.longitude);

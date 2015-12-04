@@ -20,10 +20,6 @@ import edu.umn.kylepete.stats.RequestStats;
 public class TaxiSystem {
     private Set<Vehicle> vehicles;
 
-    /**
-     * Eventually, we may want to run this dynamically
-     */
-    private int numberOfVehicles = 50;
     private TaxiData db;
     private RequestGenerator requestGenerator;
     
@@ -31,7 +27,7 @@ public class TaxiSystem {
         db = new MockTaxiData();
         requestGenerator = new RequestGenerator(db);
         this.vehicles = new HashSet<Vehicle>();
-        for (int i = 0; i < numberOfVehicles; ++i) {
+        for (int i = 0; i < TaxiSystemProperties.getTaxiCount(); ++i) {
             Vehicle vehicle = new Vehicle("Vehicle " + (i + 1), "Car", 4, new Coordinate(40.748433, -73.985656));
             this.vehicles.add(vehicle);
         }
@@ -73,7 +69,17 @@ public class TaxiSystem {
         }
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+    	if(args.length != 1){
+    		if(args.length < 1){
+    			System.out.println("Missing property file argument.");
+    		}else if(args.length > 1){
+    			System.out.println("Too many arguments. There must be only one argument for property file.");
+    		}
+    		System.out.print("Usage: TaxiSystem path/to/taxisystem.properties");
+    		System.exit(1);
+    	}
+    	TaxiSystemProperties.loadProperties(args[0]);
         TaxiSystem system = new TaxiSystem();
         system.start();
     }
