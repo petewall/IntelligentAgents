@@ -16,6 +16,7 @@ public class TaxiAgent implements VehicleListener {
 	private TaxiDispatch dispatch;
 	private Request currentRequest;
 	private Status status;
+	private BiddingStrategy biddingStrategy;
 
 	public enum Status {
 		WAITING, // Waiting for a request
@@ -28,6 +29,7 @@ public class TaxiAgent implements VehicleListener {
 		this.currentRequest = null;
 		this.status = Status.WAITING;
 		this.dispatch = dispatch;
+		this.biddingStrategy = new DistanceBiddingStrategy(this);
 	}
 	
 	public Status getStatus(){
@@ -65,12 +67,6 @@ public class TaxiAgent implements VehicleListener {
 	}
 	
 	public Bid getBid(Request request) {
-	    Bid bid = new Bid(this);
-	    if (request.getNumberOfPassengers() > getVehicle().getCapacity()) {
-	        bid.abstain = true;
-	    } else {
-	        bid.value = getVehicle().getLocation().distance(request.getPickupLocation());
-	    }
-	    return bid;
+	    return this.biddingStrategy.getBid(request);
 	}
 }

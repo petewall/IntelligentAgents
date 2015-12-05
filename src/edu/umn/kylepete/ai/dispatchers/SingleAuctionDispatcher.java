@@ -1,10 +1,10 @@
 package edu.umn.kylepete.ai.dispatchers;
 
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.HashSet;
+import java.util.Set;
 
 import edu.umn.kylepete.ai.agents.TaxiAgent;
-import edu.umn.kylepete.auctions.Bid;
+import edu.umn.kylepete.auctions.SingleAuction;
 import edu.umn.kylepete.env.Request;
 
 /**
@@ -13,7 +13,18 @@ import edu.umn.kylepete.env.Request;
  *
  */
 public class SingleAuctionDispatcher extends TaxiDispatch {
-        
+
+    private Set<TaxiAgent> taxis;
+    
+    public SingleAuctionDispatcher() {
+        taxis = new HashSet<TaxiAgent>();
+    }
+    
+    @Override
+    public void addTaxi(TaxiAgent taxi) {
+        taxis.add(taxi);
+    }
+
     @Override
     public void newRequest(Request event) {
         requestQueue.add(event);
@@ -22,27 +33,16 @@ public class SingleAuctionDispatcher extends TaxiDispatch {
 
     @Override
     public void requestComplete(TaxiAgent taxiAgent) {
-        busyTaxis.remove(taxiAgent);
-        waitingTaxis.add(taxiAgent);
         processRequests();
     }
 
     private void processRequests() {
         Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
         for (Request request : requests) {
-            Queue<Bid> bids = new PriorityQueue<Bid>();
-            for (TaxiAgent agent : waitingTaxis) {
-                Bid bid = agent.getBid(request);
-                if (!bid.abstain) {
-                    bids.add(bid);
-                }
-            }
-
-            if (bids.size() > 0) {
-                Bid winningBid = bids.remove();
-                waitingTaxis.remove(winningBid.bidder);
-                busyTaxis.add(winningBid.bidder);
-                winningBid.bidder.fulfillRequest(request);
+            SingleAuction auction = new SingleAuction(taxis);
+            TaxiAgent winner = auction.offerOne(request);
+            if (winner != null) {
+                winner.fulfillRequest(request);
                 requestQueue.remove(request);
             }
         }

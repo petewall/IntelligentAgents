@@ -11,19 +11,13 @@ import edu.umn.kylepete.env.RequestListener;
 
 public abstract class TaxiDispatch implements RequestListener {
 	
-	protected List<TaxiAgent> waitingTaxis;
-	protected List<TaxiAgent> busyTaxis;
 	protected Queue<Request> requestQueue;
 
 	public TaxiDispatch(){
-		waitingTaxis = new ArrayList<TaxiAgent>();
-		busyTaxis = new ArrayList<TaxiAgent>();
 		requestQueue = new LinkedList<Request>();
 	}
 
-	public void addTaxi(TaxiAgent taxi){
-		waitingTaxis.add(taxi);
-	}
+	public abstract void addTaxi(TaxiAgent taxi);
 	
     public abstract void newRequest(Request event);
 
