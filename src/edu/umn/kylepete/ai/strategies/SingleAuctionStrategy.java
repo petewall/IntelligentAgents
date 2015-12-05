@@ -12,16 +12,13 @@ public class SingleAuctionStrategy implements AIStrategy {
 
 	SingleAuctionDispatcher dispatch = new SingleAuctionDispatcher();
 
-	@Override
 	public void addVehicles(Collection<Vehicle> vehicles) {
 		for (Vehicle vehicle : vehicles) {
 			dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
 		}
 	}
 
-	@Override
 	public Collection<? extends RequestListener> getRequestListeners() {
 		return Arrays.asList(dispatch);
 	}
-
 }

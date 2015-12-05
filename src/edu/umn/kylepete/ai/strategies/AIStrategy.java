@@ -9,5 +9,5 @@ public interface AIStrategy {
 
 	public void addVehicles(Collection<Vehicle> vehicles);
 
-	public abstract Collection<? extends RequestListener> getRequestListeners();
+	public Collection<? extends RequestListener> getRequestListeners();
 }
