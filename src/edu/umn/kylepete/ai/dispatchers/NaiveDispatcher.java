@@ -41,7 +41,7 @@ public class NaiveDispatcher extends TaxiDispatch {
                 if (agent.getVehicle().getCapacity() >= request.getNumberOfPassengers()) {
                     waitingTaxis.remove(agent);
                     busyTaxis.add(agent);
-                    agent.fulfillRequest(request);
+                    agent.assignRequest(request);
                     requestQueue.remove(request);
                     break;
                 }

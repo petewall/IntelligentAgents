@@ -6,12 +6,14 @@ public class Request {
     private Date time;
     private Coordinate pickup;
     private Coordinate dropoff;
+    private double distance;
     private int passengers;
     
     public Request(Date time, Coordinate pickup, Coordinate dropoff, int passengers) {
         this.time = time;
         this.pickup = pickup;
         this.dropoff = dropoff;
+        this.distance = pickup.distance(dropoff); // FIXME Should this be made truly accurate using OSRM? 
         this.passengers = passengers;
     }
     
@@ -25,6 +27,10 @@ public class Request {
     
     public Coordinate getDropoffLocation() {
         return dropoff;
+    }
+    
+    public double getDistance() {
+        return distance;
     }
     
     public int getNumberOfPassengers() {

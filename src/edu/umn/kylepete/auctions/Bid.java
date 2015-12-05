@@ -13,6 +13,14 @@ public class Bid implements Comparable<Bid> {
         this.value = 0;
     }
     
+    public String toString() {
+        if (abstain) {
+            return bidder.toString() + " abstains";
+        } else {
+            return bidder.toString() + " bids " + Double.toString(value);
+        }
+    }
+    
     public int compareTo(Bid otherBid) {
         return Double.compare(value, otherBid.value);
     }

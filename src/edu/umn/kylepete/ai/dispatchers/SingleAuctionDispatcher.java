@@ -42,7 +42,7 @@ public class SingleAuctionDispatcher extends TaxiDispatch {
             SingleAuction auction = new SingleAuction(taxis);
             TaxiAgent winner = auction.offerOne(request);
             if (winner != null) {
-                winner.fulfillRequest(request);
+                winner.assignRequest(request);
                 requestQueue.remove(request);
             }
         }

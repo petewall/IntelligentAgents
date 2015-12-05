@@ -59,7 +59,7 @@ public class DistanceDispatcher extends TaxiDispatch {
             if (agent != null) {
                 waitingTaxis.remove(agent);
                 busyTaxis.add(agent);
-                agent.fulfillRequest(request);
+                agent.assignRequest(request);
                 requestQueue.remove(request);
             }
         }
