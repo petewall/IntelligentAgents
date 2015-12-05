@@ -1,73 +1,42 @@
 package edu.umn.kylepete;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.text.ParseException;
-import java.util.Random;
-import java.util.Set;
 
-import edu.umn.kylepete.ai.agents.TaxiAgent;
-import edu.umn.kylepete.ai.dispatchers.*;
-import edu.umn.kylepete.db.MockTaxiData;
-import edu.umn.kylepete.db.TaxiData;
-import edu.umn.kylepete.env.EnvironmentTime;
-import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
+import edu.umn.kylepete.ai.strategies.AIStrategy;
+import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.vehicles.Vehicle;
-import edu.umn.kylepete.env.vehicles.VehicleFactory;
-import edu.umn.kylepete.env.RequestGenerator;
 import edu.umn.kylepete.stats.RequestStats;
 import edu.umn.kylepete.stats.VehicleStats;
 
 public class TaxiSystem {
-	public static Random randomGenerator;
-	
-	private Set<Vehicle> vehicles;
 
-	private TaxiData db;
-	private RequestGenerator requestGenerator;
+	public static void main(String[] args) throws Exception {
+		TaxiSystemProperties properties = loadProperties(args);
 
-	public TaxiSystem() {
-	    this.db = new MockTaxiData();
-		this.requestGenerator = new RequestGenerator(db);
-		this.vehicles = VehicleFactory.generateVehicles(randomGenerator);
-	}
+		// get the strategy class first so we flush out any property file/class loading errors
+		// before generating the environment (which takes longer)
+		AIStrategy aiStrategy = getAIStrategy(properties);
 
-	public void start() throws EnvironmentTimeException {
-		TaxiDispatch dispatch = new SingleAuctionDispatcher();
-		for (Vehicle vehicle : vehicles) {
-			dispatch.addTaxi(new TaxiAgent(vehicle, dispatch));
+		// setup the environment (random, time, requests, vehicles)
+		Environment environment = Environment.getNewEnvironment(properties);
+
+		// register the vehicles to the AI and the AI listeners to the environment
+		// TODO may be better design to have new vehicle listeners
+		aiStrategy.addVehicles(environment.getVehicles());
+		environment.getRequestGenerator().addRequestListeners(aiStrategy.getRequestListeners());
+
+		// run the simulation
+		environment.start();
+
+		// Report the final statistics
+		for (Vehicle vehicle : environment.getVehicles()) {
+			vehicle.reportTimeParked();
 		}
-		requestGenerator.addRequestListener(dispatch);
-		requestGenerator.generateRequests();
-
-		while (true) {
-			if (!EnvironmentTime.advanceTime()) {
-				break;
-			}
-		}
-
-		// Report the final parked time
-		for (Vehicle vehicle : vehicles) {
-		    vehicle.reportTimeParked();
-        }
 		RequestStats.report();
 		VehicleStats.report();
 	}
 
-	public static String inputString() {
-		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("> ");
-
-		try {
-			return input.readLine();
-		} catch (IOException e) {
-			Logger.warning(Logger.stackTraceToString(e));
-			return inputString();
-		}
-	}
-
-	public static void main(String[] args) throws IOException, ParseException, EnvironmentTimeException {
+	private static TaxiSystemProperties loadProperties(String[] args) throws IOException {
 		if (args.length != 1) {
 			if (args.length < 1) {
 				System.out.println("Missing property file argument.");
@@ -77,15 +46,36 @@ public class TaxiSystem {
 			System.out.print("Usage: TaxiSystem path/to/taxisystem.properties");
 			System.exit(1);
 		}
-		TaxiSystemProperties.loadProperties(args[0]);
-		Long randomSeed = TaxiSystemProperties.getRandomSeed();
-		if(randomSeed != null){
-			randomGenerator = new Random(randomSeed);
-		}else{
-			randomGenerator = new Random();
+		TaxiSystemProperties properties = new TaxiSystemProperties(args[0]);
+		OSRM.hostname = properties.getOsrmHost();
+		OSRM.port = properties.getOsrmPort();
+		return properties;
+	}
+
+	private static AIStrategy getAIStrategy(TaxiSystemProperties properties) throws Exception {
+		String strategyClassName = properties.getAIStrategy();
+		Class<?> strategyClass;
+		try {
+			strategyClass = Class.forName(strategyClassName);
+		} catch (ClassNotFoundException e) {
+			Logger.error("Stragegy class with name " + strategyClassName + " could not be found. Make sure the name is fully qualified.");
+			throw e;
 		}
-		EnvironmentTime.initializeTime(TaxiSystemProperties.getTimeStart());
-		TaxiSystem system = new TaxiSystem();
-		system.start();
+
+		Object strategy;
+		try {
+			strategy = strategyClass.newInstance();
+		} catch (Exception e) {
+			Logger.error("Unable to instantiate a new AI strategy class of type " + strategyClass.getName());
+			throw e;
+		}
+
+		if (!(strategy instanceof AIStrategy)) {
+			String err = strategyClassName + " class specified in the ai.strategy property must implement the AIStrategy interface.";
+			Logger.error(err);
+			throw new IllegalArgumentException(err);
+		}
+
+		return (AIStrategy) strategy;
 	}
 }

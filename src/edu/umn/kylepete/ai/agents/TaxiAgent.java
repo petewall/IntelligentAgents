@@ -1,11 +1,11 @@
 package edu.umn.kylepete.ai.agents;
 
 import java.util.LinkedList;
+
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
 import edu.umn.kylepete.auctions.Bid;
 import edu.umn.kylepete.env.Coordinate;
-import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.Request;
 import edu.umn.kylepete.env.vehicles.Vehicle;
 import edu.umn.kylepete.env.vehicles.VehicleListener;
@@ -61,7 +61,7 @@ public class TaxiAgent implements VehicleListener {
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
 		if (status == Status.PICKING_UP) {
 			status = Status.DRIVING;
-			RequestStats.addIdleTime((EnvironmentTime.getCurTime().getTime() - currentRequest.getTime().getTime()) / 1000);
+			RequestStats.addIdleTime((vehicle.getEnvironmentTime().getCurTime().getTime() - currentRequest.getTime().getTime()) / 1000);
 			Logger.debug(vehicle.toString() + " --> " + status);
 			this.vehicle.driveToLoc(currentRequest.getDropoffLocation(), this);
 		} else if (status == Status.DRIVING) {

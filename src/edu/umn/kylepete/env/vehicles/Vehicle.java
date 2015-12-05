@@ -1,16 +1,13 @@
 package edu.umn.kylepete.env.vehicles;
 
-import java.text.ParseException;
 import java.util.Date;
 
-import edu.umn.kylepete.Logger;
-import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
+import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.Route;
 import edu.umn.kylepete.env.TimeListener;
-import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.stats.VehicleStats;
 
 public abstract class Vehicle implements TimeListener {
@@ -20,18 +17,19 @@ public abstract class Vehicle implements TimeListener {
     private Coordinate currentLocation;
     private Route currentRoute;
     private VehicleListener currentListener;
+	private EnvironmentTime environmentTime;
 
-    public Vehicle(String name, Coordinate startingLocation) {
+	public Vehicle(String name, Coordinate startingLocation, EnvironmentTime time) {
         this.name = name;
         this.currentLocation = startingLocation;
         this.driving = false;
-        try {
-            this.timeSince = TaxiSystemProperties.getTimeStart();
-        } catch (ParseException e) {
-            Logger.error("VEHICLE", "Failed to get the start time");
-            Logger.error("VEHICLE", Logger.stackTraceToString(e));
-        }
+		this.environmentTime = time;
+		this.timeSince = environmentTime.getCurTime();
     }
+
+	public EnvironmentTime getEnvironmentTime() {
+		return this.environmentTime;
+	}
 
     public String getName() {
         return this.name;
@@ -40,12 +38,12 @@ public abstract class Vehicle implements TimeListener {
     public abstract int getCapacity();
     
     public void reportTimeParked() {
-        VehicleStats.addParked(EnvironmentTime.getElapsed(timeSince));        
+		VehicleStats.addParked(environmentTime.getElapsed(timeSince));
     }
 
     public void driveToLoc(Coordinate loc, VehicleListener callback){
         reportTimeParked();
-        this.timeSince = EnvironmentTime.getCurTime();
+		this.timeSince = environmentTime.getCurTime();
     	this.driving = true;
     	currentListener = callback;
     	currentRoute = OSRM.viaRoute(currentLocation, loc);
@@ -53,9 +51,9 @@ public abstract class Vehicle implements TimeListener {
 			// we are already at the location
 			ariveAtTime();
 		} else {
-			Date expectedTime = new Date(EnvironmentTime.getCurTime().getTime() + currentRoute.time * 1000);
+			Date expectedTime = new Date(environmentTime.getCurTime().getTime() + currentRoute.time * 1000);
 			try {
-				EnvironmentTime.waitForTime(expectedTime, this);
+				environmentTime.waitForTime(expectedTime, this);
 			} catch (EnvironmentTimeException e) {
 				throw new IllegalStateException(e.getMessage(), e);
 			}
@@ -63,8 +61,8 @@ public abstract class Vehicle implements TimeListener {
     }
 
 	public void ariveAtTime() {
-        VehicleStats.addDrive(currentRoute.distance, EnvironmentTime.getElapsed(timeSince));
-        this.timeSince = EnvironmentTime.getCurTime();
+		VehicleStats.addDrive(currentRoute.distance, environmentTime.getElapsed(timeSince));
+		this.timeSince = environmentTime.getCurTime();
 		this.driving = false;
 		VehicleListener callback = currentListener;
 		currentListener = null;

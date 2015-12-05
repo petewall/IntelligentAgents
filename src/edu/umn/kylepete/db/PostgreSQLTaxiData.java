@@ -11,18 +11,16 @@ import java.util.List;
 import java.util.Properties;
 
 import edu.umn.kylepete.Logger;
-import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.env.Request;
 
 public class PostgreSQLTaxiData extends TaxiData {
     Connection conn;
     
-    public PostgreSQLTaxiData() {
+	public PostgreSQLTaxiData(String url, String user, String password) {
         try {
-            String url = TaxiSystemProperties.getDbUrl();
             Properties props = new Properties();
-            props.setProperty("user", TaxiSystemProperties.getDbUser());
-            props.setProperty("password",TaxiSystemProperties.getDbPassword());
+			props.setProperty("user", user);
+			props.setProperty("password", password);
             conn = DriverManager.getConnection(url, props);
         } catch (SQLException e) {
             Logger.error("DATA", "Failed to open connection: " + e.getMessage());

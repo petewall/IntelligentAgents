@@ -15,14 +15,14 @@ public class EnvironmentTime {
 		}
 	};
 	
-	private static Long curTimeInSeconds;
-	private static Map<Long, Queue<TimeListener>> listeners = new HashMap<Long, Queue<TimeListener>>();
+	private Long curTimeInSeconds;
+	private Map<Long, Queue<TimeListener>> listeners = new HashMap<Long, Queue<TimeListener>>();
 	
-	public static void initializeTime(Date startTime){
+	public void initializeTime(Date startTime) {
 		curTimeInSeconds = startTime.getTime() / 1000;
 	}
 
-	public static Date getCurTime(){
+	public Date getCurTime() {
 		return new Date(curTimeInSeconds * 1000);
 	}
 	
@@ -32,16 +32,16 @@ public class EnvironmentTime {
 	 * @param previousTime
 	 * @return
 	 */
-	public static long getElapsed(Date previousTime) {
+	public long getElapsed(Date previousTime) {
 		return curTimeInSeconds - previousTime.getTime() / 1000;
 	}
 	
-	public static boolean advanceTime(){
+	public boolean advanceTime() {
 		curTimeInSeconds++;
 		return executeListeners();
 	}
 	
-	private static boolean executeListeners(){
+	private boolean executeListeners() {
 	    if (listeners.size() == 0) { // Nothing else to do
 	        return false;
 	    }
@@ -57,12 +57,12 @@ public class EnvironmentTime {
 		return true;
 	}
 	
-	private static void excecuteListener(TimeListener listener) {
+	private void excecuteListener(TimeListener listener) {
 		// TODO start a new thread?
 		listener.ariveAtTime();
 	}
 
-	public static void waitForTime(Date time, TimeListener callback) throws EnvironmentTimeException{
+	public void waitForTime(Date time, TimeListener callback) throws EnvironmentTimeException {
 		if (callback == null) {
 			throw new EnvironmentTimeException("callback must not be null");
 		}

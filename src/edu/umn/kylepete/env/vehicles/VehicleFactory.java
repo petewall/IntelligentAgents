@@ -4,23 +4,25 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+import edu.umn.kylepete.Environment;
 import edu.umn.kylepete.Logger;
-import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.EnvironmentTime;
 
 public class VehicleFactory {
     
-    public static Set<Vehicle> generateVehicles(Random randomGenerator) {
-        int count = TaxiSystemProperties.getTaxiCount();
+	public static Set<Vehicle> generateVehicles(int count, Environment environment) {
         Logger.info("VEHICLE FACTORY", "Generating " + count + " vehicles");
         Set<Vehicle> vehicles = new HashSet<Vehicle>();
 
         for (int i = 0; i < count; ++i) {
-            vehicles.add(makeVehicle(randomGenerator, "Vehicle " + (i + 1), Coordinate.getRandomCoordinate(randomGenerator)));
+			Coordinate vehicleLocation = Coordinate.getRandomCoordinate(environment.getRandomGenerator());
+			vehicles.add(makeVehicle(environment.getRandomGenerator(), "Vehicle " + (i + 1), vehicleLocation, environment.getTime()));
         }
         return vehicles;
     }
-    private static Vehicle makeVehicle(Random randomGenerator, String name, Coordinate startingLocaiton) {
+
+	private static Vehicle makeVehicle(Random randomGenerator, String name, Coordinate startingLocaiton, EnvironmentTime environmentTime) {
         // I found online that most taxis are required by law to only hold 4 passengers
         // A few exceptions exist for 5 passenger minivan cabs and/or for young children
         // http://www.nyc.gov/html/tlc/html/faq/faq_pass.shtml#3
@@ -29,9 +31,9 @@ public class VehicleFactory {
         // I'm going to go with 80% 4 passenger and 20% 6 passenger to estimate the exceptions
 
         if (randomGenerator.nextDouble() < 0.80) {
-            return new Car(name, startingLocaiton);
+			return new Car(name, startingLocaiton, environmentTime);
         } else {
-            return new Van(name, startingLocaiton);
+			return new Van(name, startingLocaiton, environmentTime);
         }
     }
 }

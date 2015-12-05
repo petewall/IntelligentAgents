@@ -13,7 +13,6 @@ import java.util.List;
 import com.google.gson.stream.JsonReader;
 
 import edu.umn.kylepete.Logger;
-import edu.umn.kylepete.TaxiSystemProperties;
 
 /**
  * Send requests to an OSRM server
@@ -22,8 +21,8 @@ import edu.umn.kylepete.TaxiSystemProperties;
  *
  */
 public class OSRM {
-    private static String hostname = TaxiSystemProperties.getOsrmHost();
-    private static int port = TaxiSystemProperties.getOsrmPort();
+	public static String hostname;
+	public static int port;
     
     public static Coordinate locate(Coordinate location) {
         String response = sendRequest("locate?loc=" + location.latitude + "," + location.longitude);

@@ -1,6 +1,7 @@
 package edu.umn.kylepete.env;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import edu.umn.kylepete.db.TaxiData;
@@ -17,15 +18,21 @@ public class RequestGenerator {
         this.requestListeners = new ArrayList<RequestListener>();
     }
     
+	public void addRequestListeners(Collection<? extends RequestListener> listeners) {
+		for (RequestListener listener : listeners) {
+			addRequestListener(listener);
+		}
+	}
+
     public void addRequestListener(RequestListener listener){
     	this.requestListeners.add(listener);
     }
     
-	public void generateRequests() throws EnvironmentTimeException {
+	public void generateRequests(EnvironmentTime time) throws EnvironmentTimeException {
     	Request request = db.getNextRequest();
     	// TODO need to limit this with some sort of paging and delay so we don't fill up memory
     	while(request != null){
-    		EnvironmentTime.waitForTime(request.getTime(), new RequestCallback(request));
+			time.waitForTime(request.getTime(), new RequestCallback(request));
     		request = db.getNextRequest();
     	}
     }

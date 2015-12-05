@@ -1,10 +1,11 @@
 package edu.umn.kylepete.env.vehicles;
 
 import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.EnvironmentTime;
 
 public class Van extends Vehicle {
-    public Van(String name, Coordinate startingLocation) {
-        super(name, startingLocation);
+	public Van(String name, Coordinate startingLocation, EnvironmentTime environmentTime) {
+		super(name, startingLocation, environmentTime);
     }
 
     @Override

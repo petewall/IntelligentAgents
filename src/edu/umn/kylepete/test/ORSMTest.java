@@ -1,6 +1,8 @@
 package edu.umn.kylepete.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.util.List;
@@ -22,7 +24,9 @@ public class ORSMTest {
 
     @BeforeClass 
     public static void setUpClass() throws IOException {      
-        TaxiSystemProperties.loadProperties("taxisystem.properties");
+		TaxiSystemProperties properties = new TaxiSystemProperties("taxisystem.properties");
+		OSRM.hostname = properties.getOsrmHost();
+		OSRM.port = properties.getOsrmPort();
     }
 
     @Test

@@ -25,7 +25,7 @@ public class TaxiSystemProperties {
 	private static String file;
 	private static Properties props = null;
 
-	public static void loadProperties(String filePath) throws IOException{
+	public TaxiSystemProperties(String filePath) throws IOException {
 		if(filePath == null){
 			throw new IllegalArgumentException("filePath must not be null");
 		}
@@ -36,33 +36,33 @@ public class TaxiSystemProperties {
 		in.close();
 	}
 	
-	public static String getDbUrl(){
+	public String getDbUrl() {
 		return getRequiredProperty(DB_URL);
 	}
 	
-	public static String getDbUser(){
+	public String getDbUser() {
 		return getRequiredProperty(DB_USER);
 	}
 	
-	public static String getDbPassword(){
+	public String getDbPassword() {
 		return getRequiredProperty(DB_PASSWORD);
 	}
 	
-	public static String getOsrmHost(){
+	public String getOsrmHost() {
 		return getRequiredProperty(OSRM_HOST);
 	}
 	
-	public static int getOsrmPort(){
+	public int getOsrmPort() {
 		String portStr = getRequiredProperty(OSRM_PORT);
 		return Integer.parseInt(portStr);
 	}
     
-    public static int getTaxiCount(){
+	public int getTaxiCount() {
         String numStr = getRequiredProperty(TAXI_COUNT);
         return Integer.parseInt(numStr);
     }
 	
-	public static Long getRandomSeed() {
+	public Long getRandomSeed() {
 		String value = props.getProperty(RANDOM_SEED);
 		if(value == null || value.isEmpty()){
 			return null;
@@ -71,17 +71,21 @@ public class TaxiSystemProperties {
 		}
 	}
 	
-	public static Date getTimeStart() throws ParseException {
+	public Date getTimeStart() throws ParseException {
 		String value = getRequiredProperty(TIME_START);
 		return dateFormat.parse(value);
 	}
 
-	public static Date getTimeEnd() throws ParseException {
+	public Date getTimeEnd() throws ParseException {
 		String value = getRequiredProperty(TIME_END);
 		return dateFormat.parse(value);
 	}
 
-	private static String getRequiredProperty(String key){
+	public String getAIStrategy() {
+		return getRequiredProperty(AI_STRATEGY);
+	}
+
+	private String getRequiredProperty(String key) {
 		String value = props.getProperty(key);
 		if(value != null && !value.isEmpty()){
 			return value;
