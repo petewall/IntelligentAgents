@@ -7,11 +7,13 @@ import edu.umn.kylepete.env.Environment;
 import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.vehicles.Vehicle;
 import edu.umn.kylepete.stats.RequestStats;
+import edu.umn.kylepete.stats.SystemStats;
 import edu.umn.kylepete.stats.VehicleStats;
 
 public class TaxiSystem {
 
 	public static void main(String[] args) throws Exception {
+	    SystemStats.start();
 		TaxiSystemProperties properties = loadProperties(args);
 
 		// get the strategy class first so we flush out any property file/class loading errors
@@ -33,6 +35,7 @@ public class TaxiSystem {
 		for (Vehicle vehicle : environment.getVehicles()) {
 			vehicle.reportTimeParked();
 		}
+		SystemStats.report();
 		RequestStats.report();
 		VehicleStats.report();
 	}
