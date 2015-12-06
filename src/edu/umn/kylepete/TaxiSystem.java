@@ -3,6 +3,7 @@ package edu.umn.kylepete;
 import java.io.IOException;
 
 import edu.umn.kylepete.ai.strategies.AIStrategy;
+import edu.umn.kylepete.env.Environment;
 import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.vehicles.Vehicle;
 import edu.umn.kylepete.stats.RequestStats;

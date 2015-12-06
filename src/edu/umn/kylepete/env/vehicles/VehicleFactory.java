@@ -4,9 +4,9 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import edu.umn.kylepete.Environment;
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.env.Coordinate;
+import edu.umn.kylepete.env.Environment;
 import edu.umn.kylepete.env.EnvironmentTime;
 
 public class VehicleFactory {

@@ -1,14 +1,13 @@
-package edu.umn.kylepete;
+package edu.umn.kylepete.env;
 
 import java.text.ParseException;
 import java.util.Random;
 import java.util.Set;
 
+import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.db.MockTaxiData;
 import edu.umn.kylepete.db.TaxiData;
-import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
-import edu.umn.kylepete.env.RequestGenerator;
 import edu.umn.kylepete.env.vehicles.Vehicle;
 import edu.umn.kylepete.env.vehicles.VehicleFactory;
 
