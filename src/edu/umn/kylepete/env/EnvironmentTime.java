@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Queue;
 
+import edu.umn.kylepete.Logger;
+
 public class EnvironmentTime {
 	
 	@SuppressWarnings("serial")
@@ -82,4 +84,13 @@ public class EnvironmentTime {
 		}
 		queue.add(callback);
 	}
+
+    public void cancelTime(Date time, TimeListener callback) {
+        Long key = new Long(time.getTime() / 1000);
+        if (listeners.containsKey(key)) {
+            listeners.get(key).remove(callback);
+        } else {
+            Logger.warning("TIME", "Asked to cancel something that wasn't there.");
+        }
+    }
 }
