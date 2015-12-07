@@ -33,14 +33,15 @@ public class SingleAuctionDispatcher extends TaxiDispatch {
     }
 
     @Override
-    public void requestComplete(TaxiAgent taxiAgent) {
+    public void requestComplete(TaxiAgent taxiAgent, Request completedRequest) {
         processRequests();
     }
 
     private void processRequests() {
         Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
+        Auction auction = new Auction(taxis, new DistanceBiddingStrategy());
+
         for (Request request : requests) {
-            Auction auction = new Auction(taxis, new DistanceBiddingStrategy());
             TaxiAgent winner = auction.offer(request);
             if (winner != null) {
                 winner.assignRequest(request);

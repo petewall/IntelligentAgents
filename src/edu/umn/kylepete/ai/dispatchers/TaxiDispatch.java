@@ -19,5 +19,5 @@ public abstract class TaxiDispatch implements RequestListener {
 	
     public abstract void newRequest(Request event);
 
-    public abstract void requestComplete(TaxiAgent taxiAgent);
+    public abstract void requestComplete(TaxiAgent taxiAgent, Request completedRequest);
 }

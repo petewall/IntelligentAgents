@@ -28,12 +28,12 @@ public class DistanceDispatcher extends TaxiDispatch {
     }
 
     @Override
-    public void requestComplete(TaxiAgent taxiAgent) {
+    public void requestComplete(TaxiAgent taxiAgent, Request completedRequest) {
         busyTaxis.remove(taxiAgent);
         waitingTaxis.add(taxiAgent);
         processRequests();
     }
-    
+
     private TaxiAgent findNearestIdleTaxi(Request request) {
         TaxiAgent nearest = null;
         double nearestDistance = Double.MAX_VALUE;
@@ -45,9 +45,6 @@ public class DistanceDispatcher extends TaxiDispatch {
                     nearest = agent;
                     nearestDistance = distance;
                 }
-            } else {
-				// TODO what is this?
-				// System.out.println("stop me");
             }
         }
         return nearest;

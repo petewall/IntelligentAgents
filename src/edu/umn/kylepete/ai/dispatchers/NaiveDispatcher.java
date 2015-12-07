@@ -28,7 +28,7 @@ public class NaiveDispatcher extends TaxiDispatch {
     }
 
     @Override
-    public void requestComplete(TaxiAgent taxiAgent) {
+    public void requestComplete(TaxiAgent taxiAgent, Request completedRequest) {
         busyTaxis.remove(taxiAgent);
         waitingTaxis.add(taxiAgent);
         processRequests();
