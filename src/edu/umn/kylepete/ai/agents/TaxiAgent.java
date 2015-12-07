@@ -78,8 +78,8 @@ public class TaxiAgent implements VehicleListener {
 			if (pendingRequests.size() > 0) {
 			    pickupRequest(pendingRequests.removeFirst());
 			} else {
+                dispatch.requestComplete(this, currentRequest);
 			    currentRequest = null;
-			    dispatch.requestComplete(this);
 			}
 		}
 	}
