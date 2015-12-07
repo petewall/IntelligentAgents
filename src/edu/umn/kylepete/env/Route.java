@@ -111,7 +111,7 @@ public class Route {
                 reader.endArray();
             }
             
-            // VIA POINTS (ignored for now)
+            // VIA POINTS
             else if (key.equals("via_points")) {
                 reader.beginArray();
                 while (reader.hasNext()) {
