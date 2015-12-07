@@ -35,15 +35,20 @@ public class Environment {
 		env.environmentTime.initializeTime(properties.getTimeStart());
 
 		env.requestGenerator = new RequestGenerator(properties);
-		env.requestGenerator.generateRequests(env.environmentTime);
 		env.vehicles = VehicleFactory.generateVehicles(properties.getTaxiCount(), env);
 		return env;
 	}
 
-	public void start() {
+	public void start() throws InterruptedException {
+		requestGenerator.start(environmentTime);
 		Logger.info("ENVIRONMENT", "Starting time simulation");
 		int count = 0;
 		while (true) {
+			// don't get ahead of the requestGenerator
+			while (requestGenerator.getProcessingTime() != null && environmentTime.getNextTime().compareTo(requestGenerator.getProcessingTime()) >= 0) {
+				Logger.info("ENVIRONMENT", "Waiting for request generator");
+				Thread.sleep(1000);
+			}
 			if (!this.getTime().advanceTime()) {
 				break;
 			}
