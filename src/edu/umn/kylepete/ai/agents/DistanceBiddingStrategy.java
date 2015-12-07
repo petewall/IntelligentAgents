@@ -11,7 +11,7 @@ public class DistanceBiddingStrategy extends BiddingStrategy {
 
     @Override
     public Bid getBid(Request request) {
-        Bid bid = new Bid(agent);
+        Bid bid = new Bid(agent, request);
         if (request.getNumberOfPassengers() > agent.getVehicle().getCapacity()) {
             bid.abstain = true;
         } else if (agent.getStatus() != TaxiAgent.Status.WAITING) {

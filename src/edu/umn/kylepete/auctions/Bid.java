@@ -1,14 +1,17 @@
 package edu.umn.kylepete.auctions;
 
 import edu.umn.kylepete.ai.agents.TaxiAgent;
+import edu.umn.kylepete.env.Request;
 
 public class Bid implements Comparable<Bid> {
     public TaxiAgent bidder;
+    public Request object;
     public boolean abstain;
     public double value;
     
-    public Bid(TaxiAgent bidder) {
+    public Bid(TaxiAgent bidder, Request object) {
         this.bidder = bidder;
+        this.object = object;
         this.abstain = false;
         this.value = 0;
     }
