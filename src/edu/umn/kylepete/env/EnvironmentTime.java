@@ -36,6 +36,10 @@ public class EnvironmentTime {
 		return curTimeInSeconds - previousTime.getTime() / 1000;
 	}
 	
+	public Date getNextTime() {
+		return new Date((curTimeInSeconds + 1) * 1000);
+	}
+
 	public boolean advanceTime() {
 		curTimeInSeconds++;
 		return executeListeners();

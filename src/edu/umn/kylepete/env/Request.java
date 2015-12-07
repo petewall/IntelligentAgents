@@ -3,41 +3,79 @@ package edu.umn.kylepete.env;
 import java.util.Date;
 
 public class Request {
-    private Date time;
-    private Coordinate pickup;
-    private Coordinate dropoff;
-    private double distance;
-    private int passengers;
+	private Date submitTime;
+	private int passengers;
+	private Route route;
     
-    public Request(Date time, Coordinate pickup, Coordinate dropoff, int passengers) {
-        this.time = time;
-        this.pickup = pickup;
-        this.dropoff = dropoff;
-        this.distance = pickup.distance(dropoff); // FIXME Should this be made truly accurate using OSRM? 
-        this.passengers = passengers;
+	public Request(Date requestSubmitTime, int passengers, Route route) {
+		this.submitTime = requestSubmitTime;
+		this.passengers = passengers;
+		this.route = route;
+		if (route == null) {
+			throw new IllegalArgumentException("route argument must not be null");
+		}
+	}
+
+	public Request(Date requestTime, int passengers, Coordinate pickup, Coordinate dropoff) {
+		this(requestTime, passengers, OSRM.viaRoute(pickup, dropoff));
     }
     
-    public Date getTime() {
-        return time;
+	public Date getSubmitTime() {
+		return submitTime;
     }
 
     public Coordinate getPickupLocation() {
-        return pickup;
+		return getRoute().getStartCoordinate();
     }
     
     public Coordinate getDropoffLocation() {
-        return dropoff;
+		return getRoute().getEndCoordinate();
     }
     
     public double getDistance() {
-        return distance;
+		return getRoute().getDistance();
+	}
+
+	public int getTravelTime() {
+		return getRoute().getTime();
     }
+
+	public Route getRoute() {
+		return route;
+	}
     
     public int getNumberOfPassengers() {
         return passengers;
     }
     
     public String toString() {
-        return "Request: " + passengers + " passenger(s) from " + pickup + " to " + dropoff;
+		return "Request: " + passengers + " passenger(s) from " + getPickupLocation() + " to " + getDropoffLocation();
     }
+
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Request other = (Request) obj;
+		if (passengers != other.passengers)
+			return false;
+		if (submitTime == null) {
+			if (other.submitTime != null)
+				return false;
+		} else if (!submitTime.equals(other.submitTime))
+			return false;
+
+		if (!getDropoffLocation().equals(other.getDropoffLocation()))
+			return false;
+
+		if (!getPickupLocation().equals(other.getPickupLocation()))
+			return false;
+
+		return true;
+	}
+
+
 }

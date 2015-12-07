@@ -27,6 +27,11 @@ public class Coordinate {
         this.longitude = longitude;
     }
     
+	public Coordinate(String latitude, String longitude) {
+		this.latitude = Double.parseDouble(latitude);
+		this.longitude = Double.parseDouble(longitude);
+	}
+
     public static Coordinate getRandomCoordinate(Random randomGenerator) {
         // Here are the min and max coordinates for the January 2013 NYC taxi trips
         //    max_lon  |   min_lon  |  max_lat  | min_lat
@@ -44,7 +49,11 @@ public class Coordinate {
         double lon = nextRandomGaussian(randomGenerator, MAX_LON, MIN_LON);
         double lat = nextRandomGaussian(randomGenerator, MAX_LAT, MIN_LAT);
         Coordinate coordinate = new Coordinate(lat, lon);
-        return OSRM.locate(coordinate);
+		// for performance reasons we won't "locate" a random coordinate
+		// this helps speed up vehicle generation but means a vehicle may start in water
+		// but the first OSRM call for the vehicle to drive somewhere will correct this
+		// coordinate = OSRM.locate(coordinate);
+        return coordinate;
     }
 
     private static double nextRandomGaussian(Random randomGenerator, double max, double min) {
@@ -85,4 +94,31 @@ public class Coordinate {
 
         return R * c;
     }
+
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(latitude);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(longitude);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Coordinate other = (Coordinate) obj;
+		if (Double.doubleToLongBits(latitude) != Double.doubleToLongBits(other.latitude))
+			return false;
+		if (Double.doubleToLongBits(longitude) != Double.doubleToLongBits(other.longitude))
+			return false;
+		return true;
+	}
+
 }

@@ -10,21 +10,22 @@ import edu.umn.kylepete.Logger;
 
 public class Route {
     
-    public Coordinate[] points;
 
     // For Route instructions
-    public List<RouteStep> steps;
+	private List<RouteStep> steps;
+
+	private List<Coordinate> viaCoordinates = new ArrayList<Coordinate>();
 
     // For Route name
-    public String name;
+	private String name;
 
     // For Summary
-    public String startPoint;
-    public String endPoint;
-    public int distance;
-    public int time;
+	private String startPoint;
+	private String endPoint;
+	private int distance;
+	private int time;
     
-    public int status;
+	private int status;
 
     public static Route fromJsonReader(JsonReader reader) throws IOException {
         Route route = new Route();
@@ -89,9 +90,9 @@ public class Route {
                 while (reader.hasNext()) {
                     summaryKey = reader.nextName();
                     if (summaryKey.equals("start_point")) {
-                        route.startPoint = reader.nextString();
+						route.startPoint = reader.nextString();
                     } else if (summaryKey.equals("end_point")) {
-                        route.endPoint = reader.nextString();
+						route.endPoint = reader.nextString();
                     } else if (summaryKey.equals("total_distance")) {
                         route.distance = reader.nextInt();
                     } else if (summaryKey.equals("total_time")) {
@@ -115,8 +116,9 @@ public class Route {
                 reader.beginArray();
                 while (reader.hasNext()) {
                     reader.beginArray();
-                    reader.nextDouble(); // lat
-                    reader.nextDouble(); // lon
+					Double lat = reader.nextDouble(); // lat
+					Double lon = reader.nextDouble(); // lon
+					route.viaCoordinates.add(new Coordinate(lat, lon));
                     reader.endArray();
                 }
                 reader.endArray();
@@ -142,10 +144,42 @@ public class Route {
             }
             
             else {
-                Logger.error("Unkown key: " + key);
+				Logger.error("ROUTE", "Unkown key: " + key);
             }
         }
         reader.endObject();
         return route;
     }
+
+	public List<RouteStep> getSteps() {
+		return steps;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Coordinate getStartCoordinate() {
+		return viaCoordinates.get(0);
+	}
+
+	public Coordinate getEndCoordinate() {
+		return viaCoordinates.get(viaCoordinates.size() - 1);
+	}
+
+	public List<Coordinate> getViaCoordinates() {
+		return this.viaCoordinates;
+	}
+
+	public int getDistance() {
+		return distance;
+	}
+
+	public int getTime() {
+		return time;
+	}
+
+	public int getStatus() {
+		return status;
+	}
 }

@@ -17,6 +17,10 @@ public class RequestStats {
         fulfilled++;
     }
     
+	public static int getRequestsFulfilled() {
+		return fulfilled;
+	}
+
     public static void addIdleTime(long idleSeconds) {
         idleCount++;
         idleTime += idleSeconds;

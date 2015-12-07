@@ -15,11 +15,12 @@ public class TaxiSystemProperties {
 	private static final String OSRM_HOST = "osrm.host";
 	private static final String OSRM_PORT = "osrm.port";
 	private static final String TAXI_COUNT = "taxi.count";
-	private static final String REQUEST_COUNT = "request.count";
 	private static final String AI_STRATEGY = "ai.strategy";
 	private static final String RANDOM_SEED = "random.seed";
 	private static final String TIME_START = "time.start";
-	private static final String TIME_END = "time.end";
+	private static final String REQUEST_MAX_TIME = "request.max.time";
+	private static final String REQUEST_PERCENT = "request.percentage";
+	private static final String LOGGER_DEBUG = "logger.debug";
 	
 	private static SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private static String file;
@@ -29,6 +30,7 @@ public class TaxiSystemProperties {
 		if(filePath == null){
 			throw new IllegalArgumentException("filePath must not be null");
 		}
+		Logger.info("TAXI SYSTEM", "Loading properties from " + filePath);
 		file = filePath;
 		props = new Properties();
 		FileInputStream in = new FileInputStream(filePath);
@@ -76,13 +78,27 @@ public class TaxiSystemProperties {
 		return dateFormat.parse(value);
 	}
 
-	public Date getTimeEnd() throws ParseException {
-		String value = getRequiredProperty(TIME_END);
+	public Date getRequestMaxTime() throws ParseException {
+		String value = getRequiredProperty(REQUEST_MAX_TIME);
 		return dateFormat.parse(value);
+	}
+
+	public int getRequestPercentage() {
+		String value = getRequiredProperty(REQUEST_PERCENT);
+		int percent = Integer.parseInt(value);
+		if (percent < 1 || percent > 100) {
+			throw new IllegalArgumentException(REQUEST_PERCENT + " property must be an integer between 1 and 100. Found value " + percent);
+		}
+		return percent;
 	}
 
 	public String getAIStrategy() {
 		return getRequiredProperty(AI_STRATEGY);
+	}
+
+	public boolean getLoggerDebug() {
+		String value = getRequiredProperty(LOGGER_DEBUG);
+		return Boolean.valueOf(value);
 	}
 
 	private String getRequiredProperty(String key) {

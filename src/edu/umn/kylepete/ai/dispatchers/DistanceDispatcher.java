@@ -46,7 +46,8 @@ public class DistanceDispatcher extends TaxiDispatch {
                     nearestDistance = distance;
                 }
             } else {
-                System.out.println("stop me");
+				// TODO what is this?
+				// System.out.println("stop me");
             }
         }
         return nearest;

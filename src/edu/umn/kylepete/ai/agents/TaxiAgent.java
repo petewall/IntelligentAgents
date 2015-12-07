@@ -8,6 +8,7 @@ import edu.umn.kylepete.auctions.Bid;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.Request;
 import edu.umn.kylepete.env.vehicles.Vehicle;
+import edu.umn.kylepete.env.vehicles.Vehicle.VehicleNotAtRouteStartException;
 import edu.umn.kylepete.env.vehicles.VehicleListener;
 import edu.umn.kylepete.stats.RequestStats;
 
@@ -54,20 +55,28 @@ public class TaxiAgent implements VehicleListener {
 	private void pickupRequest(Request request) {
         currentRequest = request;
         status = Status.PICKING_UP;
-        Logger.debug(vehicle.toString() + " --> " + status);
+		Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
         vehicle.driveToLoc(request.getPickupLocation(), this);
 	}
 	
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
 		if (status == Status.PICKING_UP) {
 			status = Status.DRIVING;
-			RequestStats.addIdleTime((vehicle.getEnvironmentTime().getCurTime().getTime() - currentRequest.getTime().getTime()) / 1000);
-			Logger.debug(vehicle.toString() + " --> " + status);
-			this.vehicle.driveToLoc(currentRequest.getDropoffLocation(), this);
+			RequestStats.addIdleTime((vehicle.getEnvironmentTime().getCurTime().getTime() - currentRequest.getSubmitTime().getTime()) / 1000);
+			Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
+			try {
+				this.vehicle.driveRoute(currentRequest.getRoute(), this);
+			} catch (VehicleNotAtRouteStartException e) {
+				Logger.error("TAXI AGENT", "Vehicle's current location does not match the pickup location");
+				// This shouldn't happen because we just drove to the route pickup coordinate
+				// but if it does, just drive from the vehicle's current location to the dropoff
+				// this causes an extra call to OSRM
+				this.vehicle.driveToLoc(currentRequest.getDropoffLocation(), this);
+			}
 		} else if (status == Status.DRIVING) {
 			status = Status.WAITING;
 			RequestStats.requestFulfilled();
-			Logger.debug(vehicle.toString() + " --> " + status);
+			Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
 			
 			if (pendingRequests.size() > 0) {
 			    pickupRequest(pendingRequests.removeFirst());
