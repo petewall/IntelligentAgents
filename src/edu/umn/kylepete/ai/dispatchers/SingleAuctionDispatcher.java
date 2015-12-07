@@ -3,8 +3,9 @@ package edu.umn.kylepete.ai.dispatchers;
 import java.util.HashSet;
 import java.util.Set;
 
+import edu.umn.kylepete.ai.agents.DistanceBiddingStrategy;
 import edu.umn.kylepete.ai.agents.TaxiAgent;
-import edu.umn.kylepete.auctions.SingleAuction;
+import edu.umn.kylepete.auctions.Auction;
 import edu.umn.kylepete.env.Request;
 
 /**
@@ -39,8 +40,8 @@ public class SingleAuctionDispatcher extends TaxiDispatch {
     private void processRequests() {
         Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
         for (Request request : requests) {
-            SingleAuction auction = new SingleAuction(taxis);
-            TaxiAgent winner = auction.offerOne(request);
+            Auction auction = new Auction(taxis, new DistanceBiddingStrategy());
+            TaxiAgent winner = auction.offer(request);
             if (winner != null) {
                 winner.assignRequest(request);
                 requestQueue.remove(request);

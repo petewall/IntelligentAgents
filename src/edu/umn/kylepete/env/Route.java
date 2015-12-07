@@ -90,9 +90,9 @@ public class Route {
                 while (reader.hasNext()) {
                     summaryKey = reader.nextName();
                     if (summaryKey.equals("start_point")) {
-						route.startPoint = reader.nextString();
+                        route.startPoint = reader.nextString();
                     } else if (summaryKey.equals("end_point")) {
-						route.endPoint = reader.nextString();
+                        route.endPoint = reader.nextString();
                     } else if (summaryKey.equals("total_distance")) {
                         route.distance = reader.nextInt();
                     } else if (summaryKey.equals("total_time")) {

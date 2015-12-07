@@ -4,7 +4,6 @@ import java.util.LinkedList;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
-import edu.umn.kylepete.auctions.Bid;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.Request;
 import edu.umn.kylepete.env.vehicles.Vehicle;
@@ -19,7 +18,6 @@ public class TaxiAgent implements VehicleListener {
 	private Request currentRequest;
 	private LinkedList<Request> pendingRequests;
 	private Status status;
-	private BiddingStrategy biddingStrategy;
 
 	public enum Status {
 		WAITING, // Waiting for a request
@@ -33,7 +31,6 @@ public class TaxiAgent implements VehicleListener {
 		this.pendingRequests = new LinkedList<Request>();
 		this.status = Status.WAITING;
 		this.dispatch = dispatch;
-		this.biddingStrategy = new DistanceBiddingStrategy(this);
 	}
 	
 	public Status getStatus(){
@@ -123,9 +120,5 @@ public class TaxiAgent implements VehicleListener {
             return currentRequest.getDropoffLocation();
         }
         return vehicle.getLocation();
-	}
-	
-	public Bid getBid(Request request) {
-	    return this.biddingStrategy.getBid(request);
 	}
 }
