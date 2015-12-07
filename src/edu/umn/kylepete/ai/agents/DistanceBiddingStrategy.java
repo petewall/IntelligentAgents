@@ -5,8 +5,12 @@ import edu.umn.kylepete.env.Request;
 
 public class DistanceBiddingStrategy extends BiddingStrategy {
 
+    public DistanceBiddingStrategy(TaxiAgent agent) {
+        super(agent);
+    }
+
     @Override
-    public Bid getBidFrom(TaxiAgent agent, Request request) {
+    public Bid getBid(Request request) {
         Bid bid = new Bid(agent, request);
         if (request.getNumberOfPassengers() > agent.getVehicle().getCapacity()) {
             bid.abstain = true;
