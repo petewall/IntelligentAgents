@@ -14,6 +14,7 @@ import org.junit.Test;
 
 import edu.umn.kylepete.TaxiSystemProperties;
 import edu.umn.kylepete.db.PostgreSQLTaxiData;
+import edu.umn.kylepete.env.OSRM;
 import edu.umn.kylepete.env.Request;
 
 public class PostgreSQLTaxiDataTest {
@@ -23,6 +24,8 @@ public class PostgreSQLTaxiDataTest {
 	@BeforeClass
 	public static void setUpClass() throws IOException, ParseException {
 		props = new TaxiSystemProperties("taxisystem.properties");
+		OSRM.hostname = props.getOsrmHost();
+		OSRM.port = props.getOsrmPort();
 	}
 
 	@Test
@@ -48,12 +51,12 @@ public class PostgreSQLTaxiDataTest {
 			db2Requests.add(r);
 		}
 
-		Assert.assertTrue(db1Requests.get(0).getTime().compareTo(props.getTimeStart()) >= 0);
-		Assert.assertTrue(db2Requests.get(0).getTime().compareTo(props.getTimeStart()) >= 0);
+		Assert.assertTrue(db1Requests.get(0).getSubmitTime().compareTo(props.getTimeStart()) >= 0);
+		Assert.assertTrue(db2Requests.get(0).getSubmitTime().compareTo(props.getTimeStart()) >= 0);
 
 		for (int i = 1; i < testResultSize; i++) {
-			Assert.assertTrue(db1Requests.get(i - 1).getTime().compareTo(db1Requests.get(i).getTime()) <= 0);
-			Assert.assertTrue(db2Requests.get(i - 1).getTime().compareTo(db2Requests.get(i).getTime()) <= 0);
+			Assert.assertTrue(db1Requests.get(i - 1).getSubmitTime().compareTo(db1Requests.get(i).getSubmitTime()) <= 0);
+			Assert.assertTrue(db2Requests.get(i - 1).getSubmitTime().compareTo(db2Requests.get(i).getSubmitTime()) <= 0);
 		}
 
 		Assert.assertEquals(db1Requests.get(9), db2Requests.get(0));
@@ -66,7 +69,7 @@ public class PostgreSQLTaxiDataTest {
 		PostgreSQLTaxiData db = new PostgreSQLTaxiData(props.getDbUrl(), props.getDbUser(), props.getDbPassword(), new Timestamp(start.getTime()), 10, 2);
 		Request r = db.getNextRequest();
 		Assert.assertNotNull(r);
-		Assert.assertTrue(r.getTime().compareTo(start) >= 0);
+		Assert.assertTrue(r.getSubmitTime().compareTo(start) >= 0);
 	}
 
 	@Test

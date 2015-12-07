@@ -23,7 +23,7 @@ public class RequestService {
     private static RequestService instance = null;
 
     private RequestService() {
-        this.db = new MockTaxiData();
+		this.db = new MockTaxiData(10);
         this.activeRequests = new HashSet<Request>();
         this.listeners = new HashSet<RequestListener>();
     }
@@ -96,7 +96,7 @@ public class RequestService {
         Request request = db.getNextRequest();
         activeRequests.add(request);
         notifyListeners(request);
-        return request.getTime().getTime();
+		return request.getSubmitTime().getTime();
     }
 
     public String toString() {

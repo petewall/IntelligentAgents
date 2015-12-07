@@ -23,6 +23,7 @@ import edu.umn.kylepete.Logger;
 public class OSRM {
 	public static String hostname;
 	public static int port;
+	public static int viaRouteCount = 0;
     
     public static Coordinate locate(Coordinate location) {
         String response = sendRequest("locate?loc=" + location.latitude + "," + location.longitude);
@@ -90,6 +91,7 @@ public class OSRM {
     }
 
     public static Route viaRoute(Coordinate... locations) {
+		viaRouteCount++;
         StringBuilder request = new StringBuilder("viaroute?alt=false&");
         for (Coordinate location : locations) {
             request.append("loc=" + location.latitude + "," + location.longitude + "&");
@@ -102,14 +104,13 @@ public class OSRM {
         JsonReader reader = new JsonReader(new StringReader(response));
         try {
             route = Route.fromJsonReader(reader);
-            route.points = locations;
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"viaroute\" response: " + e.getMessage());
 			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
 
-        if (route.status != 0) {
+		if (route.getStatus() != 0) {
             Logger.error("OSRM", "Non-zero status for viaroute: " + status + "  Locations were " + locations);
         }
         return route;

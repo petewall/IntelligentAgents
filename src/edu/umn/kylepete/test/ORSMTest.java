@@ -23,7 +23,7 @@ public class ORSMTest {
     private Coordinate theMet = new NamedCoordinate("The Metropolitan Museum of Art", 40.779447, -73.96311);
 
     @BeforeClass 
-    public static void setUpClass() throws IOException {      
+	public static void setUpClass() throws IOException {
 		TaxiSystemProperties properties = new TaxiSystemProperties("taxisystem.properties");
 		OSRM.hostname = properties.getOsrmHost();
 		OSRM.port = properties.getOsrmPort();
@@ -48,8 +48,8 @@ public class ORSMTest {
     public void testViaRoute() {
         Coordinate[] locations = { empireState, madisonSquareGarden };
         Route route = OSRM.viaRoute(locations);
-        assertTrue(route.distance < 1500);
-        assertTrue(route.time < 120);
+		assertTrue(route.getDistance() < 1500);
+		assertTrue(route.getTime() < 120);
         assertNotNull(route);
     }
     

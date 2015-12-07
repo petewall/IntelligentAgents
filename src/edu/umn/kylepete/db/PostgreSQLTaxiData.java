@@ -27,7 +27,7 @@ public class PostgreSQLTaxiData extends TaxiData {
 	private Timestamp prevPickupTime;
 	private long prevId;
 
-	private List<Request> curPageRequests;
+	private List<RequestData> curPageRequests;
 	private int curRequestInPage;
 
 	public PostgreSQLTaxiData(TaxiSystemProperties props) throws ParseException {
@@ -82,19 +82,19 @@ public class PostgreSQLTaxiData extends TaxiData {
 
 	private void getNextPage() {
 		this.curRequestInPage = 0;
-		this.curPageRequests = new ArrayList<Request>(pageSize);
+		this.curPageRequests = new ArrayList<RequestData>(pageSize);
     	try {
 			PreparedStatement statement = getSqlStatement(prevPickupTime, prevId);
 			ResultSet result = statement.executeQuery();
 			while(result.next()){
-				Timestamp pickupTime = result.getTimestamp(1);
-				int passengers = result.getInt(2);
-				Coordinate pickup = new Coordinate(result.getDouble(3), result.getDouble(4));
-				Coordinate dropoff = new Coordinate(result.getDouble(5), result.getDouble(6));
-				Request request = new Request(pickupTime, pickup, dropoff, passengers);
-				this.curPageRequests.add(request);
+				RequestData data = new RequestData();
+				data.time = result.getTimestamp(1);
+				data.passengers = result.getInt(2);
+				data.pickup = new Coordinate(result.getDouble(3), result.getDouble(4));
+				data.dropoff = new Coordinate(result.getDouble(5), result.getDouble(6));
+				this.curPageRequests.add(data);
 				this.prevId = result.getLong(7);
-				this.prevPickupTime = pickupTime;
+				this.prevPickupTime = data.time;
 			}
             statement.close();
 		} catch (SQLException e) {
@@ -112,6 +112,15 @@ public class PostgreSQLTaxiData extends TaxiData {
 		if (this.curRequestInPage >= this.curPageRequests.size()) {
 			return null;
 		}
-		return this.curPageRequests.get(this.curRequestInPage);
+		RequestData data = this.curPageRequests.get(this.curRequestInPage);
+		// create the request. This will make an OSRM call so we don't want to do it until needed
+		return new Request(data.time, data.passengers, data.pickup, data.dropoff);
+	}
+
+	private class RequestData {
+		Timestamp time;
+		int passengers;
+		Coordinate pickup;
+		Coordinate dropoff;
     }
 }

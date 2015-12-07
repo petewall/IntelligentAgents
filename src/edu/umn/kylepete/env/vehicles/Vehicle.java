@@ -18,6 +18,9 @@ public abstract class Vehicle implements TimeListener {
     private Route currentRoute;
     private VehicleListener currentListener;
 	private EnvironmentTime environmentTime;
+	
+	@SuppressWarnings("serial")
+	public static class VehicleNotAtRouteStartException extends Exception {};
 
 	public Vehicle(String name, Coordinate startingLocation, EnvironmentTime time) {
         this.name = name;
@@ -40,18 +43,21 @@ public abstract class Vehicle implements TimeListener {
     public void reportTimeParked() {
 		VehicleStats.addParked(environmentTime.getElapsed(timeSince));
     }
-
-    public void driveToLoc(Coordinate loc, VehicleListener callback){
+    
+	public void driveRoute(Route route, VehicleListener callback) throws VehicleNotAtRouteStartException {
+    	if(!currentLocation.equals(route.getStartCoordinate())){
+			throw new VehicleNotAtRouteStartException();
+    	}
         reportTimeParked();
 		this.timeSince = environmentTime.getCurTime();
     	this.driving = true;
     	currentListener = callback;
-    	currentRoute = OSRM.viaRoute(currentLocation, loc);
-		if (currentRoute.time == 0) {
+    	currentRoute = route;
+		if (currentRoute.getTime() == 0) {
 			// we are already at the location
 			ariveAtTime();
 		} else {
-			Date expectedTime = new Date(environmentTime.getCurTime().getTime() + currentRoute.time * 1000);
+			Date expectedTime = new Date(environmentTime.getCurTime().getTime() + currentRoute.getTime() * 1000);
 			try {
 				environmentTime.waitForTime(expectedTime, this);
 			} catch (EnvironmentTimeException e) {
@@ -60,13 +66,25 @@ public abstract class Vehicle implements TimeListener {
 		}
     }
 
+    public void driveToLoc(Coordinate loc, VehicleListener callback){
+		Route route = OSRM.viaRoute(currentLocation, loc);
+		// trust OSRM to snap our current location location to the nearest valid location
+		currentLocation = route.getStartCoordinate();
+		try {
+			driveRoute(route, callback);
+		} catch (VehicleNotAtRouteStartException e) {
+			// this shouldn't happen because we just set our current location to the route start location
+			throw new IllegalStateException("Unexpected vehicle not at route start", e);
+		}
+    }
+
 	public void ariveAtTime() {
-		VehicleStats.addDrive(currentRoute.distance, environmentTime.getElapsed(timeSince));
+		VehicleStats.addDrive(currentRoute.getDistance(), environmentTime.getElapsed(timeSince));
 		this.timeSince = environmentTime.getCurTime();
 		this.driving = false;
 		VehicleListener callback = currentListener;
 		currentListener = null;
-		currentLocation = currentRoute.points[currentRoute.points.length - 1];
+		currentLocation = currentRoute.getEndCoordinate();
 		currentRoute = null;
 		callback.arriveAtLoc(this, currentLocation);
 	}

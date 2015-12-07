@@ -38,6 +38,7 @@ public class TaxiSystem {
 		SystemStats.report();
 		RequestStats.report();
 		VehicleStats.report();
+		System.out.println("OSRM ViaRoute count: " + OSRM.viaRouteCount);
 	}
 
 	private static TaxiSystemProperties loadProperties(String[] args) throws IOException {

@@ -40,9 +40,9 @@ public class RequestGenerator {
 		int count = 0;
     	Request request = db.getNextRequest();
     	// TODO need to limit this with some sort of paging and delay so we don't fill up memory
-		while (request != null && request.getTime().compareTo(maxRequestTime) <= 0) {
+		while (request != null && request.getSubmitTime().compareTo(maxRequestTime) <= 0) {
 			count++;
-			time.waitForTime(request.getTime(), new RequestCallback(request));
+			time.waitForTime(request.getSubmitTime(), new RequestCallback(request));
     		request = db.getNextRequest();
     	}
 		Logger.info("ENVIRONMENT", "Done generating " + count + " trip requests");

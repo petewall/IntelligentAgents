@@ -22,12 +22,12 @@ public class MockTaxiData extends TaxiData {
     private List<Request> requests;
     private SimpleDateFormat dateFormat;
 
-    public MockTaxiData() {
+	public MockTaxiData(int max) {
         file = new File("db/1000.csv");
         dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Logger.info("MockTaxiData", "Parsing data file " + file.getName());
         requestIndex = 0;
-        readDataFile();
+		readDataFile(max);
         Logger.info("MockTaxiData", "Parsing done.  Found " + requests.size() + " records");
     }
 
@@ -50,7 +50,7 @@ public class MockTaxiData extends TaxiData {
             double endLongitude = Double.parseDouble(parts[12]);
             double endLatitude = Double.parseDouble(parts[13]);
 
-            return new Request(pickupDate, new Coordinate(startLatitude, startLongitude), new Coordinate(endLatitude, endLongitude), passengers);
+			return new Request(pickupDate, passengers, new Coordinate(startLatitude, startLongitude), new Coordinate(endLatitude, endLongitude));
         } catch (ParseException e) {
             Logger.error("", "Failed to parse date: " + parts[5]);
             Logger.error(Logger.stackTraceToString(e));
@@ -58,13 +58,15 @@ public class MockTaxiData extends TaxiData {
         }
     }
     
-    private void readDataFile() {
+	private void readDataFile(int max) {
         try {
             requests = new ArrayList<Request>();
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine(); // Skip the first line
-            while ((line = reader.readLine()) != null) {
+			int count = 0;
+			while (count < max && (line = reader.readLine()) != null) {
                 requests.add(lineToRequest(line));
+				count++;
             }
             reader.close();
         } catch (FileNotFoundException e) {
@@ -78,7 +80,7 @@ public class MockTaxiData extends TaxiData {
 
 
     public long getStartTime() { 
-        return requests.get(0).getTime().getTime();
+		return requests.get(0).getSubmitTime().getTime();
     }
     
     public Request getNextRequest() {
@@ -94,7 +96,7 @@ public class MockTaxiData extends TaxiData {
         int startIndex = 0;
         int endIndex = requests.size() - 1;
         for (int i = 0; i < requests.size(); ++i) {
-            long requestTime = requests.get(i).getTime().getTime();
+			long requestTime = requests.get(i).getSubmitTime().getTime();
             if (requestTime < startTime) {
                 startIndex = i;
             }
