@@ -53,6 +53,7 @@ public class TaxiSystem {
 		TaxiSystemProperties properties = new TaxiSystemProperties(args[0]);
 		OSRM.hostname = properties.getOsrmHost();
 		OSRM.port = properties.getOsrmPort();
+		Logger.debugging = properties.getLoggerDebug();
 		return properties;
 	}
 
@@ -62,21 +63,22 @@ public class TaxiSystem {
 		try {
 			strategyClass = Class.forName(strategyClassName);
 		} catch (ClassNotFoundException e) {
-			Logger.error("Stragegy class with name " + strategyClassName + " could not be found. Make sure the name is fully qualified.");
+			Logger.error("TAXI SYSTEM", "Stragegy class with name " + strategyClassName + " could not be found. Make sure the name is fully qualified.");
 			throw e;
 		}
 
+		Logger.info("TAXI SYSTEM", "Creating AI Stragegy " + strategyClass.getSimpleName());
 		Object strategy;
 		try {
 			strategy = strategyClass.newInstance();
 		} catch (Exception e) {
-			Logger.error("Unable to instantiate a new AI strategy class of type " + strategyClass.getName());
+			Logger.error("TAXI SYSTEM", "Unable to instantiate a new AI strategy class of type " + strategyClass.getName());
 			throw e;
 		}
 
 		if (!(strategy instanceof AIStrategy)) {
 			String err = strategyClassName + " class specified in the ai.strategy property must implement the AIStrategy interface.";
-			Logger.error(err);
+			Logger.error("TAXI SYSTEM", err);
 			throw new IllegalArgumentException(err);
 		}
 

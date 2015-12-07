@@ -49,8 +49,8 @@ public class PostgreSQLTaxiData extends TaxiData {
 			props.setProperty("password", password);
             conn = DriverManager.getConnection(url, props);
         } catch (SQLException e) {
-            Logger.error("DATA", "Failed to open connection: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("DATABASE", "Failed to open connection: " + e.getMessage());
+			Logger.error("DATABASE", Logger.stackTraceToString(e));
         }
 		this.pageSize = pageSize;
 		this.prevPickupTime = startTime;
@@ -98,8 +98,8 @@ public class PostgreSQLTaxiData extends TaxiData {
 			}
             statement.close();
 		} catch (SQLException e) {
-            Logger.error("DB", "SQL execption: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("DATABASE", "SQL execption: " + e.getMessage());
+			Logger.error("DATABASE", Logger.stackTraceToString(e));
 		}
     	
     }

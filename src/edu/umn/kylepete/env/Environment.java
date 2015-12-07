@@ -4,12 +4,12 @@ import java.text.ParseException;
 import java.util.Random;
 import java.util.Set;
 
+import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.TaxiSystemProperties;
-import edu.umn.kylepete.db.MockTaxiData;
-import edu.umn.kylepete.db.TaxiData;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
 import edu.umn.kylepete.env.vehicles.Vehicle;
 import edu.umn.kylepete.env.vehicles.VehicleFactory;
+import edu.umn.kylepete.stats.RequestStats;
 
 public class Environment {
 
@@ -22,6 +22,7 @@ public class Environment {
 	}
 
 	public static Environment getNewEnvironment(TaxiSystemProperties properties) throws ParseException, EnvironmentTimeException {
+		Logger.info("ENVIRONMENT", "Creating new taxi simulation environment");
 		Environment env = new Environment();
 
 		Long randomSeed = properties.getRandomSeed();
@@ -33,18 +34,23 @@ public class Environment {
 		env.environmentTime = new EnvironmentTime();
 		env.environmentTime.initializeTime(properties.getTimeStart());
 
-		TaxiData db = new MockTaxiData();
-		env.requestGenerator = new RequestGenerator(db);
+		env.requestGenerator = new RequestGenerator(properties);
 		env.requestGenerator.generateRequests(env.environmentTime);
 		env.vehicles = VehicleFactory.generateVehicles(properties.getTaxiCount(), env);
 		return env;
 	}
 
 	public void start() {
+		Logger.info("ENVIRONMENT", "Starting time simulation");
+		int count = 0;
 		while (true) {
 			if (!this.getTime().advanceTime()) {
 				break;
 			}
+			if (count % 60 == 0) {
+				Logger.info("ENVIRONMENT", "Time: " + this.getTime().getCurTime() + " Requests fulfilled: " + RequestStats.getRequestsFulfilled());
+			}
+			count++;
 		}
 	}
 

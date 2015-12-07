@@ -46,7 +46,7 @@ public class OSRM {
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"locate\" response: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
         
         if (status != 0) {
@@ -80,7 +80,7 @@ public class OSRM {
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"nearest\" response: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
         
         if (status != 0) {
@@ -106,7 +106,7 @@ public class OSRM {
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"viaroute\" response: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
 
         if (route.status != 0) {
@@ -147,7 +147,7 @@ public class OSRM {
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"table\" response: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
         return distanceTable;
     }
@@ -182,7 +182,7 @@ public class OSRM {
             reader.close();
         } catch (IOException e) {
             Logger.error("OSRM", "Failed to parse the \"table\" response: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
         return trips;
     }
@@ -191,7 +191,7 @@ public class OSRM {
         StringBuilder responseBody = new StringBuilder();
         try {
             URL url = new URL("http://" + hostname + ":" + port + "/" + request);
-            Logger.debug("HTTP", "-----> " + url.toString());
+			Logger.debug("OSRM", "-----> " + url.toString());
             HttpURLConnection connection = (HttpURLConnection)url.openConnection();
             connection.setRequestMethod("GET");
             connection.setUseCaches (false);
@@ -205,13 +205,13 @@ public class OSRM {
             }
             reader.close();
         } catch (UnknownHostException e) {
-            Logger.error("Invalid host: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", "Invalid host: " + e.getMessage());
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         } catch (IOException e) {
-            Logger.error("Failed to send HTTP request: " + e.getMessage());
-            Logger.error(Logger.stackTraceToString(e));
+			Logger.error("OSRM", "Failed to send HTTP request: " + e.getMessage());
+			Logger.error("OSRM", Logger.stackTraceToString(e));
         }
-        Logger.debug("HTTP", "<----- " + responseBody.toString());
+		Logger.debug("OSRM", "<----- " + responseBody.toString());
         return responseBody.toString();
     }
 }
