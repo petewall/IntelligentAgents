@@ -170,6 +170,14 @@ public class Route {
 	public List<Coordinate> getViaCoordinates() {
 		return this.viaCoordinates;
 	}
+	
+	public String getStartPoint() {
+	    return startPoint;
+	}
+	
+	public String getEndPoint() {
+	    return endPoint;
+	}
 
 	public int getDistance() {
 		return distance;
