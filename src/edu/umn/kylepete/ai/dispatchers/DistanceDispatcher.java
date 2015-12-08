@@ -51,7 +51,8 @@ public class DistanceDispatcher extends TaxiDispatch {
     }
 
     private void processRequests(){
-        for (Request request : requestQueue) {
+        Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
+        for (Request request : requests) {
             TaxiAgent agent = findNearestIdleTaxi(request);
             if (agent != null) {
                 waitingTaxis.remove(agent);

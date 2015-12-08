@@ -35,7 +35,8 @@ public class NaiveDispatcher extends TaxiDispatch {
     }
 
     private void processRequests() {
-        for (Request request : requestQueue) {
+        Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
+        for (Request request : requests) {
             for (TaxiAgent agent : waitingTaxis) {
                 if (agent.getVehicle().getCapacity() >= request.getNumberOfPassengers()) {
                     waitingTaxis.remove(agent);

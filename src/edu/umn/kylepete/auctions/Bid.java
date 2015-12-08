@@ -10,10 +10,14 @@ public class Bid implements Comparable<Bid> {
     public double value;
     
     public Bid(TaxiAgent bidder, Request object) {
+        this(bidder, object, 0);
+    }
+    
+    public Bid(TaxiAgent bidder, Request object, double value) {
         this.bidder = bidder;
         this.object = object;
         this.abstain = false;
-        this.value = 0;
+        this.value = value;
     }
     
     public String toString() {

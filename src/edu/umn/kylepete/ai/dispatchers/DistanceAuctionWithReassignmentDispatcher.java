@@ -1,19 +1,21 @@
 package edu.umn.kylepete.ai.dispatchers;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
-import edu.umn.kylepete.ai.agents.DistanceBiddingStrategy;
+import edu.umn.kylepete.ai.agents.DistanceWithReassignmentBiddingStrategy;
 import edu.umn.kylepete.ai.agents.TaxiAgent;
 import edu.umn.kylepete.auctions.Auction;
 import edu.umn.kylepete.auctions.AuctionResult;
 import edu.umn.kylepete.env.Request;
 
-public class DistanceAuctionDispatcher extends TaxiDispatch {
+public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
 
     private Set<TaxiAgent> taxis;
     
-    public DistanceAuctionDispatcher() {
+    public DistanceAuctionWithReassignmentDispatcher() {
         taxis = new HashSet<TaxiAgent>();
     }
     
@@ -30,18 +32,24 @@ public class DistanceAuctionDispatcher extends TaxiDispatch {
 
     @Override
     public void requestComplete(TaxiAgent taxiAgent, Request completedRequest) {
+        requestQueue.remove(completedRequest);
         processRequests();
     }
 
     private void processRequests() {
-        Auction auction = new Auction(taxis, new DistanceBiddingStrategy());
-        Request[] requests = requestQueue.toArray(new Request[requestQueue.size()]);
-        for (Request request : requests) {
+        Map<TaxiAgent, Request> assignments = new HashMap<TaxiAgent, Request>();
+
+        Auction auction = new Auction(taxis, new DistanceWithReassignmentBiddingStrategy(assignments));
+        for (Request request : requestQueue) {
             AuctionResult results = auction.offer(request);
             if (results.hasWinner()) {
-                results.getWinner().assignRequest(request);
-                requestQueue.remove(request);
+                TaxiAgent winner = results.getWinner();
+                assignments.put(winner, request);
             }
+        }
+        
+        for (TaxiAgent winner : assignments.keySet()) {
+            winner.assignRequest(assignments.get(winner));
         }
     }
 }
