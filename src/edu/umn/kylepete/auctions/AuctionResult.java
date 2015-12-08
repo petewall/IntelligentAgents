@@ -5,19 +5,19 @@ import java.util.PriorityQueue;
 import edu.umn.kylepete.ai.agents.TaxiAgent;
 
 public class AuctionResult {
-    private PriorityQueue<Bid> results;
+    public PriorityQueue<Bid> bids;
 
-    public AuctionResult(PriorityQueue<Bid> results) {
-        this.results = results;
+    public AuctionResult(PriorityQueue<Bid> bids) {
+        this.bids = bids;
     }
     
     public boolean hasWinner() {
-        return results.size() > 0;
+        return bids.size() > 0;
     }
 
     public Bid getWinningBid() {
         if (hasWinner()) {
-            return results.peek();
+            return bids.peek();
         }
         return null;
     }

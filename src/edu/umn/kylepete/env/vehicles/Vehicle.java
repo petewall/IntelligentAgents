@@ -15,6 +15,7 @@ public abstract class Vehicle implements TimeListener {
     private String name;
     private boolean driving;
     private Date timeSince; // Used to calculate how long this car has been driving or parked
+    private Date expectedArrival;
     private Coordinate currentLocation;
     private Route currentRoute;
     private VehicleListener currentListener;
@@ -46,7 +47,7 @@ public abstract class Vehicle implements TimeListener {
     }
     
 	public void driveRoute(Route route, VehicleListener callback) throws VehicleNotAtRouteStartException {
-	    if (route != null) {
+	    if (currentRoute != null) {
 	        Logger.error(getName(), "Driving to new route before the existing one was cancelled!");
 	    }
     	if(!currentLocation.equals(route.getStartCoordinate())){
@@ -61,9 +62,9 @@ public abstract class Vehicle implements TimeListener {
 			// we are already at the location
 			ariveAtTime();
 		} else {
-			Date expectedTime = new Date(environmentTime.getCurTime().getTime() + currentRoute.getTime() * 1000);
+		    expectedArrival = new Date(environmentTime.getCurTime().getTime() + currentRoute.getTime() * 1000);
 			try {
-				environmentTime.waitForTime(expectedTime, this);
+				environmentTime.waitForTime(expectedArrival, this);
 			} catch (EnvironmentTimeException e) {
 				throw new IllegalStateException(e.getMessage(), e);
 			}
@@ -90,35 +91,42 @@ public abstract class Vehicle implements TimeListener {
 		currentListener = null;
 		currentLocation = currentRoute.getEndCoordinate();
 		currentRoute = null;
+		expectedArrival = null;
 		callback.arriveAtLoc(this, currentLocation);
 	}
 
-//	public void cancelCurrentRoute(){
-//		this.driving = false;
-//		currentLocation = getLocation();
-//		currentRoute = null;
-//		currentListener = null; // TODO should we notify the listener of the cancel?
-//	}
-	
+	public void cancelCurrentRoute() {
+	    if (driving) {
+            environmentTime.cancelTime(expectedArrival, this);
+	        currentLocation = getLocation();
+            driving = false;
+	        currentRoute = null;
+	        currentListener = null; // TODO should we notify the listener of the cancel?
+	        expectedArrival = null;
+	    }
+	}
+
     public boolean isDriving() {
         return this.driving;
     }
-    
+
     public String toString() {
-    	String drivingStr = "PARKED";
-    	if(driving){
-    		drivingStr = "DRIVING";
-    	}
-        return this.getName() + " (" + drivingStr + ")";
+        return this.getName() + " (" + (driving ? "DRIVING" : "PARKED") + ")";
     }
 
     public Coordinate getLocation() {
-    	if(this.driving){
-    		// TODO estimate current location between currentLocation and currentDestination
-    		return this.currentLocation;
-    	}else{
-    		return this.currentLocation;
-    	}
+    	if (this.driving) {
+    	    long elapsed = environmentTime.getElapsed(timeSince);
+    	    if (elapsed > 0) {
+    	        double percent = (100.0 * elapsed) / currentRoute.getTime();
+    	        Coordinate locationEstimate = new Coordinate(
+    	                currentRoute.getStartCoordinate().latitude + percent * (currentRoute.getStartCoordinate().latitude - currentRoute.getEndCoordinate().latitude), 
+    	                currentRoute.getStartCoordinate().longitude + percent * (currentRoute.getStartCoordinate().longitude - currentRoute.getEndCoordinate().longitude)
+    	                    );
+    	        return locationEstimate;
+    	    }
+        }
+		return this.currentLocation;
     }
 
 }

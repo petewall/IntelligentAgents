@@ -47,9 +47,15 @@ public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
                 assignments.put(winner, request);
             }
         }
-        
+
         for (TaxiAgent winner : assignments.keySet()) {
-            winner.assignRequest(assignments.get(winner));
+            Request assignment = assignments.get(winner); 
+            if (!assignment.equals(winner.getCurrentRequest())) {
+                if (winner.getCurrentRequest() != null) {
+                    System.out.println("Stop here.  Reassigning!");
+                }
+                winner.setRequest(assignment);
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 package edu.umn.kylepete.ai.agents;
 
 import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.ai.dispatchers.TaxiDispatch;
@@ -40,7 +41,11 @@ public class TaxiAgent implements VehicleListener {
 	}
 	
 	public Request getCurrentRequest() {
-	    return requests.getFirst();
+	    try {
+	        return requests.getFirst();
+	    } catch (NoSuchElementException e) {
+	        return null;
+	    }
 	}
 	
 	public String toString() {
@@ -82,7 +87,7 @@ public class TaxiAgent implements VehicleListener {
         startNextRequest();
         dispatch.requestComplete(this, completedRequest);
 	}
-	
+
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
 		if (status == Status.PICKING_UP) {
 		    driveRequestToDestination();
@@ -95,8 +100,12 @@ public class TaxiAgent implements VehicleListener {
 	    requests.addLast(request);
 	    if (requests.size() == 1) {
 	        startNextRequest();
-	    } else {
-	        System.out.println("Stop here");
 	    }
+	}
+
+	public void setRequest(Request request) {
+        vehicle.cancelCurrentRoute();
+        requests.add(request);
+        startNextRequest();
 	}
 }
