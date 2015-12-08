@@ -1,7 +1,10 @@
 package edu.umn.kylepete.ai.dispatchers;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -9,14 +12,17 @@ import edu.umn.kylepete.ai.agents.DistanceWithReassignmentBiddingStrategy;
 import edu.umn.kylepete.ai.agents.TaxiAgent;
 import edu.umn.kylepete.auctions.Auction;
 import edu.umn.kylepete.auctions.AuctionResult;
+import edu.umn.kylepete.auctions.Bid;
 import edu.umn.kylepete.env.Request;
 
 public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
 
     private Set<TaxiAgent> taxis;
+    private Map<Request, TaxiAgent> assignments;
     
     public DistanceAuctionWithReassignmentDispatcher() {
         taxis = new HashSet<TaxiAgent>();
+        assignments = new HashMap<Request, TaxiAgent>();
     }
     
     @Override
@@ -37,24 +43,24 @@ public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
     }
 
     private void processRequests() {
-        Map<TaxiAgent, Request> assignments = new HashMap<TaxiAgent, Request>();
-
-        Auction auction = new Auction(taxis, new DistanceWithReassignmentBiddingStrategy(assignments));
+        List<Bid> allBids = new ArrayList<Bid>();
+        Auction auction = new Auction(taxis, new DistanceWithReassignmentBiddingStrategy());
         for (Request request : requestQueue) {
             AuctionResult results = auction.offer(request);
-            if (results.hasWinner()) {
-                TaxiAgent winner = results.getWinner();
-                assignments.put(winner, request);
-            }
+            allBids.addAll(results.bids);
         }
 
-        for (TaxiAgent winner : assignments.keySet()) {
-            Request assignment = assignments.get(winner); 
-            if (!assignment.equals(winner.getCurrentRequest())) {
-                if (winner.getCurrentRequest() != null) {
-                    System.out.println("Stop here.  Reassigning!");
+        Collections.sort(allBids);
+        Set<Request> assignedRequests = new HashSet<Request>();
+        Set<TaxiAgent> assignedTaxis = new HashSet<TaxiAgent>();
+        for (Bid bid : allBids) {
+            if (!assignedRequests.contains(bid.object) && !assignedTaxis.contains(bid.bidder)) {
+                if (assignments.containsKey(bid.object)) {
+                    assignments.get(bid.object).clearRequests();
                 }
-                winner.setRequest(assignment);
+                bid.bidder.assignRequest(bid.object);
+                assignedRequests.add(bid.object);
+                assignedTaxis.add(bid.bidder);
             }
         }
     }

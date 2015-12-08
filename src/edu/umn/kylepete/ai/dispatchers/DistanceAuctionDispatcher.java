@@ -1,7 +1,9 @@
 package edu.umn.kylepete.ai.dispatchers;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
-import java.util.PriorityQueue;
+import java.util.List;
 import java.util.Set;
 
 import edu.umn.kylepete.ai.agents.DistanceBiddingStrategy;
@@ -36,13 +38,14 @@ public class DistanceAuctionDispatcher extends TaxiDispatch {
     }
 
     private void processRequests() {
-        PriorityQueue<Bid> allBids = new PriorityQueue<Bid>();
+        List<Bid> allBids = new ArrayList<Bid>();
         Auction auction = new Auction(taxis, new DistanceBiddingStrategy());
         for (Request request : requestQueue) {
             AuctionResult results = auction.offer(request);
             allBids.addAll(results.bids);
         }
 
+        Collections.sort(allBids);
         Set<Request> assignedRequests = new HashSet<Request>();
         Set<TaxiAgent> assignedTaxis = new HashSet<TaxiAgent>();
         for (Bid bid : allBids) {

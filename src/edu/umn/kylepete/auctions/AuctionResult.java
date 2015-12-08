@@ -1,14 +1,16 @@
 package edu.umn.kylepete.auctions;
 
-import java.util.PriorityQueue;
+import java.util.Collections;
+import java.util.List;
 
 import edu.umn.kylepete.ai.agents.TaxiAgent;
 
 public class AuctionResult {
-    public PriorityQueue<Bid> bids;
+    public List<Bid> bids;
 
-    public AuctionResult(PriorityQueue<Bid> bids) {
+    public AuctionResult(List<Bid> bids) {
         this.bids = bids;
+        Collections.sort(bids);
     }
     
     public boolean hasWinner() {
@@ -17,7 +19,7 @@ public class AuctionResult {
 
     public Bid getWinningBid() {
         if (hasWinner()) {
-            return bids.peek();
+            return bids.get(0);
         }
         return null;
     }

@@ -1,6 +1,7 @@
 package edu.umn.kylepete.auctions;
 
-import java.util.PriorityQueue;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import edu.umn.kylepete.ai.agents.BiddingStrategy;
@@ -17,14 +18,14 @@ public class Auction {
     }
 
     public AuctionResult offer(Request request) {
-        PriorityQueue<Bid> bids = new PriorityQueue<Bid>();
+        List<Bid> bids = new ArrayList<Bid>();
         for (TaxiAgent bidder : bidders) {
             Bid bid = biddingStrategy.getBidFrom(bidder, request);
             if (!bid.abstain) {                
                 bids.add(bid);
             }
         }
-
+        
         return new AuctionResult(bids);
     }
 }
