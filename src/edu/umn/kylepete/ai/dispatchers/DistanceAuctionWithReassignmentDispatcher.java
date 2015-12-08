@@ -39,6 +39,7 @@ public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
     @Override
     public void requestComplete(TaxiAgent taxiAgent, Request completedRequest) {
         requestQueue.remove(completedRequest);
+        assignments.remove(completedRequest);
         processRequests();
     }
 
@@ -56,7 +57,19 @@ public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
         for (Bid bid : allBids) {
             if (!assignedRequests.contains(bid.object) && !assignedTaxis.contains(bid.bidder)) {
                 if (assignments.containsKey(bid.object)) {
+                    if (assignments.get(bid.object).equals(bid.bidder)) {
+                        assignedRequests.add(bid.object);
+                        assignedTaxis.add(bid.bidder);
+                        continue;
+                    }
+                    System.out.println("Reassigning - I took someone elses");
                     assignments.get(bid.object).clearRequests();
+                }
+                assignments.put(bid.object, bid.bidder);
+                if (bid.bidder.getCurrentRequest() != null) {
+                    assignments.remove(bid.bidder.getCurrentRequest());
+                    System.out.println("Reassigning - I'm getting rid of my own");
+                    bid.bidder.clearRequests();
                 }
                 bid.bidder.assignRequest(bid.object);
                 assignedRequests.add(bid.object);

@@ -80,9 +80,6 @@ public class TaxiAgent implements VehicleListener {
         RequestStats.requestFulfilled();
         Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
         
-        if (requests.size() > 1) {
-            System.out.println("Stop here");
-        }
         Request completedRequest = requests.removeFirst();
         startNextRequest();
         dispatch.requestComplete(this, completedRequest);
@@ -103,9 +100,8 @@ public class TaxiAgent implements VehicleListener {
 	    }
 	}
 
-	public void setRequest(Request request) {
+    public void clearRequests() {
         vehicle.cancelCurrentRoute();
-        requests.add(request);
-        startNextRequest();
-	}
+        requests.clear();
+    }
 }

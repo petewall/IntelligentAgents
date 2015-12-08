@@ -118,12 +118,12 @@ public abstract class Vehicle implements TimeListener {
     	if (this.driving) {
     	    long elapsed = environmentTime.getElapsed(timeSince);
     	    if (elapsed > 0) {
-    	        double percent = (100.0 * elapsed) / currentRoute.getTime();
-    	        Coordinate locationEstimate = new Coordinate(
-    	                currentRoute.getStartCoordinate().latitude + percent * (currentRoute.getStartCoordinate().latitude - currentRoute.getEndCoordinate().latitude), 
-    	                currentRoute.getStartCoordinate().longitude + percent * (currentRoute.getStartCoordinate().longitude - currentRoute.getEndCoordinate().longitude)
-    	                    );
-    	        return locationEstimate;
+    	        Coordinate a = currentRoute.getStartCoordinate();
+    	        Coordinate b = currentRoute.getEndCoordinate();
+    	        double percent = 1.0 * elapsed / currentRoute.getTime();
+    	        double newLatitude = a.latitude + percent * (a.latitude - b.latitude);
+    	        double newLongitude = a.longitude + percent * (a.longitude - b.longitude); 
+    	        return new Coordinate(newLatitude, newLongitude);
     	    }
         }
 		return this.currentLocation;
