@@ -2,6 +2,7 @@ package edu.umn.kylepete.env.vehicles;
 
 import java.util.Date;
 
+import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.env.Coordinate;
 import edu.umn.kylepete.env.EnvironmentTime;
 import edu.umn.kylepete.env.EnvironmentTime.EnvironmentTimeException;
@@ -45,6 +46,9 @@ public abstract class Vehicle implements TimeListener {
     }
     
 	public void driveRoute(Route route, VehicleListener callback) throws VehicleNotAtRouteStartException {
+	    if (route != null) {
+	        Logger.error(getName(), "Driving to new route before the existing one was cancelled!");
+	    }
     	if(!currentLocation.equals(route.getStartCoordinate())){
 			throw new VehicleNotAtRouteStartException();
     	}
@@ -89,12 +93,12 @@ public abstract class Vehicle implements TimeListener {
 		callback.arriveAtLoc(this, currentLocation);
 	}
 
-	public void cancelCurrentRoute(){
-		this.driving = false;
-		currentLocation = getLocation();
-		currentRoute = null;
-		currentListener = null; // TODO should we notify the listener of the cancel?
-	}
+//	public void cancelCurrentRoute(){
+//		this.driving = false;
+//		currentLocation = getLocation();
+//		currentRoute = null;
+//		currentListener = null; // TODO should we notify the listener of the cancel?
+//	}
 	
     public boolean isDriving() {
         return this.driving;

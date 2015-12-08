@@ -15,8 +15,7 @@ public class TaxiAgent implements VehicleListener {
 	
 	private Vehicle vehicle;
 	private TaxiDispatch dispatch;
-	private Request currentRequest;
-	private LinkedList<Request> pendingRequests;
+	private LinkedList<Request> requests;
 	private Status status;
 
 	public enum Status {
@@ -27,8 +26,7 @@ public class TaxiAgent implements VehicleListener {
 
 	public TaxiAgent(Vehicle vehicle, TaxiDispatch dispatch){
 		this.vehicle = vehicle;
-		this.currentRequest = null;
-		this.pendingRequests = new LinkedList<Request>();
+		this.requests = new LinkedList<Request>();
 		this.status = Status.WAITING;
 		this.dispatch = dispatch;
 	}
@@ -42,84 +40,63 @@ public class TaxiAgent implements VehicleListener {
 	}
 	
 	public Request getCurrentRequest() {
-	    return currentRequest;
+	    return requests.getFirst();
 	}
 	
 	public String toString() {
 	    return vehicle.toString();
 	}
 	
-	private void pickupRequest(Request request) {
-        currentRequest = request;
-        status = Status.PICKING_UP;
-		Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
-        vehicle.driveToLoc(request.getPickupLocation(), this);
+	private void startNextRequest() {
+	    if (requests.size() > 0) {
+	        status = Status.PICKING_UP;
+	        Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
+	        vehicle.driveToLoc(getCurrentRequest().getPickupLocation(), this);
+	    }
+	}
+	
+	private void driveRequestToDestination() {
+        status = Status.DRIVING;
+        RequestStats.addIdleTime((vehicle.getEnvironmentTime().getCurTime().getTime() - getCurrentRequest().getSubmitTime().getTime()) / 1000);
+        Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
+        try {
+            this.vehicle.driveRoute(getCurrentRequest().getRoute(), this);
+        } catch (VehicleNotAtRouteStartException e) {
+            Logger.error("TAXI AGENT", "Vehicle's current location does not match the pickup location");
+            // This shouldn't happen because we just drove to the route pickup coordinate
+            // but if it does, just drive from the vehicle's current location to the dropoff
+            // this causes an extra call to OSRM
+            this.vehicle.driveToLoc(getCurrentRequest().getDropoffLocation(), this);
+        }
+	}
+	
+	private void completeRequest() {
+        status = Status.WAITING;
+        RequestStats.requestFulfilled();
+        Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
+        
+        if (requests.size() > 1) {
+            System.out.println("Stop here");
+        }
+        Request completedRequest = requests.removeFirst();
+        startNextRequest();
+        dispatch.requestComplete(this, completedRequest);
 	}
 	
 	public void arriveAtLoc(Vehicle vehicle, Coordinate loc) {
 		if (status == Status.PICKING_UP) {
-			status = Status.DRIVING;
-			RequestStats.addIdleTime((vehicle.getEnvironmentTime().getCurTime().getTime() - currentRequest.getSubmitTime().getTime()) / 1000);
-			Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
-			try {
-				this.vehicle.driveRoute(currentRequest.getRoute(), this);
-			} catch (VehicleNotAtRouteStartException e) {
-				Logger.error("TAXI AGENT", "Vehicle's current location does not match the pickup location");
-				// This shouldn't happen because we just drove to the route pickup coordinate
-				// but if it does, just drive from the vehicle's current location to the dropoff
-				// this causes an extra call to OSRM
-				this.vehicle.driveToLoc(currentRequest.getDropoffLocation(), this);
-			}
+		    driveRequestToDestination();
 		} else if (status == Status.DRIVING) {
-			status = Status.WAITING;
-			RequestStats.requestFulfilled();
-			Logger.debug("TAXI AGENT", vehicle.toString() + " --> " + status);
-			
-			if (pendingRequests.size() > 0) {
-			    pickupRequest(pendingRequests.removeFirst());
-			} else {
-			    Request completedRequest = currentRequest;
-                currentRequest = null;
-                dispatch.requestComplete(this, completedRequest);
-			}
+		    completeRequest();
 		}
 	}
 
 	public void assignRequest(Request request){
-	    if (currentRequest == null) {
-	        pickupRequest(request);
+	    requests.addLast(request);
+	    if (requests.size() == 1) {
+	        startNextRequest();
 	    } else {
-	        pendingRequests.addLast(request);
+	        System.out.println("Stop here");
 	    }
-	}
-	
-	public double getDistanceUntilComplete() {
-	    double distance = 0;
-	    if (currentRequest != null) {
-	        if (status == Status.PICKING_UP) {
-                distance += vehicle.getLocation().distance(currentRequest.getPickupLocation());             
-                distance += currentRequest.getDistance();
-	        } else if (status == Status.DRIVING) {
-	            distance += vehicle.getLocation().distance(currentRequest.getDropoffLocation());
-	        }
-	        
-            Coordinate lastLocation = currentRequest.getDropoffLocation();
-	        for (Request pendingRequest : pendingRequests) {
-	            distance += lastLocation.distance(pendingRequest.getPickupLocation());
-	            distance += pendingRequest.getDistance();
-	            lastLocation = pendingRequest.getDropoffLocation();
-	        }
-	    }
-	    return distance;
-	}
-	
-	public Coordinate getFinalLocation() {
-	    if (pendingRequests.size() > 0) {
-	        return pendingRequests.getLast().getDropoffLocation();
-	    }
-        if (currentRequest != null) {
-            return currentRequest.getDropoffLocation();
-        }
-        return vehicle.getLocation();
 	}
 }
