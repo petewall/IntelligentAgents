@@ -1,0 +1,2303 @@
+[INFO] [TAXI SYSTEM] Loading properties from ../testConfigs/naive-500.properties
+[INFO] [TAXI SYSTEM] Creating AI Stragegy NaiveStrategy
+[INFO] [ENVIRONMENT] Creating new taxi simulation environment
+[INFO] [VEHICLE FACTORY] Generating 500 vehicles
+[INFO] [ENVIRONMENT] Starting to generate taxi trip requests in a background thread
+[INFO] [ENVIRONMENT] Starting time simulation
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:00:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:01:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:02:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:03:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:04:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:05:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:06:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:07:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:08:01 CST 2013 Requests fulfilled: 2
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:09:01 CST 2013 Requests fulfilled: 3
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:10:01 CST 2013 Requests fulfilled: 5
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:11:01 CST 2013 Requests fulfilled: 12
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:12:01 CST 2013 Requests fulfilled: 22
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:13:01 CST 2013 Requests fulfilled: 26
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:14:01 CST 2013 Requests fulfilled: 35
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:15:01 CST 2013 Requests fulfilled: 49
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:16:01 CST 2013 Requests fulfilled: 70
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:17:01 CST 2013 Requests fulfilled: 93
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:18:01 CST 2013 Requests fulfilled: 120
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:19:01 CST 2013 Requests fulfilled: 150
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:20:01 CST 2013 Requests fulfilled: 179
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:21:01 CST 2013 Requests fulfilled: 219
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:22:01 CST 2013 Requests fulfilled: 254
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:23:01 CST 2013 Requests fulfilled: 298
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:24:01 CST 2013 Requests fulfilled: 336
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:25:01 CST 2013 Requests fulfilled: 384
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:26:01 CST 2013 Requests fulfilled: 435
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:27:01 CST 2013 Requests fulfilled: 490
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:28:01 CST 2013 Requests fulfilled: 536
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:29:01 CST 2013 Requests fulfilled: 578
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:30:01 CST 2013 Requests fulfilled: 629
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:31:01 CST 2013 Requests fulfilled: 683
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:32:01 CST 2013 Requests fulfilled: 717
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:33:01 CST 2013 Requests fulfilled: 773
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:34:01 CST 2013 Requests fulfilled: 817
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:35:01 CST 2013 Requests fulfilled: 871
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:36:01 CST 2013 Requests fulfilled: 917
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:37:01 CST 2013 Requests fulfilled: 963
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:38:01 CST 2013 Requests fulfilled: 1011
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:39:01 CST 2013 Requests fulfilled: 1057
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:40:01 CST 2013 Requests fulfilled: 1096
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:41:01 CST 2013 Requests fulfilled: 1138
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:42:01 CST 2013 Requests fulfilled: 1181
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:43:01 CST 2013 Requests fulfilled: 1231
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:44:01 CST 2013 Requests fulfilled: 1284
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:45:01 CST 2013 Requests fulfilled: 1334
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:46:01 CST 2013 Requests fulfilled: 1370
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:47:01 CST 2013 Requests fulfilled: 1423
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:48:01 CST 2013 Requests fulfilled: 1459
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:49:01 CST 2013 Requests fulfilled: 1509
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:50:01 CST 2013 Requests fulfilled: 1564
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:51:01 CST 2013 Requests fulfilled: 1609
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:52:01 CST 2013 Requests fulfilled: 1650
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:53:01 CST 2013 Requests fulfilled: 1703
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:54:01 CST 2013 Requests fulfilled: 1753
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:55:01 CST 2013 Requests fulfilled: 1794
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:56:01 CST 2013 Requests fulfilled: 1841
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:57:01 CST 2013 Requests fulfilled: 1897
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:58:01 CST 2013 Requests fulfilled: 1943
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:59:01 CST 2013 Requests fulfilled: 1992
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:00:01 CST 2013 Requests fulfilled: 2037
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:01:01 CST 2013 Requests fulfilled: 2083
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:02:01 CST 2013 Requests fulfilled: 2141
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:03:01 CST 2013 Requests fulfilled: 2178
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:04:01 CST 2013 Requests fulfilled: 2230
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:05:01 CST 2013 Requests fulfilled: 2275
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:06:01 CST 2013 Requests fulfilled: 2332
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:07:01 CST 2013 Requests fulfilled: 2381
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:08:01 CST 2013 Requests fulfilled: 2429
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:09:01 CST 2013 Requests fulfilled: 2479
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:10:01 CST 2013 Requests fulfilled: 2514
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:11:01 CST 2013 Requests fulfilled: 2556
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:12:01 CST 2013 Requests fulfilled: 2603
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:13:01 CST 2013 Requests fulfilled: 2663
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:14:01 CST 2013 Requests fulfilled: 2715
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:15:01 CST 2013 Requests fulfilled: 2763
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:16:01 CST 2013 Requests fulfilled: 2800
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:17:01 CST 2013 Requests fulfilled: 2847
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:18:01 CST 2013 Requests fulfilled: 2889
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:19:01 CST 2013 Requests fulfilled: 2932
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:20:01 CST 2013 Requests fulfilled: 2983
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:21:01 CST 2013 Requests fulfilled: 3034
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:22:01 CST 2013 Requests fulfilled: 3082
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:23:01 CST 2013 Requests fulfilled: 3132
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:24:01 CST 2013 Requests fulfilled: 3187
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:25:01 CST 2013 Requests fulfilled: 3236
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:26:01 CST 2013 Requests fulfilled: 3280
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:27:01 CST 2013 Requests fulfilled: 3317
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:28:01 CST 2013 Requests fulfilled: 3353
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:29:01 CST 2013 Requests fulfilled: 3406
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:30:01 CST 2013 Requests fulfilled: 3452
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:31:01 CST 2013 Requests fulfilled: 3515
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:32:01 CST 2013 Requests fulfilled: 3566
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:33:01 CST 2013 Requests fulfilled: 3611
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:34:01 CST 2013 Requests fulfilled: 3658
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:35:01 CST 2013 Requests fulfilled: 3702
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:36:01 CST 2013 Requests fulfilled: 3739
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:37:01 CST 2013 Requests fulfilled: 3785
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:38:01 CST 2013 Requests fulfilled: 3832
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:39:01 CST 2013 Requests fulfilled: 3870
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:40:01 CST 2013 Requests fulfilled: 3920
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:41:01 CST 2013 Requests fulfilled: 3972
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:42:01 CST 2013 Requests fulfilled: 4018
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:43:01 CST 2013 Requests fulfilled: 4076
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:44:01 CST 2013 Requests fulfilled: 4129
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:45:01 CST 2013 Requests fulfilled: 4176
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:46:01 CST 2013 Requests fulfilled: 4211
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:47:01 CST 2013 Requests fulfilled: 4249
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:48:01 CST 2013 Requests fulfilled: 4304
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:49:01 CST 2013 Requests fulfilled: 4353
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:50:01 CST 2013 Requests fulfilled: 4390
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:51:01 CST 2013 Requests fulfilled: 4433
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:52:01 CST 2013 Requests fulfilled: 4472
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:53:01 CST 2013 Requests fulfilled: 4520
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:54:01 CST 2013 Requests fulfilled: 4559
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:55:01 CST 2013 Requests fulfilled: 4614
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:56:01 CST 2013 Requests fulfilled: 4655
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:57:01 CST 2013 Requests fulfilled: 4705
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:58:01 CST 2013 Requests fulfilled: 4756
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:59:01 CST 2013 Requests fulfilled: 4805
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:00:01 CST 2013 Requests fulfilled: 4833
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:01:01 CST 2013 Requests fulfilled: 4884
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:02:01 CST 2013 Requests fulfilled: 4944
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:03:01 CST 2013 Requests fulfilled: 4994
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:04:01 CST 2013 Requests fulfilled: 5032
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:05:01 CST 2013 Requests fulfilled: 5081
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:06:01 CST 2013 Requests fulfilled: 5124
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:07:01 CST 2013 Requests fulfilled: 5172
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:08:01 CST 2013 Requests fulfilled: 5215
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:09:01 CST 2013 Requests fulfilled: 5258
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:10:01 CST 2013 Requests fulfilled: 5298
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:11:01 CST 2013 Requests fulfilled: 5338
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:12:01 CST 2013 Requests fulfilled: 5382
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:13:01 CST 2013 Requests fulfilled: 5447
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:14:01 CST 2013 Requests fulfilled: 5491
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:15:01 CST 2013 Requests fulfilled: 5535
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:16:01 CST 2013 Requests fulfilled: 5584
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:17:01 CST 2013 Requests fulfilled: 5622
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:18:01 CST 2013 Requests fulfilled: 5671
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:19:01 CST 2013 Requests fulfilled: 5716
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:20:01 CST 2013 Requests fulfilled: 5763
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:21:01 CST 2013 Requests fulfilled: 5815
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:22:01 CST 2013 Requests fulfilled: 5859
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:23:01 CST 2013 Requests fulfilled: 5906
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:24:01 CST 2013 Requests fulfilled: 5953
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:25:01 CST 2013 Requests fulfilled: 5995
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:26:01 CST 2013 Requests fulfilled: 6044
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:27:01 CST 2013 Requests fulfilled: 6104
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:28:01 CST 2013 Requests fulfilled: 6151
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:29:01 CST 2013 Requests fulfilled: 6194
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:30:01 CST 2013 Requests fulfilled: 6238
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:31:01 CST 2013 Requests fulfilled: 6284
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:32:01 CST 2013 Requests fulfilled: 6330
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:33:01 CST 2013 Requests fulfilled: 6378
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:34:01 CST 2013 Requests fulfilled: 6420
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:35:01 CST 2013 Requests fulfilled: 6463
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:36:01 CST 2013 Requests fulfilled: 6513
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:37:01 CST 2013 Requests fulfilled: 6554
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:38:01 CST 2013 Requests fulfilled: 6608
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:39:01 CST 2013 Requests fulfilled: 6651
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:40:01 CST 2013 Requests fulfilled: 6702
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:41:01 CST 2013 Requests fulfilled: 6760
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:42:01 CST 2013 Requests fulfilled: 6807
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:43:01 CST 2013 Requests fulfilled: 6849
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:44:01 CST 2013 Requests fulfilled: 6897
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:45:01 CST 2013 Requests fulfilled: 6941
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:46:01 CST 2013 Requests fulfilled: 6979
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:47:01 CST 2013 Requests fulfilled: 7011
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:48:01 CST 2013 Requests fulfilled: 7058
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:49:01 CST 2013 Requests fulfilled: 7112
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:50:01 CST 2013 Requests fulfilled: 7162
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:51:01 CST 2013 Requests fulfilled: 7210
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:52:01 CST 2013 Requests fulfilled: 7258
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:53:01 CST 2013 Requests fulfilled: 7305
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:54:01 CST 2013 Requests fulfilled: 7356
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:55:01 CST 2013 Requests fulfilled: 7414
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:56:01 CST 2013 Requests fulfilled: 7451
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:57:01 CST 2013 Requests fulfilled: 7506
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:58:01 CST 2013 Requests fulfilled: 7557
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:59:01 CST 2013 Requests fulfilled: 7599
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:00:01 CST 2013 Requests fulfilled: 7638
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:01:01 CST 2013 Requests fulfilled: 7681
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:02:01 CST 2013 Requests fulfilled: 7714
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:03:01 CST 2013 Requests fulfilled: 7758
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:04:01 CST 2013 Requests fulfilled: 7807
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:05:01 CST 2013 Requests fulfilled: 7858
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:06:01 CST 2013 Requests fulfilled: 7891
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:07:01 CST 2013 Requests fulfilled: 7946
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:08:01 CST 2013 Requests fulfilled: 8011
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:09:01 CST 2013 Requests fulfilled: 8050
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:10:01 CST 2013 Requests fulfilled: 8095
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:11:01 CST 2013 Requests fulfilled: 8140
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:12:01 CST 2013 Requests fulfilled: 8182
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:13:01 CST 2013 Requests fulfilled: 8228
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:14:01 CST 2013 Requests fulfilled: 8274
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:15:01 CST 2013 Requests fulfilled: 8310
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:16:01 CST 2013 Requests fulfilled: 8352
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:17:01 CST 2013 Requests fulfilled: 8401
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:18:01 CST 2013 Requests fulfilled: 8449
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:19:01 CST 2013 Requests fulfilled: 8491
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:20:01 CST 2013 Requests fulfilled: 8539
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:21:01 CST 2013 Requests fulfilled: 8588
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:22:01 CST 2013 Requests fulfilled: 8624
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:23:01 CST 2013 Requests fulfilled: 8665
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:24:01 CST 2013 Requests fulfilled: 8719
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:25:01 CST 2013 Requests fulfilled: 8767
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:26:01 CST 2013 Requests fulfilled: 8813
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:27:01 CST 2013 Requests fulfilled: 8854
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:28:01 CST 2013 Requests fulfilled: 8899
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:29:01 CST 2013 Requests fulfilled: 8942
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:30:01 CST 2013 Requests fulfilled: 8988
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:31:01 CST 2013 Requests fulfilled: 9029
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:32:01 CST 2013 Requests fulfilled: 9063
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:33:01 CST 2013 Requests fulfilled: 9120
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:34:01 CST 2013 Requests fulfilled: 9155
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:35:01 CST 2013 Requests fulfilled: 9199
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:36:01 CST 2013 Requests fulfilled: 9245
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:37:01 CST 2013 Requests fulfilled: 9297
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:38:01 CST 2013 Requests fulfilled: 9350
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:39:01 CST 2013 Requests fulfilled: 9401
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:40:01 CST 2013 Requests fulfilled: 9446
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:41:01 CST 2013 Requests fulfilled: 9499
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:42:01 CST 2013 Requests fulfilled: 9533
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:43:01 CST 2013 Requests fulfilled: 9579
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:44:01 CST 2013 Requests fulfilled: 9628
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:45:01 CST 2013 Requests fulfilled: 9667
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:46:01 CST 2013 Requests fulfilled: 9709
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:47:01 CST 2013 Requests fulfilled: 9761
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:48:01 CST 2013 Requests fulfilled: 9811
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:49:01 CST 2013 Requests fulfilled: 9860
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:50:01 CST 2013 Requests fulfilled: 9903
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:51:01 CST 2013 Requests fulfilled: 9946
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:52:01 CST 2013 Requests fulfilled: 9986
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:53:01 CST 2013 Requests fulfilled: 10029
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:54:01 CST 2013 Requests fulfilled: 10082
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:55:01 CST 2013 Requests fulfilled: 10135
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:56:01 CST 2013 Requests fulfilled: 10190
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:57:01 CST 2013 Requests fulfilled: 10230
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:58:01 CST 2013 Requests fulfilled: 10272
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:59:01 CST 2013 Requests fulfilled: 10329
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:00:01 CST 2013 Requests fulfilled: 10377
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:01:01 CST 2013 Requests fulfilled: 10427
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:02:01 CST 2013 Requests fulfilled: 10471
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:03:01 CST 2013 Requests fulfilled: 10520
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:04:01 CST 2013 Requests fulfilled: 10569
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:05:01 CST 2013 Requests fulfilled: 10615
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:06:01 CST 2013 Requests fulfilled: 10655
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:07:01 CST 2013 Requests fulfilled: 10708
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:08:01 CST 2013 Requests fulfilled: 10748
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:09:01 CST 2013 Requests fulfilled: 10792
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:10:01 CST 2013 Requests fulfilled: 10834
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:11:01 CST 2013 Requests fulfilled: 10881
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:12:01 CST 2013 Requests fulfilled: 10924
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:13:01 CST 2013 Requests fulfilled: 10969
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:14:01 CST 2013 Requests fulfilled: 11010
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:15:01 CST 2013 Requests fulfilled: 11070
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:16:01 CST 2013 Requests fulfilled: 11121
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:17:01 CST 2013 Requests fulfilled: 11160
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:18:01 CST 2013 Requests fulfilled: 11214
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:19:01 CST 2013 Requests fulfilled: 11259
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:20:01 CST 2013 Requests fulfilled: 11304
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:21:01 CST 2013 Requests fulfilled: 11346
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:22:01 CST 2013 Requests fulfilled: 11392
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:23:01 CST 2013 Requests fulfilled: 11442
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:24:01 CST 2013 Requests fulfilled: 11486
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:25:01 CST 2013 Requests fulfilled: 11529
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:26:01 CST 2013 Requests fulfilled: 11580
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:27:01 CST 2013 Requests fulfilled: 11644
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:28:01 CST 2013 Requests fulfilled: 11690
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:29:01 CST 2013 Requests fulfilled: 11740
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:30:01 CST 2013 Requests fulfilled: 11794
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:31:01 CST 2013 Requests fulfilled: 11839
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:32:01 CST 2013 Requests fulfilled: 11879
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:33:01 CST 2013 Requests fulfilled: 11925
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:34:01 CST 2013 Requests fulfilled: 11966
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:35:01 CST 2013 Requests fulfilled: 12006
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:36:01 CST 2013 Requests fulfilled: 12058
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:37:01 CST 2013 Requests fulfilled: 12100
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:38:01 CST 2013 Requests fulfilled: 12148
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:39:01 CST 2013 Requests fulfilled: 12194
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:40:01 CST 2013 Requests fulfilled: 12248
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:41:01 CST 2013 Requests fulfilled: 12295
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:42:01 CST 2013 Requests fulfilled: 12341
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:43:01 CST 2013 Requests fulfilled: 12384
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:44:01 CST 2013 Requests fulfilled: 12421
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:45:01 CST 2013 Requests fulfilled: 12462
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:46:01 CST 2013 Requests fulfilled: 12510
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:47:01 CST 2013 Requests fulfilled: 12560
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:48:01 CST 2013 Requests fulfilled: 12606
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:49:01 CST 2013 Requests fulfilled: 12664
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:50:01 CST 2013 Requests fulfilled: 12715
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:51:01 CST 2013 Requests fulfilled: 12760
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:52:01 CST 2013 Requests fulfilled: 12810
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:53:01 CST 2013 Requests fulfilled: 12859
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:54:01 CST 2013 Requests fulfilled: 12898
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:55:01 CST 2013 Requests fulfilled: 12943
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:56:01 CST 2013 Requests fulfilled: 13001
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:57:01 CST 2013 Requests fulfilled: 13045
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:58:01 CST 2013 Requests fulfilled: 13085
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:59:01 CST 2013 Requests fulfilled: 13135
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:00:01 CST 2013 Requests fulfilled: 13195
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:01:01 CST 2013 Requests fulfilled: 13240
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:02:01 CST 2013 Requests fulfilled: 13287
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:03:01 CST 2013 Requests fulfilled: 13333
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:04:01 CST 2013 Requests fulfilled: 13378
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:05:01 CST 2013 Requests fulfilled: 13437
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:06:01 CST 2013 Requests fulfilled: 13495
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:07:01 CST 2013 Requests fulfilled: 13536
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:08:01 CST 2013 Requests fulfilled: 13572
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:09:01 CST 2013 Requests fulfilled: 13628
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:10:01 CST 2013 Requests fulfilled: 13688
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:11:01 CST 2013 Requests fulfilled: 13740
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:12:01 CST 2013 Requests fulfilled: 13784
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:13:01 CST 2013 Requests fulfilled: 13832
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:14:01 CST 2013 Requests fulfilled: 13880
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:15:01 CST 2013 Requests fulfilled: 13921
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:16:01 CST 2013 Requests fulfilled: 13966
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:17:01 CST 2013 Requests fulfilled: 14011
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:18:01 CST 2013 Requests fulfilled: 14045
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:19:01 CST 2013 Requests fulfilled: 14106
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:20:01 CST 2013 Requests fulfilled: 14152
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:21:01 CST 2013 Requests fulfilled: 14189
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:22:01 CST 2013 Requests fulfilled: 14238
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:23:01 CST 2013 Requests fulfilled: 14287
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:24:01 CST 2013 Requests fulfilled: 14324
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:25:01 CST 2013 Requests fulfilled: 14365
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:26:01 CST 2013 Requests fulfilled: 14405
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:27:01 CST 2013 Requests fulfilled: 14454
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:28:01 CST 2013 Requests fulfilled: 14508
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:29:01 CST 2013 Requests fulfilled: 14554
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:30:01 CST 2013 Requests fulfilled: 14606
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:31:01 CST 2013 Requests fulfilled: 14648
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:32:01 CST 2013 Requests fulfilled: 14700
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:33:01 CST 2013 Requests fulfilled: 14745
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:34:01 CST 2013 Requests fulfilled: 14793
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:35:01 CST 2013 Requests fulfilled: 14841
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:36:01 CST 2013 Requests fulfilled: 14886
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:37:01 CST 2013 Requests fulfilled: 14925
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:38:01 CST 2013 Requests fulfilled: 14980
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:39:01 CST 2013 Requests fulfilled: 15030
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:40:01 CST 2013 Requests fulfilled: 15081
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:41:01 CST 2013 Requests fulfilled: 15129
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:42:01 CST 2013 Requests fulfilled: 15174
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:43:01 CST 2013 Requests fulfilled: 15210
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:44:01 CST 2013 Requests fulfilled: 15254
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:45:01 CST 2013 Requests fulfilled: 15299
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:46:01 CST 2013 Requests fulfilled: 15344
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:47:01 CST 2013 Requests fulfilled: 15398
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:48:01 CST 2013 Requests fulfilled: 15452
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:49:01 CST 2013 Requests fulfilled: 15502
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:50:01 CST 2013 Requests fulfilled: 15548
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:51:01 CST 2013 Requests fulfilled: 15589
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:52:01 CST 2013 Requests fulfilled: 15635
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:53:01 CST 2013 Requests fulfilled: 15692
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:54:01 CST 2013 Requests fulfilled: 15752
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:55:01 CST 2013 Requests fulfilled: 15794
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:56:01 CST 2013 Requests fulfilled: 15840
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:57:01 CST 2013 Requests fulfilled: 15883
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:58:01 CST 2013 Requests fulfilled: 15934
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:59:01 CST 2013 Requests fulfilled: 15991
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:00:01 CST 2013 Requests fulfilled: 16030
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:01:01 CST 2013 Requests fulfilled: 16079
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:02:01 CST 2013 Requests fulfilled: 16139
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:03:01 CST 2013 Requests fulfilled: 16186
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:04:01 CST 2013 Requests fulfilled: 16229
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:05:01 CST 2013 Requests fulfilled: 16278
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:06:01 CST 2013 Requests fulfilled: 16325
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:07:01 CST 2013 Requests fulfilled: 16365
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:08:01 CST 2013 Requests fulfilled: 16419
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:09:01 CST 2013 Requests fulfilled: 16456
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:10:01 CST 2013 Requests fulfilled: 16511
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:11:01 CST 2013 Requests fulfilled: 16561
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:12:01 CST 2013 Requests fulfilled: 16610
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:13:01 CST 2013 Requests fulfilled: 16656
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:14:01 CST 2013 Requests fulfilled: 16694
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:15:01 CST 2013 Requests fulfilled: 16748
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:16:01 CST 2013 Requests fulfilled: 16798
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:17:01 CST 2013 Requests fulfilled: 16834
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:18:01 CST 2013 Requests fulfilled: 16880
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:19:01 CST 2013 Requests fulfilled: 16934
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:20:01 CST 2013 Requests fulfilled: 16995
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:21:01 CST 2013 Requests fulfilled: 17044
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:22:01 CST 2013 Requests fulfilled: 17080
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:23:01 CST 2013 Requests fulfilled: 17129
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:24:01 CST 2013 Requests fulfilled: 17174
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:25:01 CST 2013 Requests fulfilled: 17236
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:26:01 CST 2013 Requests fulfilled: 17272
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:27:01 CST 2013 Requests fulfilled: 17312
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:28:01 CST 2013 Requests fulfilled: 17349
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:29:01 CST 2013 Requests fulfilled: 17393
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:30:01 CST 2013 Requests fulfilled: 17447
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:31:01 CST 2013 Requests fulfilled: 17497
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:32:01 CST 2013 Requests fulfilled: 17545
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:33:01 CST 2013 Requests fulfilled: 17601
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:34:01 CST 2013 Requests fulfilled: 17647
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:35:01 CST 2013 Requests fulfilled: 17696
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:36:01 CST 2013 Requests fulfilled: 17740
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:37:01 CST 2013 Requests fulfilled: 17790
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:38:01 CST 2013 Requests fulfilled: 17835
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:39:01 CST 2013 Requests fulfilled: 17874
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:40:01 CST 2013 Requests fulfilled: 17927
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:41:01 CST 2013 Requests fulfilled: 17969
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:42:01 CST 2013 Requests fulfilled: 18015
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:43:01 CST 2013 Requests fulfilled: 18065
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:44:01 CST 2013 Requests fulfilled: 18107
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:45:01 CST 2013 Requests fulfilled: 18153
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:46:01 CST 2013 Requests fulfilled: 18202
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:47:01 CST 2013 Requests fulfilled: 18244
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:48:01 CST 2013 Requests fulfilled: 18292
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:49:01 CST 2013 Requests fulfilled: 18338
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:50:01 CST 2013 Requests fulfilled: 18380
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:51:01 CST 2013 Requests fulfilled: 18419
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:52:01 CST 2013 Requests fulfilled: 18472
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:53:01 CST 2013 Requests fulfilled: 18519
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:54:01 CST 2013 Requests fulfilled: 18563
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:55:01 CST 2013 Requests fulfilled: 18620
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:56:01 CST 2013 Requests fulfilled: 18655
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:57:01 CST 2013 Requests fulfilled: 18710
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:58:01 CST 2013 Requests fulfilled: 18762
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:59:01 CST 2013 Requests fulfilled: 18805
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:00:01 CST 2013 Requests fulfilled: 18845
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:01:01 CST 2013 Requests fulfilled: 18893
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:02:01 CST 2013 Requests fulfilled: 18934
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:03:01 CST 2013 Requests fulfilled: 18975
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:04:01 CST 2013 Requests fulfilled: 19025
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:05:01 CST 2013 Requests fulfilled: 19085
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:06:01 CST 2013 Requests fulfilled: 19144
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:07:01 CST 2013 Requests fulfilled: 19192
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:08:01 CST 2013 Requests fulfilled: 19232
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:09:01 CST 2013 Requests fulfilled: 19277
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:10:01 CST 2013 Requests fulfilled: 19320
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:11:01 CST 2013 Requests fulfilled: 19366
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:12:01 CST 2013 Requests fulfilled: 19411
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:13:01 CST 2013 Requests fulfilled: 19455
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:14:01 CST 2013 Requests fulfilled: 19510
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:15:01 CST 2013 Requests fulfilled: 19558
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:16:01 CST 2013 Requests fulfilled: 19590
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:17:01 CST 2013 Requests fulfilled: 19628
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:18:01 CST 2013 Requests fulfilled: 19666
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:19:01 CST 2013 Requests fulfilled: 19722
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:20:01 CST 2013 Requests fulfilled: 19758
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:21:01 CST 2013 Requests fulfilled: 19806
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:22:01 CST 2013 Requests fulfilled: 19859
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:23:01 CST 2013 Requests fulfilled: 19899
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:24:01 CST 2013 Requests fulfilled: 19946
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:25:01 CST 2013 Requests fulfilled: 20008
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:26:01 CST 2013 Requests fulfilled: 20047
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:27:01 CST 2013 Requests fulfilled: 20101
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:28:01 CST 2013 Requests fulfilled: 20147
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:29:01 CST 2013 Requests fulfilled: 20195
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:30:01 CST 2013 Requests fulfilled: 20242
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:31:01 CST 2013 Requests fulfilled: 20287
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:32:01 CST 2013 Requests fulfilled: 20328
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:33:01 CST 2013 Requests fulfilled: 20365
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:34:01 CST 2013 Requests fulfilled: 20418
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:35:01 CST 2013 Requests fulfilled: 20467
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:36:01 CST 2013 Requests fulfilled: 20515
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:37:01 CST 2013 Requests fulfilled: 20569
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:38:01 CST 2013 Requests fulfilled: 20608
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:39:01 CST 2013 Requests fulfilled: 20661
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:40:01 CST 2013 Requests fulfilled: 20724
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:41:01 CST 2013 Requests fulfilled: 20769
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:42:01 CST 2013 Requests fulfilled: 20807
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:43:01 CST 2013 Requests fulfilled: 20846
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:44:01 CST 2013 Requests fulfilled: 20894
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:45:01 CST 2013 Requests fulfilled: 20937
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:46:01 CST 2013 Requests fulfilled: 20983
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:47:01 CST 2013 Requests fulfilled: 21029
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:48:01 CST 2013 Requests fulfilled: 21069
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:49:01 CST 2013 Requests fulfilled: 21106
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:50:01 CST 2013 Requests fulfilled: 21157
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:51:01 CST 2013 Requests fulfilled: 21205
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:52:01 CST 2013 Requests fulfilled: 21255
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:53:01 CST 2013 Requests fulfilled: 21298
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:54:01 CST 2013 Requests fulfilled: 21353
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:55:01 CST 2013 Requests fulfilled: 21399
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:56:01 CST 2013 Requests fulfilled: 21448
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:57:01 CST 2013 Requests fulfilled: 21494
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:58:01 CST 2013 Requests fulfilled: 21541
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:59:01 CST 2013 Requests fulfilled: 21582
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:00:01 CST 2013 Requests fulfilled: 21628
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:01:01 CST 2013 Requests fulfilled: 21665
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:02:01 CST 2013 Requests fulfilled: 21700
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:03:01 CST 2013 Requests fulfilled: 21739
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:04:01 CST 2013 Requests fulfilled: 21789
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:05:01 CST 2013 Requests fulfilled: 21835
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:06:01 CST 2013 Requests fulfilled: 21879
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:07:01 CST 2013 Requests fulfilled: 21919
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:08:01 CST 2013 Requests fulfilled: 21957
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:09:01 CST 2013 Requests fulfilled: 22010
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:10:01 CST 2013 Requests fulfilled: 22054
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:11:01 CST 2013 Requests fulfilled: 22102
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:12:01 CST 2013 Requests fulfilled: 22150
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:13:01 CST 2013 Requests fulfilled: 22199
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:14:01 CST 2013 Requests fulfilled: 22249
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:15:01 CST 2013 Requests fulfilled: 22284
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:16:01 CST 2013 Requests fulfilled: 22317
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:17:01 CST 2013 Requests fulfilled: 22378
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:18:01 CST 2013 Requests fulfilled: 22429
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:19:01 CST 2013 Requests fulfilled: 22468
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:20:01 CST 2013 Requests fulfilled: 22500
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:21:01 CST 2013 Requests fulfilled: 22544
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:22:01 CST 2013 Requests fulfilled: 22593
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:23:01 CST 2013 Requests fulfilled: 22655
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:24:01 CST 2013 Requests fulfilled: 22705
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:25:01 CST 2013 Requests fulfilled: 22747
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:26:01 CST 2013 Requests fulfilled: 22784
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:27:01 CST 2013 Requests fulfilled: 22825
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:28:01 CST 2013 Requests fulfilled: 22866
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:29:01 CST 2013 Requests fulfilled: 22902
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:30:01 CST 2013 Requests fulfilled: 22942
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:31:01 CST 2013 Requests fulfilled: 22984
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:32:01 CST 2013 Requests fulfilled: 23025
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:33:01 CST 2013 Requests fulfilled: 23077
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:34:01 CST 2013 Requests fulfilled: 23132
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:35:01 CST 2013 Requests fulfilled: 23178
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:36:01 CST 2013 Requests fulfilled: 23225
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:37:01 CST 2013 Requests fulfilled: 23258
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:38:01 CST 2013 Requests fulfilled: 23300
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:39:01 CST 2013 Requests fulfilled: 23353
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:40:01 CST 2013 Requests fulfilled: 23395
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:41:01 CST 2013 Requests fulfilled: 23448
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:42:01 CST 2013 Requests fulfilled: 23492
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:43:01 CST 2013 Requests fulfilled: 23538
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:44:01 CST 2013 Requests fulfilled: 23581
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:45:01 CST 2013 Requests fulfilled: 23639
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:46:01 CST 2013 Requests fulfilled: 23681
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:47:01 CST 2013 Requests fulfilled: 23727
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:48:01 CST 2013 Requests fulfilled: 23779
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:49:01 CST 2013 Requests fulfilled: 23818
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:50:01 CST 2013 Requests fulfilled: 23876
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:51:01 CST 2013 Requests fulfilled: 23920
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:52:01 CST 2013 Requests fulfilled: 23961
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:53:01 CST 2013 Requests fulfilled: 24000
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:54:01 CST 2013 Requests fulfilled: 24045
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:55:01 CST 2013 Requests fulfilled: 24097
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:56:01 CST 2013 Requests fulfilled: 24153
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:57:01 CST 2013 Requests fulfilled: 24200
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:58:01 CST 2013 Requests fulfilled: 24248
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:59:01 CST 2013 Requests fulfilled: 24290
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:00:01 CST 2013 Requests fulfilled: 24344
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:01:01 CST 2013 Requests fulfilled: 24381
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:02:01 CST 2013 Requests fulfilled: 24426
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:03:01 CST 2013 Requests fulfilled: 24468
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:04:01 CST 2013 Requests fulfilled: 24512
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:05:01 CST 2013 Requests fulfilled: 24555
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:06:01 CST 2013 Requests fulfilled: 24604
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:07:01 CST 2013 Requests fulfilled: 24663
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:08:01 CST 2013 Requests fulfilled: 24711
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:09:01 CST 2013 Requests fulfilled: 24747
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:10:01 CST 2013 Requests fulfilled: 24796
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:11:01 CST 2013 Requests fulfilled: 24838
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:12:01 CST 2013 Requests fulfilled: 24885
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:13:01 CST 2013 Requests fulfilled: 24925
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:14:01 CST 2013 Requests fulfilled: 24973
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:15:01 CST 2013 Requests fulfilled: 25029
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:16:01 CST 2013 Requests fulfilled: 25076
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:17:01 CST 2013 Requests fulfilled: 25131
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:18:01 CST 2013 Requests fulfilled: 25164
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:19:01 CST 2013 Requests fulfilled: 25210
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:20:01 CST 2013 Requests fulfilled: 25257
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:21:01 CST 2013 Requests fulfilled: 25303
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:22:01 CST 2013 Requests fulfilled: 25340
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:23:01 CST 2013 Requests fulfilled: 25376
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:24:01 CST 2013 Requests fulfilled: 25418
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:25:01 CST 2013 Requests fulfilled: 25465
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:26:01 CST 2013 Requests fulfilled: 25513
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:27:01 CST 2013 Requests fulfilled: 25553
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:28:01 CST 2013 Requests fulfilled: 25601
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:29:01 CST 2013 Requests fulfilled: 25650
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:30:01 CST 2013 Requests fulfilled: 25697
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:31:01 CST 2013 Requests fulfilled: 25740
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:32:01 CST 2013 Requests fulfilled: 25786
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:33:01 CST 2013 Requests fulfilled: 25838
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:34:01 CST 2013 Requests fulfilled: 25890
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:35:01 CST 2013 Requests fulfilled: 25939
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:36:01 CST 2013 Requests fulfilled: 25982
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:37:01 CST 2013 Requests fulfilled: 26018
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:38:01 CST 2013 Requests fulfilled: 26059
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:39:01 CST 2013 Requests fulfilled: 26119
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:40:01 CST 2013 Requests fulfilled: 26166
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:41:01 CST 2013 Requests fulfilled: 26213
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:42:01 CST 2013 Requests fulfilled: 26261
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:43:01 CST 2013 Requests fulfilled: 26307
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:44:01 CST 2013 Requests fulfilled: 26350
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:45:01 CST 2013 Requests fulfilled: 26398
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:46:01 CST 2013 Requests fulfilled: 26441
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:47:01 CST 2013 Requests fulfilled: 26488
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:48:01 CST 2013 Requests fulfilled: 26530
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:49:01 CST 2013 Requests fulfilled: 26583
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:50:01 CST 2013 Requests fulfilled: 26629
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:51:01 CST 2013 Requests fulfilled: 26675
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:52:01 CST 2013 Requests fulfilled: 26723
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:53:01 CST 2013 Requests fulfilled: 26780
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:54:01 CST 2013 Requests fulfilled: 26831
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:55:01 CST 2013 Requests fulfilled: 26869
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:56:01 CST 2013 Requests fulfilled: 26910
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:57:01 CST 2013 Requests fulfilled: 26948
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:58:01 CST 2013 Requests fulfilled: 26996
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:59:01 CST 2013 Requests fulfilled: 27041
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:00:01 CST 2013 Requests fulfilled: 27086
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:01:01 CST 2013 Requests fulfilled: 27138
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:02:01 CST 2013 Requests fulfilled: 27178
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:03:01 CST 2013 Requests fulfilled: 27216
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:04:01 CST 2013 Requests fulfilled: 27258
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:05:01 CST 2013 Requests fulfilled: 27307
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:06:01 CST 2013 Requests fulfilled: 27373
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:07:01 CST 2013 Requests fulfilled: 27410
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:08:01 CST 2013 Requests fulfilled: 27447
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:09:01 CST 2013 Requests fulfilled: 27484
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:10:01 CST 2013 Requests fulfilled: 27537
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:11:01 CST 2013 Requests fulfilled: 27586
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:12:01 CST 2013 Requests fulfilled: 27629
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:13:01 CST 2013 Requests fulfilled: 27667
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:14:01 CST 2013 Requests fulfilled: 27724
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:15:01 CST 2013 Requests fulfilled: 27772
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:16:01 CST 2013 Requests fulfilled: 27819
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:17:01 CST 2013 Requests fulfilled: 27855
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:18:01 CST 2013 Requests fulfilled: 27892
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:19:01 CST 2013 Requests fulfilled: 27933
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:20:01 CST 2013 Requests fulfilled: 27982
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:21:01 CST 2013 Requests fulfilled: 28023
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:22:01 CST 2013 Requests fulfilled: 28070
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:23:01 CST 2013 Requests fulfilled: 28126
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:24:01 CST 2013 Requests fulfilled: 28166
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:25:01 CST 2013 Requests fulfilled: 28217
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:26:01 CST 2013 Requests fulfilled: 28268
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:27:01 CST 2013 Requests fulfilled: 28317
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:28:01 CST 2013 Requests fulfilled: 28361
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:29:01 CST 2013 Requests fulfilled: 28398
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:30:01 CST 2013 Requests fulfilled: 28439
+[INFO] [ENVIRONMENT] Waiting for request generator
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:31:01 CST 2013 Requests fulfilled: 28486
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:32:01 CST 2013 Requests fulfilled: 28532
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:33:01 CST 2013 Requests fulfilled: 28579
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:34:01 CST 2013 Requests fulfilled: 28635
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:35:01 CST 2013 Requests fulfilled: 28685
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:36:01 CST 2013 Requests fulfilled: 28727
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:37:01 CST 2013 Requests fulfilled: 28779
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:38:01 CST 2013 Requests fulfilled: 28823
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:39:01 CST 2013 Requests fulfilled: 28874
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:40:01 CST 2013 Requests fulfilled: 28914
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:41:01 CST 2013 Requests fulfilled: 28954
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:42:01 CST 2013 Requests fulfilled: 29008
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:43:01 CST 2013 Requests fulfilled: 29059
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:44:01 CST 2013 Requests fulfilled: 29112
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:45:01 CST 2013 Requests fulfilled: 29166
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:46:01 CST 2013 Requests fulfilled: 29204
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:47:01 CST 2013 Requests fulfilled: 29245
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:48:01 CST 2013 Requests fulfilled: 29297
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:49:01 CST 2013 Requests fulfilled: 29340
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:50:01 CST 2013 Requests fulfilled: 29382
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:51:01 CST 2013 Requests fulfilled: 29431
+[INFO] [ENVIRONMENT] Waiting for request generator
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:52:01 CST 2013 Requests fulfilled: 29472
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:53:01 CST 2013 Requests fulfilled: 29521
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:54:01 CST 2013 Requests fulfilled: 29569
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:55:01 CST 2013 Requests fulfilled: 29608
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:56:01 CST 2013 Requests fulfilled: 29652
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:57:01 CST 2013 Requests fulfilled: 29704
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:58:01 CST 2013 Requests fulfilled: 29745
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:59:01 CST 2013 Requests fulfilled: 29784
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:00:01 CST 2013 Requests fulfilled: 29829
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:01:01 CST 2013 Requests fulfilled: 29868
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:02:01 CST 2013 Requests fulfilled: 29920
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:03:01 CST 2013 Requests fulfilled: 29979
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:04:01 CST 2013 Requests fulfilled: 30022
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:05:01 CST 2013 Requests fulfilled: 30074
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:06:01 CST 2013 Requests fulfilled: 30122
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:07:01 CST 2013 Requests fulfilled: 30177
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:08:01 CST 2013 Requests fulfilled: 30213
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:09:01 CST 2013 Requests fulfilled: 30253
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:10:01 CST 2013 Requests fulfilled: 30298
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:11:01 CST 2013 Requests fulfilled: 30332
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:12:01 CST 2013 Requests fulfilled: 30384
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:13:01 CST 2013 Requests fulfilled: 30423
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:14:01 CST 2013 Requests fulfilled: 30460
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:15:01 CST 2013 Requests fulfilled: 30507
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:16:01 CST 2013 Requests fulfilled: 30559
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:17:01 CST 2013 Requests fulfilled: 30616
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:18:01 CST 2013 Requests fulfilled: 30669
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:19:01 CST 2013 Requests fulfilled: 30707
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:20:01 CST 2013 Requests fulfilled: 30746
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:21:01 CST 2013 Requests fulfilled: 30795
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:22:01 CST 2013 Requests fulfilled: 30836
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:23:01 CST 2013 Requests fulfilled: 30887
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:24:01 CST 2013 Requests fulfilled: 30929
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:25:01 CST 2013 Requests fulfilled: 30973
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:26:01 CST 2013 Requests fulfilled: 31018
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:27:01 CST 2013 Requests fulfilled: 31057
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:28:01 CST 2013 Requests fulfilled: 31096
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:29:01 CST 2013 Requests fulfilled: 31149
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:30:01 CST 2013 Requests fulfilled: 31207
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:31:01 CST 2013 Requests fulfilled: 31250
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:32:01 CST 2013 Requests fulfilled: 31289
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:33:01 CST 2013 Requests fulfilled: 31333
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:34:01 CST 2013 Requests fulfilled: 31376
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:35:01 CST 2013 Requests fulfilled: 31424
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:36:01 CST 2013 Requests fulfilled: 31463
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:37:01 CST 2013 Requests fulfilled: 31507
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:38:01 CST 2013 Requests fulfilled: 31553
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:39:01 CST 2013 Requests fulfilled: 31602
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:40:01 CST 2013 Requests fulfilled: 31640
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:41:01 CST 2013 Requests fulfilled: 31685
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:42:01 CST 2013 Requests fulfilled: 31726
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:43:01 CST 2013 Requests fulfilled: 31772
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:44:01 CST 2013 Requests fulfilled: 31819
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:45:01 CST 2013 Requests fulfilled: 31860
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:46:01 CST 2013 Requests fulfilled: 31905
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:47:01 CST 2013 Requests fulfilled: 31948
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:48:01 CST 2013 Requests fulfilled: 32009
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:49:01 CST 2013 Requests fulfilled: 32044
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:50:01 CST 2013 Requests fulfilled: 32082
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:51:01 CST 2013 Requests fulfilled: 32127
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:52:01 CST 2013 Requests fulfilled: 32175
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:53:01 CST 2013 Requests fulfilled: 32224
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:54:01 CST 2013 Requests fulfilled: 32268
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:55:01 CST 2013 Requests fulfilled: 32310
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:56:01 CST 2013 Requests fulfilled: 32360
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:57:01 CST 2013 Requests fulfilled: 32396
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:58:01 CST 2013 Requests fulfilled: 32451
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:59:01 CST 2013 Requests fulfilled: 32506
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:00:01 CST 2013 Requests fulfilled: 32565
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:01:01 CST 2013 Requests fulfilled: 32621
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:02:01 CST 2013 Requests fulfilled: 32663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:03:01 CST 2013 Requests fulfilled: 32707
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:04:01 CST 2013 Requests fulfilled: 32746
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:05:01 CST 2013 Requests fulfilled: 32779
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:06:01 CST 2013 Requests fulfilled: 32828
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:07:01 CST 2013 Requests fulfilled: 32869
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:08:01 CST 2013 Requests fulfilled: 32920
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:09:01 CST 2013 Requests fulfilled: 32967
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:10:01 CST 2013 Requests fulfilled: 33016
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:11:01 CST 2013 Requests fulfilled: 33065
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:12:01 CST 2013 Requests fulfilled: 33111
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:13:01 CST 2013 Requests fulfilled: 33169
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:14:01 CST 2013 Requests fulfilled: 33216
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:15:01 CST 2013 Requests fulfilled: 33253
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:16:01 CST 2013 Requests fulfilled: 33294
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:17:01 CST 2013 Requests fulfilled: 33340
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:18:01 CST 2013 Requests fulfilled: 33383
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:19:01 CST 2013 Requests fulfilled: 33435
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:20:01 CST 2013 Requests fulfilled: 33484
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:21:01 CST 2013 Requests fulfilled: 33534
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:22:01 CST 2013 Requests fulfilled: 33567
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:23:01 CST 2013 Requests fulfilled: 33617
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:24:01 CST 2013 Requests fulfilled: 33681
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:25:01 CST 2013 Requests fulfilled: 33724
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:26:01 CST 2013 Requests fulfilled: 33777
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:27:01 CST 2013 Requests fulfilled: 33816
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:28:01 CST 2013 Requests fulfilled: 33863
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:29:01 CST 2013 Requests fulfilled: 33910
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:30:01 CST 2013 Requests fulfilled: 33950
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:31:01 CST 2013 Requests fulfilled: 34005
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:32:01 CST 2013 Requests fulfilled: 34040
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:33:01 CST 2013 Requests fulfilled: 34084
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:34:01 CST 2013 Requests fulfilled: 34125
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:35:01 CST 2013 Requests fulfilled: 34176
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:36:01 CST 2013 Requests fulfilled: 34219
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:37:01 CST 2013 Requests fulfilled: 34278
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:38:01 CST 2013 Requests fulfilled: 34327
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:39:01 CST 2013 Requests fulfilled: 34378
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:40:01 CST 2013 Requests fulfilled: 34420
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:41:01 CST 2013 Requests fulfilled: 34460
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:42:01 CST 2013 Requests fulfilled: 34510
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:43:01 CST 2013 Requests fulfilled: 34558
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:44:01 CST 2013 Requests fulfilled: 34606
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:45:01 CST 2013 Requests fulfilled: 34657
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:46:01 CST 2013 Requests fulfilled: 34710
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:47:01 CST 2013 Requests fulfilled: 34748
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:48:01 CST 2013 Requests fulfilled: 34791
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:49:01 CST 2013 Requests fulfilled: 34832
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:50:01 CST 2013 Requests fulfilled: 34888
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:51:01 CST 2013 Requests fulfilled: 34932
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:52:01 CST 2013 Requests fulfilled: 34970
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:53:01 CST 2013 Requests fulfilled: 35037
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:54:01 CST 2013 Requests fulfilled: 35092
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:55:01 CST 2013 Requests fulfilled: 35131
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:56:01 CST 2013 Requests fulfilled: 35172
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:57:01 CST 2013 Requests fulfilled: 35223
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:58:01 CST 2013 Requests fulfilled: 35282
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:59:01 CST 2013 Requests fulfilled: 35331
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:00:01 CST 2013 Requests fulfilled: 35372
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:01:01 CST 2013 Requests fulfilled: 35413
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:02:01 CST 2013 Requests fulfilled: 35460
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:03:01 CST 2013 Requests fulfilled: 35504
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:04:01 CST 2013 Requests fulfilled: 35545
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:05:01 CST 2013 Requests fulfilled: 35602
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:06:01 CST 2013 Requests fulfilled: 35654
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:07:01 CST 2013 Requests fulfilled: 35701
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:08:01 CST 2013 Requests fulfilled: 35749
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:09:01 CST 2013 Requests fulfilled: 35805
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:10:01 CST 2013 Requests fulfilled: 35845
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:11:01 CST 2013 Requests fulfilled: 35895
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:12:01 CST 2013 Requests fulfilled: 35942
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:13:01 CST 2013 Requests fulfilled: 35983
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:14:01 CST 2013 Requests fulfilled: 36027
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:15:01 CST 2013 Requests fulfilled: 36066
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:16:01 CST 2013 Requests fulfilled: 36096
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:17:01 CST 2013 Requests fulfilled: 36139
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:18:01 CST 2013 Requests fulfilled: 36192
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:19:01 CST 2013 Requests fulfilled: 36240
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:20:01 CST 2013 Requests fulfilled: 36295
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:21:01 CST 2013 Requests fulfilled: 36352
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:22:01 CST 2013 Requests fulfilled: 36395
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:23:01 CST 2013 Requests fulfilled: 36445
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:24:01 CST 2013 Requests fulfilled: 36492
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:25:01 CST 2013 Requests fulfilled: 36534
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:26:01 CST 2013 Requests fulfilled: 36575
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:27:01 CST 2013 Requests fulfilled: 36624
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:28:01 CST 2013 Requests fulfilled: 36669
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:29:01 CST 2013 Requests fulfilled: 36714
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:30:01 CST 2013 Requests fulfilled: 36766
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:31:01 CST 2013 Requests fulfilled: 36809
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:32:01 CST 2013 Requests fulfilled: 36854
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:33:01 CST 2013 Requests fulfilled: 36894
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:34:01 CST 2013 Requests fulfilled: 36933
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:35:01 CST 2013 Requests fulfilled: 36980
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:36:01 CST 2013 Requests fulfilled: 37034
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:37:01 CST 2013 Requests fulfilled: 37074
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:38:01 CST 2013 Requests fulfilled: 37121
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:39:01 CST 2013 Requests fulfilled: 37169
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:40:01 CST 2013 Requests fulfilled: 37217
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:41:01 CST 2013 Requests fulfilled: 37262
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:42:01 CST 2013 Requests fulfilled: 37306
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:43:01 CST 2013 Requests fulfilled: 37357
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:44:01 CST 2013 Requests fulfilled: 37404
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:45:01 CST 2013 Requests fulfilled: 37451
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:46:01 CST 2013 Requests fulfilled: 37499
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:47:01 CST 2013 Requests fulfilled: 37546
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:48:01 CST 2013 Requests fulfilled: 37588
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:49:01 CST 2013 Requests fulfilled: 37618
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:50:01 CST 2013 Requests fulfilled: 37663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:51:01 CST 2013 Requests fulfilled: 37716
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:52:01 CST 2013 Requests fulfilled: 37774
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:53:01 CST 2013 Requests fulfilled: 37824
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:54:01 CST 2013 Requests fulfilled: 37863
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:55:01 CST 2013 Requests fulfilled: 37918
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:56:01 CST 2013 Requests fulfilled: 37953
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:57:01 CST 2013 Requests fulfilled: 37995
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:58:01 CST 2013 Requests fulfilled: 38038
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:59:01 CST 2013 Requests fulfilled: 38088
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:00:01 CST 2013 Requests fulfilled: 38135
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:01:01 CST 2013 Requests fulfilled: 38181
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:02:01 CST 2013 Requests fulfilled: 38235
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:03:01 CST 2013 Requests fulfilled: 38289
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:04:01 CST 2013 Requests fulfilled: 38321
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:05:01 CST 2013 Requests fulfilled: 38364
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:06:01 CST 2013 Requests fulfilled: 38399
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:07:01 CST 2013 Requests fulfilled: 38449
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:08:01 CST 2013 Requests fulfilled: 38493
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:09:01 CST 2013 Requests fulfilled: 38539
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:10:01 CST 2013 Requests fulfilled: 38590
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:11:01 CST 2013 Requests fulfilled: 38642
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:12:01 CST 2013 Requests fulfilled: 38685
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:13:01 CST 2013 Requests fulfilled: 38731
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:14:01 CST 2013 Requests fulfilled: 38785
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:15:01 CST 2013 Requests fulfilled: 38824
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:16:01 CST 2013 Requests fulfilled: 38880
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:17:01 CST 2013 Requests fulfilled: 38916
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:18:01 CST 2013 Requests fulfilled: 38956
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:19:01 CST 2013 Requests fulfilled: 39007
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:20:01 CST 2013 Requests fulfilled: 39046
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:21:01 CST 2013 Requests fulfilled: 39094
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:22:01 CST 2013 Requests fulfilled: 39139
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:23:01 CST 2013 Requests fulfilled: 39176
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:24:01 CST 2013 Requests fulfilled: 39224
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:25:01 CST 2013 Requests fulfilled: 39273
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:26:01 CST 2013 Requests fulfilled: 39320
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:27:01 CST 2013 Requests fulfilled: 39363
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:28:01 CST 2013 Requests fulfilled: 39417
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:29:01 CST 2013 Requests fulfilled: 39476
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:30:01 CST 2013 Requests fulfilled: 39515
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:31:01 CST 2013 Requests fulfilled: 39558
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:32:01 CST 2013 Requests fulfilled: 39598
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:33:01 CST 2013 Requests fulfilled: 39651
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:34:01 CST 2013 Requests fulfilled: 39693
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:35:01 CST 2013 Requests fulfilled: 39750
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:36:01 CST 2013 Requests fulfilled: 39786
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:37:01 CST 2013 Requests fulfilled: 39823
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:38:01 CST 2013 Requests fulfilled: 39863
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:39:01 CST 2013 Requests fulfilled: 39897
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:40:01 CST 2013 Requests fulfilled: 39951
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:41:01 CST 2013 Requests fulfilled: 40006
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:42:01 CST 2013 Requests fulfilled: 40053
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:43:01 CST 2013 Requests fulfilled: 40089
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:44:01 CST 2013 Requests fulfilled: 40133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:45:01 CST 2013 Requests fulfilled: 40185
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:46:01 CST 2013 Requests fulfilled: 40233
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:47:01 CST 2013 Requests fulfilled: 40267
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:48:01 CST 2013 Requests fulfilled: 40310
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:49:01 CST 2013 Requests fulfilled: 40357
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:50:01 CST 2013 Requests fulfilled: 40395
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:51:01 CST 2013 Requests fulfilled: 40440
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:52:01 CST 2013 Requests fulfilled: 40491
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:53:01 CST 2013 Requests fulfilled: 40535
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:54:01 CST 2013 Requests fulfilled: 40594
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:55:01 CST 2013 Requests fulfilled: 40629
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:56:01 CST 2013 Requests fulfilled: 40674
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:57:01 CST 2013 Requests fulfilled: 40712
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:58:01 CST 2013 Requests fulfilled: 40753
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:59:01 CST 2013 Requests fulfilled: 40795
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:00:01 CST 2013 Requests fulfilled: 40838
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:01:01 CST 2013 Requests fulfilled: 40893
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:02:01 CST 2013 Requests fulfilled: 40941
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:03:01 CST 2013 Requests fulfilled: 40976
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:04:01 CST 2013 Requests fulfilled: 41022
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:05:01 CST 2013 Requests fulfilled: 41071
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:06:01 CST 2013 Requests fulfilled: 41122
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:07:01 CST 2013 Requests fulfilled: 41169
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:08:01 CST 2013 Requests fulfilled: 41208
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:09:01 CST 2013 Requests fulfilled: 41250
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:10:01 CST 2013 Requests fulfilled: 41302
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:11:01 CST 2013 Requests fulfilled: 41357
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:12:01 CST 2013 Requests fulfilled: 41396
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:13:01 CST 2013 Requests fulfilled: 41452
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:14:01 CST 2013 Requests fulfilled: 41490
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:15:01 CST 2013 Requests fulfilled: 41540
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:16:01 CST 2013 Requests fulfilled: 41586
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:17:01 CST 2013 Requests fulfilled: 41628
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:18:01 CST 2013 Requests fulfilled: 41670
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:19:01 CST 2013 Requests fulfilled: 41716
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:20:01 CST 2013 Requests fulfilled: 41754
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:21:01 CST 2013 Requests fulfilled: 41806
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:22:01 CST 2013 Requests fulfilled: 41849
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:23:01 CST 2013 Requests fulfilled: 41903
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:24:01 CST 2013 Requests fulfilled: 41943
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:25:01 CST 2013 Requests fulfilled: 41983
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:26:01 CST 2013 Requests fulfilled: 42024
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:27:01 CST 2013 Requests fulfilled: 42071
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:28:01 CST 2013 Requests fulfilled: 42120
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:29:01 CST 2013 Requests fulfilled: 42162
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:30:01 CST 2013 Requests fulfilled: 42215
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:31:01 CST 2013 Requests fulfilled: 42262
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:32:01 CST 2013 Requests fulfilled: 42311
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:33:01 CST 2013 Requests fulfilled: 42362
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:34:01 CST 2013 Requests fulfilled: 42412
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:35:01 CST 2013 Requests fulfilled: 42450
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:36:01 CST 2013 Requests fulfilled: 42499
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:37:01 CST 2013 Requests fulfilled: 42552
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:38:01 CST 2013 Requests fulfilled: 42596
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:39:01 CST 2013 Requests fulfilled: 42643
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:40:01 CST 2013 Requests fulfilled: 42686
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:41:01 CST 2013 Requests fulfilled: 42746
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:42:01 CST 2013 Requests fulfilled: 42788
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:43:01 CST 2013 Requests fulfilled: 42824
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:44:01 CST 2013 Requests fulfilled: 42873
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:45:01 CST 2013 Requests fulfilled: 42910
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:46:01 CST 2013 Requests fulfilled: 42956
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:47:01 CST 2013 Requests fulfilled: 43003
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:48:01 CST 2013 Requests fulfilled: 43055
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:49:01 CST 2013 Requests fulfilled: 43091
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:50:01 CST 2013 Requests fulfilled: 43136
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:51:01 CST 2013 Requests fulfilled: 43183
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:52:01 CST 2013 Requests fulfilled: 43243
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:53:01 CST 2013 Requests fulfilled: 43281
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:54:01 CST 2013 Requests fulfilled: 43320
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:55:01 CST 2013 Requests fulfilled: 43365
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:56:01 CST 2013 Requests fulfilled: 43415
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:57:01 CST 2013 Requests fulfilled: 43459
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:58:01 CST 2013 Requests fulfilled: 43498
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 03:59:01 CST 2013 Requests fulfilled: 43552
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:00:01 CST 2013 Requests fulfilled: 43599
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:01:01 CST 2013 Requests fulfilled: 43641
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:02:01 CST 2013 Requests fulfilled: 43675
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:03:01 CST 2013 Requests fulfilled: 43725
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:04:01 CST 2013 Requests fulfilled: 43769
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:05:01 CST 2013 Requests fulfilled: 43814
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:06:01 CST 2013 Requests fulfilled: 43863
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:07:01 CST 2013 Requests fulfilled: 43911
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:08:01 CST 2013 Requests fulfilled: 43958
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:09:01 CST 2013 Requests fulfilled: 43996
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:10:01 CST 2013 Requests fulfilled: 44047
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:11:01 CST 2013 Requests fulfilled: 44088
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:12:01 CST 2013 Requests fulfilled: 44120
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:13:01 CST 2013 Requests fulfilled: 44161
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:14:01 CST 2013 Requests fulfilled: 44214
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:15:01 CST 2013 Requests fulfilled: 44263
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:16:01 CST 2013 Requests fulfilled: 44313
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:17:01 CST 2013 Requests fulfilled: 44361
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:18:01 CST 2013 Requests fulfilled: 44407
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:19:01 CST 2013 Requests fulfilled: 44443
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:20:01 CST 2013 Requests fulfilled: 44488
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:21:01 CST 2013 Requests fulfilled: 44525
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:22:01 CST 2013 Requests fulfilled: 44573
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:23:01 CST 2013 Requests fulfilled: 44617
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:24:01 CST 2013 Requests fulfilled: 44658
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:25:01 CST 2013 Requests fulfilled: 44698
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:26:01 CST 2013 Requests fulfilled: 44743
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:27:01 CST 2013 Requests fulfilled: 44782
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:28:01 CST 2013 Requests fulfilled: 44827
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:29:01 CST 2013 Requests fulfilled: 44869
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:30:01 CST 2013 Requests fulfilled: 44917
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:31:01 CST 2013 Requests fulfilled: 44962
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:32:01 CST 2013 Requests fulfilled: 45012
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:33:01 CST 2013 Requests fulfilled: 45056
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:34:01 CST 2013 Requests fulfilled: 45101
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:35:01 CST 2013 Requests fulfilled: 45135
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:36:01 CST 2013 Requests fulfilled: 45188
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:37:01 CST 2013 Requests fulfilled: 45228
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:38:01 CST 2013 Requests fulfilled: 45269
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:39:01 CST 2013 Requests fulfilled: 45315
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:40:01 CST 2013 Requests fulfilled: 45358
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:41:01 CST 2013 Requests fulfilled: 45400
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:42:01 CST 2013 Requests fulfilled: 45440
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:43:01 CST 2013 Requests fulfilled: 45477
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:44:01 CST 2013 Requests fulfilled: 45528
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:45:01 CST 2013 Requests fulfilled: 45568
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:46:01 CST 2013 Requests fulfilled: 45613
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:47:01 CST 2013 Requests fulfilled: 45661
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:48:01 CST 2013 Requests fulfilled: 45706
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:49:01 CST 2013 Requests fulfilled: 45752
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:50:01 CST 2013 Requests fulfilled: 45806
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:51:01 CST 2013 Requests fulfilled: 45839
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:52:01 CST 2013 Requests fulfilled: 45882
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:53:01 CST 2013 Requests fulfilled: 45915
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:54:01 CST 2013 Requests fulfilled: 45956
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:55:01 CST 2013 Requests fulfilled: 46000
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:56:01 CST 2013 Requests fulfilled: 46048
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:57:01 CST 2013 Requests fulfilled: 46089
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:58:01 CST 2013 Requests fulfilled: 46137
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 04:59:01 CST 2013 Requests fulfilled: 46185
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:00:01 CST 2013 Requests fulfilled: 46218
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:01:01 CST 2013 Requests fulfilled: 46264
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:02:01 CST 2013 Requests fulfilled: 46319
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:03:01 CST 2013 Requests fulfilled: 46352
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:04:01 CST 2013 Requests fulfilled: 46401
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:05:01 CST 2013 Requests fulfilled: 46446
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:06:01 CST 2013 Requests fulfilled: 46496
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:07:01 CST 2013 Requests fulfilled: 46535
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:08:01 CST 2013 Requests fulfilled: 46576
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:09:01 CST 2013 Requests fulfilled: 46612
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:10:01 CST 2013 Requests fulfilled: 46656
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:11:01 CST 2013 Requests fulfilled: 46690
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:12:01 CST 2013 Requests fulfilled: 46749
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:13:01 CST 2013 Requests fulfilled: 46796
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:14:01 CST 2013 Requests fulfilled: 46836
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:15:01 CST 2013 Requests fulfilled: 46872
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:16:01 CST 2013 Requests fulfilled: 46924
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:17:01 CST 2013 Requests fulfilled: 46965
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:18:01 CST 2013 Requests fulfilled: 47013
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:19:01 CST 2013 Requests fulfilled: 47054
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:20:01 CST 2013 Requests fulfilled: 47087
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:21:01 CST 2013 Requests fulfilled: 47132
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:22:01 CST 2013 Requests fulfilled: 47170
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:23:01 CST 2013 Requests fulfilled: 47211
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:24:01 CST 2013 Requests fulfilled: 47258
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:25:01 CST 2013 Requests fulfilled: 47310
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:26:01 CST 2013 Requests fulfilled: 47354
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:27:01 CST 2013 Requests fulfilled: 47383
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:28:01 CST 2013 Requests fulfilled: 47424
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:29:01 CST 2013 Requests fulfilled: 47477
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:30:01 CST 2013 Requests fulfilled: 47524
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:31:01 CST 2013 Requests fulfilled: 47578
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:32:01 CST 2013 Requests fulfilled: 47613
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:33:01 CST 2013 Requests fulfilled: 47659
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:34:01 CST 2013 Requests fulfilled: 47692
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:35:01 CST 2013 Requests fulfilled: 47740
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:36:01 CST 2013 Requests fulfilled: 47786
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:37:01 CST 2013 Requests fulfilled: 47822
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:38:01 CST 2013 Requests fulfilled: 47863
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:39:01 CST 2013 Requests fulfilled: 47911
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:40:01 CST 2013 Requests fulfilled: 47952
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:41:01 CST 2013 Requests fulfilled: 47999
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:42:01 CST 2013 Requests fulfilled: 48060
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:43:01 CST 2013 Requests fulfilled: 48104
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:44:01 CST 2013 Requests fulfilled: 48142
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:45:01 CST 2013 Requests fulfilled: 48184
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:46:01 CST 2013 Requests fulfilled: 48225
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:47:01 CST 2013 Requests fulfilled: 48277
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:48:01 CST 2013 Requests fulfilled: 48313
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:49:01 CST 2013 Requests fulfilled: 48365
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:50:01 CST 2013 Requests fulfilled: 48414
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:51:01 CST 2013 Requests fulfilled: 48458
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:52:01 CST 2013 Requests fulfilled: 48499
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:53:01 CST 2013 Requests fulfilled: 48553
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:54:01 CST 2013 Requests fulfilled: 48581
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:55:01 CST 2013 Requests fulfilled: 48634
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:56:01 CST 2013 Requests fulfilled: 48675
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:57:01 CST 2013 Requests fulfilled: 48733
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:58:01 CST 2013 Requests fulfilled: 48773
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 05:59:01 CST 2013 Requests fulfilled: 48817
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:00:01 CST 2013 Requests fulfilled: 48856
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:01:01 CST 2013 Requests fulfilled: 48892
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:02:01 CST 2013 Requests fulfilled: 48935
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:03:01 CST 2013 Requests fulfilled: 48983
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:04:01 CST 2013 Requests fulfilled: 49022
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:05:01 CST 2013 Requests fulfilled: 49074
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:06:01 CST 2013 Requests fulfilled: 49112
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:07:01 CST 2013 Requests fulfilled: 49157
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:08:01 CST 2013 Requests fulfilled: 49192
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:09:01 CST 2013 Requests fulfilled: 49238
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:10:01 CST 2013 Requests fulfilled: 49295
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:11:01 CST 2013 Requests fulfilled: 49337
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:12:01 CST 2013 Requests fulfilled: 49376
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:13:01 CST 2013 Requests fulfilled: 49414
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:14:01 CST 2013 Requests fulfilled: 49448
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:15:01 CST 2013 Requests fulfilled: 49491
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:16:01 CST 2013 Requests fulfilled: 49537
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:17:01 CST 2013 Requests fulfilled: 49574
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:18:01 CST 2013 Requests fulfilled: 49631
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:19:01 CST 2013 Requests fulfilled: 49680
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:20:01 CST 2013 Requests fulfilled: 49717
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:21:01 CST 2013 Requests fulfilled: 49768
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:22:01 CST 2013 Requests fulfilled: 49817
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:23:01 CST 2013 Requests fulfilled: 49856
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:24:01 CST 2013 Requests fulfilled: 49899
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:25:01 CST 2013 Requests fulfilled: 49940
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:26:01 CST 2013 Requests fulfilled: 49990
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:27:01 CST 2013 Requests fulfilled: 50026
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:28:01 CST 2013 Requests fulfilled: 50060
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:29:01 CST 2013 Requests fulfilled: 50104
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:30:01 CST 2013 Requests fulfilled: 50147
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:31:01 CST 2013 Requests fulfilled: 50191
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:32:01 CST 2013 Requests fulfilled: 50223
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:33:01 CST 2013 Requests fulfilled: 50267
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:34:01 CST 2013 Requests fulfilled: 50320
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:35:01 CST 2013 Requests fulfilled: 50362
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:36:01 CST 2013 Requests fulfilled: 50406
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:37:01 CST 2013 Requests fulfilled: 50442
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:38:01 CST 2013 Requests fulfilled: 50480
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:39:01 CST 2013 Requests fulfilled: 50533
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:40:01 CST 2013 Requests fulfilled: 50574
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:41:01 CST 2013 Requests fulfilled: 50614
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:42:01 CST 2013 Requests fulfilled: 50656
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:43:01 CST 2013 Requests fulfilled: 50693
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:44:01 CST 2013 Requests fulfilled: 50744
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:45:01 CST 2013 Requests fulfilled: 50793
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:46:01 CST 2013 Requests fulfilled: 50842
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:47:01 CST 2013 Requests fulfilled: 50885
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:48:01 CST 2013 Requests fulfilled: 50917
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:49:01 CST 2013 Requests fulfilled: 50967
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:50:01 CST 2013 Requests fulfilled: 51009
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:51:01 CST 2013 Requests fulfilled: 51050
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:52:01 CST 2013 Requests fulfilled: 51092
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:53:01 CST 2013 Requests fulfilled: 51133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:54:01 CST 2013 Requests fulfilled: 51187
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:55:01 CST 2013 Requests fulfilled: 51230
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:56:01 CST 2013 Requests fulfilled: 51265
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:57:01 CST 2013 Requests fulfilled: 51302
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:58:01 CST 2013 Requests fulfilled: 51346
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 06:59:01 CST 2013 Requests fulfilled: 51393
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:00:01 CST 2013 Requests fulfilled: 51438
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:01:01 CST 2013 Requests fulfilled: 51477
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:02:01 CST 2013 Requests fulfilled: 51519
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:03:01 CST 2013 Requests fulfilled: 51562
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:04:01 CST 2013 Requests fulfilled: 51615
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:05:01 CST 2013 Requests fulfilled: 51650
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:06:01 CST 2013 Requests fulfilled: 51700
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:07:01 CST 2013 Requests fulfilled: 51738
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:08:01 CST 2013 Requests fulfilled: 51772
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:09:01 CST 2013 Requests fulfilled: 51824
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:10:01 CST 2013 Requests fulfilled: 51870
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:11:01 CST 2013 Requests fulfilled: 51914
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:12:01 CST 2013 Requests fulfilled: 51959
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:13:01 CST 2013 Requests fulfilled: 52011
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:14:01 CST 2013 Requests fulfilled: 52056
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:15:01 CST 2013 Requests fulfilled: 52091
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:16:01 CST 2013 Requests fulfilled: 52129
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:17:01 CST 2013 Requests fulfilled: 52179
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:18:01 CST 2013 Requests fulfilled: 52223
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:19:01 CST 2013 Requests fulfilled: 52260
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:20:01 CST 2013 Requests fulfilled: 52296
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:21:01 CST 2013 Requests fulfilled: 52342
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:22:01 CST 2013 Requests fulfilled: 52378
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:23:01 CST 2013 Requests fulfilled: 52415
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:24:01 CST 2013 Requests fulfilled: 52462
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:25:01 CST 2013 Requests fulfilled: 52507
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:26:01 CST 2013 Requests fulfilled: 52556
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:27:01 CST 2013 Requests fulfilled: 52591
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:28:01 CST 2013 Requests fulfilled: 52639
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:29:01 CST 2013 Requests fulfilled: 52680
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:30:01 CST 2013 Requests fulfilled: 52724
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:31:01 CST 2013 Requests fulfilled: 52767
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:32:01 CST 2013 Requests fulfilled: 52812
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:33:01 CST 2013 Requests fulfilled: 52860
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:34:01 CST 2013 Requests fulfilled: 52899
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:35:01 CST 2013 Requests fulfilled: 52939
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:36:01 CST 2013 Requests fulfilled: 52979
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:37:01 CST 2013 Requests fulfilled: 53016
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:38:01 CST 2013 Requests fulfilled: 53060
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:39:01 CST 2013 Requests fulfilled: 53115
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:40:01 CST 2013 Requests fulfilled: 53163
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:41:01 CST 2013 Requests fulfilled: 53205
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:42:01 CST 2013 Requests fulfilled: 53245
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:43:01 CST 2013 Requests fulfilled: 53283
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:44:01 CST 2013 Requests fulfilled: 53321
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:45:01 CST 2013 Requests fulfilled: 53358
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:46:01 CST 2013 Requests fulfilled: 53405
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:47:01 CST 2013 Requests fulfilled: 53449
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:48:01 CST 2013 Requests fulfilled: 53492
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:49:01 CST 2013 Requests fulfilled: 53540
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:50:01 CST 2013 Requests fulfilled: 53590
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:51:01 CST 2013 Requests fulfilled: 53639
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:52:01 CST 2013 Requests fulfilled: 53678
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:53:01 CST 2013 Requests fulfilled: 53721
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:54:01 CST 2013 Requests fulfilled: 53768
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:55:01 CST 2013 Requests fulfilled: 53809
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:56:01 CST 2013 Requests fulfilled: 53849
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:57:01 CST 2013 Requests fulfilled: 53879
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:58:01 CST 2013 Requests fulfilled: 53918
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 07:59:01 CST 2013 Requests fulfilled: 53964
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:00:01 CST 2013 Requests fulfilled: 54012
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:01:01 CST 2013 Requests fulfilled: 54055
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:02:01 CST 2013 Requests fulfilled: 54096
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:03:01 CST 2013 Requests fulfilled: 54146
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:04:01 CST 2013 Requests fulfilled: 54180
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:05:01 CST 2013 Requests fulfilled: 54226
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:06:01 CST 2013 Requests fulfilled: 54266
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:07:01 CST 2013 Requests fulfilled: 54313
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:08:01 CST 2013 Requests fulfilled: 54343
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:09:01 CST 2013 Requests fulfilled: 54388
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:10:01 CST 2013 Requests fulfilled: 54433
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:11:01 CST 2013 Requests fulfilled: 54469
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:12:01 CST 2013 Requests fulfilled: 54509
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:13:01 CST 2013 Requests fulfilled: 54549
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:14:01 CST 2013 Requests fulfilled: 54593
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:15:01 CST 2013 Requests fulfilled: 54635
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:16:01 CST 2013 Requests fulfilled: 54667
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:17:01 CST 2013 Requests fulfilled: 54715
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:18:01 CST 2013 Requests fulfilled: 54759
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:19:01 CST 2013 Requests fulfilled: 54792
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:20:01 CST 2013 Requests fulfilled: 54841
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:21:01 CST 2013 Requests fulfilled: 54883
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:22:01 CST 2013 Requests fulfilled: 54919
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:23:01 CST 2013 Requests fulfilled: 54957
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:24:01 CST 2013 Requests fulfilled: 54997
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:25:01 CST 2013 Requests fulfilled: 55053
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:26:01 CST 2013 Requests fulfilled: 55096
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:27:01 CST 2013 Requests fulfilled: 55134
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:28:01 CST 2013 Requests fulfilled: 55173
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:29:01 CST 2013 Requests fulfilled: 55216
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:30:01 CST 2013 Requests fulfilled: 55260
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:31:01 CST 2013 Requests fulfilled: 55309
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:32:01 CST 2013 Requests fulfilled: 55342
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:33:01 CST 2013 Requests fulfilled: 55383
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:34:01 CST 2013 Requests fulfilled: 55424
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:35:01 CST 2013 Requests fulfilled: 55478
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:36:01 CST 2013 Requests fulfilled: 55526
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:37:01 CST 2013 Requests fulfilled: 55562
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:38:01 CST 2013 Requests fulfilled: 55607
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:39:01 CST 2013 Requests fulfilled: 55635
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:40:01 CST 2013 Requests fulfilled: 55667
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:41:01 CST 2013 Requests fulfilled: 55721
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:42:01 CST 2013 Requests fulfilled: 55771
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:43:01 CST 2013 Requests fulfilled: 55818
+[INFO] [ENVIRONMENT] Done generating 87135 trip requests
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:44:01 CST 2013 Requests fulfilled: 55868
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:45:01 CST 2013 Requests fulfilled: 55900
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:46:01 CST 2013 Requests fulfilled: 55934
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:47:01 CST 2013 Requests fulfilled: 55976
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:48:01 CST 2013 Requests fulfilled: 56022
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:49:01 CST 2013 Requests fulfilled: 56062
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:50:01 CST 2013 Requests fulfilled: 56112
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:51:01 CST 2013 Requests fulfilled: 56155
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:52:01 CST 2013 Requests fulfilled: 56190
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:53:01 CST 2013 Requests fulfilled: 56235
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:54:01 CST 2013 Requests fulfilled: 56276
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:55:01 CST 2013 Requests fulfilled: 56314
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:56:01 CST 2013 Requests fulfilled: 56365
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:57:01 CST 2013 Requests fulfilled: 56418
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:58:01 CST 2013 Requests fulfilled: 56460
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 08:59:01 CST 2013 Requests fulfilled: 56502
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:00:01 CST 2013 Requests fulfilled: 56543
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:01:01 CST 2013 Requests fulfilled: 56584
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:02:01 CST 2013 Requests fulfilled: 56621
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:03:01 CST 2013 Requests fulfilled: 56669
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:04:01 CST 2013 Requests fulfilled: 56711
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:05:01 CST 2013 Requests fulfilled: 56747
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:06:01 CST 2013 Requests fulfilled: 56784
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:07:01 CST 2013 Requests fulfilled: 56830
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:08:01 CST 2013 Requests fulfilled: 56863
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:09:01 CST 2013 Requests fulfilled: 56902
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:10:01 CST 2013 Requests fulfilled: 56949
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:11:01 CST 2013 Requests fulfilled: 56985
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:12:01 CST 2013 Requests fulfilled: 57030
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:13:01 CST 2013 Requests fulfilled: 57082
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:14:01 CST 2013 Requests fulfilled: 57128
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:15:01 CST 2013 Requests fulfilled: 57169
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:16:01 CST 2013 Requests fulfilled: 57204
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:17:01 CST 2013 Requests fulfilled: 57252
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:18:01 CST 2013 Requests fulfilled: 57285
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:19:01 CST 2013 Requests fulfilled: 57327
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:20:01 CST 2013 Requests fulfilled: 57360
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:21:01 CST 2013 Requests fulfilled: 57392
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:22:01 CST 2013 Requests fulfilled: 57424
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:23:01 CST 2013 Requests fulfilled: 57479
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:24:01 CST 2013 Requests fulfilled: 57528
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:25:01 CST 2013 Requests fulfilled: 57584
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:26:01 CST 2013 Requests fulfilled: 57630
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:27:01 CST 2013 Requests fulfilled: 57664
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:28:01 CST 2013 Requests fulfilled: 57705
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:29:01 CST 2013 Requests fulfilled: 57749
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:30:01 CST 2013 Requests fulfilled: 57789
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:31:01 CST 2013 Requests fulfilled: 57825
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:32:01 CST 2013 Requests fulfilled: 57867
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:33:01 CST 2013 Requests fulfilled: 57912
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:34:01 CST 2013 Requests fulfilled: 57962
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:35:01 CST 2013 Requests fulfilled: 58003
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:36:01 CST 2013 Requests fulfilled: 58051
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:37:01 CST 2013 Requests fulfilled: 58092
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:38:01 CST 2013 Requests fulfilled: 58133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:39:01 CST 2013 Requests fulfilled: 58171
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:40:01 CST 2013 Requests fulfilled: 58203
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:41:01 CST 2013 Requests fulfilled: 58242
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:42:01 CST 2013 Requests fulfilled: 58288
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:43:01 CST 2013 Requests fulfilled: 58341
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:44:01 CST 2013 Requests fulfilled: 58376
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:45:01 CST 2013 Requests fulfilled: 58416
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:46:01 CST 2013 Requests fulfilled: 58450
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:47:01 CST 2013 Requests fulfilled: 58498
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:48:01 CST 2013 Requests fulfilled: 58549
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:49:01 CST 2013 Requests fulfilled: 58591
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:50:01 CST 2013 Requests fulfilled: 58632
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:51:01 CST 2013 Requests fulfilled: 58672
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:52:01 CST 2013 Requests fulfilled: 58712
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:53:01 CST 2013 Requests fulfilled: 58763
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:54:01 CST 2013 Requests fulfilled: 58802
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:55:01 CST 2013 Requests fulfilled: 58846
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:56:01 CST 2013 Requests fulfilled: 58875
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:57:01 CST 2013 Requests fulfilled: 58921
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:58:01 CST 2013 Requests fulfilled: 58960
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 09:59:01 CST 2013 Requests fulfilled: 59005
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:00:01 CST 2013 Requests fulfilled: 59051
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:01:01 CST 2013 Requests fulfilled: 59092
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:02:01 CST 2013 Requests fulfilled: 59130
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:03:01 CST 2013 Requests fulfilled: 59181
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:04:01 CST 2013 Requests fulfilled: 59232
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:05:01 CST 2013 Requests fulfilled: 59279
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:06:01 CST 2013 Requests fulfilled: 59323
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:07:01 CST 2013 Requests fulfilled: 59362
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:08:01 CST 2013 Requests fulfilled: 59404
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:09:01 CST 2013 Requests fulfilled: 59447
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:10:01 CST 2013 Requests fulfilled: 59491
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:11:01 CST 2013 Requests fulfilled: 59513
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:12:01 CST 2013 Requests fulfilled: 59555
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:13:01 CST 2013 Requests fulfilled: 59595
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:14:01 CST 2013 Requests fulfilled: 59642
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:15:01 CST 2013 Requests fulfilled: 59688
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:16:01 CST 2013 Requests fulfilled: 59726
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:17:01 CST 2013 Requests fulfilled: 59761
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:18:01 CST 2013 Requests fulfilled: 59801
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:19:01 CST 2013 Requests fulfilled: 59846
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:20:01 CST 2013 Requests fulfilled: 59888
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:21:01 CST 2013 Requests fulfilled: 59920
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:22:01 CST 2013 Requests fulfilled: 59965
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:23:01 CST 2013 Requests fulfilled: 60004
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:24:01 CST 2013 Requests fulfilled: 60050
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:25:01 CST 2013 Requests fulfilled: 60084
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:26:01 CST 2013 Requests fulfilled: 60129
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:27:01 CST 2013 Requests fulfilled: 60165
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:28:01 CST 2013 Requests fulfilled: 60206
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:29:01 CST 2013 Requests fulfilled: 60243
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:30:01 CST 2013 Requests fulfilled: 60284
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:31:01 CST 2013 Requests fulfilled: 60331
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:32:01 CST 2013 Requests fulfilled: 60378
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:33:01 CST 2013 Requests fulfilled: 60411
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:34:01 CST 2013 Requests fulfilled: 60445
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:35:01 CST 2013 Requests fulfilled: 60487
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:36:01 CST 2013 Requests fulfilled: 60526
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:37:01 CST 2013 Requests fulfilled: 60578
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:38:01 CST 2013 Requests fulfilled: 60621
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:39:01 CST 2013 Requests fulfilled: 60663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:40:01 CST 2013 Requests fulfilled: 60710
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:41:01 CST 2013 Requests fulfilled: 60751
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:42:01 CST 2013 Requests fulfilled: 60798
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:43:01 CST 2013 Requests fulfilled: 60841
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:44:01 CST 2013 Requests fulfilled: 60883
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:45:01 CST 2013 Requests fulfilled: 60919
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:46:01 CST 2013 Requests fulfilled: 60965
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:47:01 CST 2013 Requests fulfilled: 61007
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:48:01 CST 2013 Requests fulfilled: 61047
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:49:01 CST 2013 Requests fulfilled: 61088
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:50:01 CST 2013 Requests fulfilled: 61132
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:51:01 CST 2013 Requests fulfilled: 61175
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:52:01 CST 2013 Requests fulfilled: 61214
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:53:01 CST 2013 Requests fulfilled: 61254
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:54:01 CST 2013 Requests fulfilled: 61311
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:55:01 CST 2013 Requests fulfilled: 61357
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:56:01 CST 2013 Requests fulfilled: 61393
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:57:01 CST 2013 Requests fulfilled: 61432
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:58:01 CST 2013 Requests fulfilled: 61475
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 10:59:01 CST 2013 Requests fulfilled: 61512
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:00:01 CST 2013 Requests fulfilled: 61555
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:01:01 CST 2013 Requests fulfilled: 61590
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:02:01 CST 2013 Requests fulfilled: 61635
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:03:01 CST 2013 Requests fulfilled: 61681
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:04:01 CST 2013 Requests fulfilled: 61730
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:05:01 CST 2013 Requests fulfilled: 61770
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:06:01 CST 2013 Requests fulfilled: 61820
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:07:01 CST 2013 Requests fulfilled: 61856
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:08:01 CST 2013 Requests fulfilled: 61896
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:09:01 CST 2013 Requests fulfilled: 61947
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:10:01 CST 2013 Requests fulfilled: 61974
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:11:01 CST 2013 Requests fulfilled: 62012
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:12:01 CST 2013 Requests fulfilled: 62052
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:13:01 CST 2013 Requests fulfilled: 62107
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:14:01 CST 2013 Requests fulfilled: 62150
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:15:01 CST 2013 Requests fulfilled: 62191
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:16:01 CST 2013 Requests fulfilled: 62235
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:17:01 CST 2013 Requests fulfilled: 62279
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:18:01 CST 2013 Requests fulfilled: 62325
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:19:01 CST 2013 Requests fulfilled: 62364
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:20:01 CST 2013 Requests fulfilled: 62398
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:21:01 CST 2013 Requests fulfilled: 62436
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:22:01 CST 2013 Requests fulfilled: 62473
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:23:01 CST 2013 Requests fulfilled: 62513
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:24:01 CST 2013 Requests fulfilled: 62560
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:25:01 CST 2013 Requests fulfilled: 62605
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:26:01 CST 2013 Requests fulfilled: 62638
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:27:01 CST 2013 Requests fulfilled: 62682
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:28:01 CST 2013 Requests fulfilled: 62730
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:29:01 CST 2013 Requests fulfilled: 62774
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:30:01 CST 2013 Requests fulfilled: 62817
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:31:01 CST 2013 Requests fulfilled: 62861
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:32:01 CST 2013 Requests fulfilled: 62892
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:33:01 CST 2013 Requests fulfilled: 62928
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:34:01 CST 2013 Requests fulfilled: 62969
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:35:01 CST 2013 Requests fulfilled: 63023
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:36:01 CST 2013 Requests fulfilled: 63068
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:37:01 CST 2013 Requests fulfilled: 63102
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:38:01 CST 2013 Requests fulfilled: 63146
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:39:01 CST 2013 Requests fulfilled: 63190
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:40:01 CST 2013 Requests fulfilled: 63224
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:41:01 CST 2013 Requests fulfilled: 63267
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:42:01 CST 2013 Requests fulfilled: 63314
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:43:01 CST 2013 Requests fulfilled: 63354
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:44:01 CST 2013 Requests fulfilled: 63399
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:45:01 CST 2013 Requests fulfilled: 63437
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:46:01 CST 2013 Requests fulfilled: 63473
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:47:01 CST 2013 Requests fulfilled: 63501
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:48:01 CST 2013 Requests fulfilled: 63540
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:49:01 CST 2013 Requests fulfilled: 63589
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:50:01 CST 2013 Requests fulfilled: 63642
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:51:01 CST 2013 Requests fulfilled: 63673
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:52:01 CST 2013 Requests fulfilled: 63710
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:53:01 CST 2013 Requests fulfilled: 63750
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:54:01 CST 2013 Requests fulfilled: 63794
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:55:01 CST 2013 Requests fulfilled: 63838
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:56:01 CST 2013 Requests fulfilled: 63877
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:57:01 CST 2013 Requests fulfilled: 63918
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:58:01 CST 2013 Requests fulfilled: 63953
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 11:59:01 CST 2013 Requests fulfilled: 63995
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:00:01 CST 2013 Requests fulfilled: 64029
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:01:01 CST 2013 Requests fulfilled: 64069
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:02:01 CST 2013 Requests fulfilled: 64105
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:03:01 CST 2013 Requests fulfilled: 64156
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:04:01 CST 2013 Requests fulfilled: 64184
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:05:01 CST 2013 Requests fulfilled: 64232
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:06:01 CST 2013 Requests fulfilled: 64265
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:07:01 CST 2013 Requests fulfilled: 64308
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:08:01 CST 2013 Requests fulfilled: 64349
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:09:01 CST 2013 Requests fulfilled: 64381
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:10:01 CST 2013 Requests fulfilled: 64426
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:11:01 CST 2013 Requests fulfilled: 64465
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:12:01 CST 2013 Requests fulfilled: 64515
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:13:01 CST 2013 Requests fulfilled: 64544
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:14:01 CST 2013 Requests fulfilled: 64578
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:15:01 CST 2013 Requests fulfilled: 64620
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:16:01 CST 2013 Requests fulfilled: 64656
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:17:01 CST 2013 Requests fulfilled: 64698
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:18:01 CST 2013 Requests fulfilled: 64743
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:19:01 CST 2013 Requests fulfilled: 64775
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:20:01 CST 2013 Requests fulfilled: 64814
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:21:01 CST 2013 Requests fulfilled: 64848
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:22:01 CST 2013 Requests fulfilled: 64893
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:23:01 CST 2013 Requests fulfilled: 64927
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:24:01 CST 2013 Requests fulfilled: 64979
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:25:01 CST 2013 Requests fulfilled: 65017
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:26:01 CST 2013 Requests fulfilled: 65057
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:27:01 CST 2013 Requests fulfilled: 65106
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:28:01 CST 2013 Requests fulfilled: 65147
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:29:01 CST 2013 Requests fulfilled: 65198
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:30:01 CST 2013 Requests fulfilled: 65229
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:31:01 CST 2013 Requests fulfilled: 65265
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:32:01 CST 2013 Requests fulfilled: 65311
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:33:01 CST 2013 Requests fulfilled: 65349
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:34:01 CST 2013 Requests fulfilled: 65385
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:35:01 CST 2013 Requests fulfilled: 65431
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:36:01 CST 2013 Requests fulfilled: 65470
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:37:01 CST 2013 Requests fulfilled: 65521
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:38:01 CST 2013 Requests fulfilled: 65553
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:39:01 CST 2013 Requests fulfilled: 65593
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:40:01 CST 2013 Requests fulfilled: 65631
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:41:01 CST 2013 Requests fulfilled: 65671
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:42:01 CST 2013 Requests fulfilled: 65712
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:43:01 CST 2013 Requests fulfilled: 65750
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:44:01 CST 2013 Requests fulfilled: 65787
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:45:01 CST 2013 Requests fulfilled: 65819
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:46:01 CST 2013 Requests fulfilled: 65862
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:47:01 CST 2013 Requests fulfilled: 65907
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:48:01 CST 2013 Requests fulfilled: 65946
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:49:01 CST 2013 Requests fulfilled: 65976
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:50:01 CST 2013 Requests fulfilled: 66023
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:51:01 CST 2013 Requests fulfilled: 66075
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:52:01 CST 2013 Requests fulfilled: 66112
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:53:01 CST 2013 Requests fulfilled: 66153
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:54:01 CST 2013 Requests fulfilled: 66180
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:55:01 CST 2013 Requests fulfilled: 66220
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:56:01 CST 2013 Requests fulfilled: 66261
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:57:01 CST 2013 Requests fulfilled: 66301
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:58:01 CST 2013 Requests fulfilled: 66340
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 12:59:01 CST 2013 Requests fulfilled: 66384
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:00:01 CST 2013 Requests fulfilled: 66423
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:01:01 CST 2013 Requests fulfilled: 66462
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:02:01 CST 2013 Requests fulfilled: 66508
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:03:01 CST 2013 Requests fulfilled: 66545
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:04:01 CST 2013 Requests fulfilled: 66582
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:05:01 CST 2013 Requests fulfilled: 66617
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:06:01 CST 2013 Requests fulfilled: 66669
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:07:01 CST 2013 Requests fulfilled: 66712
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:08:01 CST 2013 Requests fulfilled: 66748
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:09:01 CST 2013 Requests fulfilled: 66791
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:10:01 CST 2013 Requests fulfilled: 66828
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:11:01 CST 2013 Requests fulfilled: 66886
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:12:01 CST 2013 Requests fulfilled: 66921
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:13:01 CST 2013 Requests fulfilled: 66966
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:14:01 CST 2013 Requests fulfilled: 67003
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:15:01 CST 2013 Requests fulfilled: 67038
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:16:01 CST 2013 Requests fulfilled: 67082
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:17:01 CST 2013 Requests fulfilled: 67134
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:18:01 CST 2013 Requests fulfilled: 67166
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:19:01 CST 2013 Requests fulfilled: 67202
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:20:01 CST 2013 Requests fulfilled: 67242
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:21:01 CST 2013 Requests fulfilled: 67294
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:22:01 CST 2013 Requests fulfilled: 67323
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:23:01 CST 2013 Requests fulfilled: 67360
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:24:01 CST 2013 Requests fulfilled: 67397
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:25:01 CST 2013 Requests fulfilled: 67433
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:26:01 CST 2013 Requests fulfilled: 67474
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:27:01 CST 2013 Requests fulfilled: 67525
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:28:01 CST 2013 Requests fulfilled: 67561
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:29:01 CST 2013 Requests fulfilled: 67604
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:30:01 CST 2013 Requests fulfilled: 67649
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:31:01 CST 2013 Requests fulfilled: 67690
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:32:01 CST 2013 Requests fulfilled: 67730
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:33:01 CST 2013 Requests fulfilled: 67772
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:34:01 CST 2013 Requests fulfilled: 67821
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:35:01 CST 2013 Requests fulfilled: 67852
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:36:01 CST 2013 Requests fulfilled: 67878
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:37:01 CST 2013 Requests fulfilled: 67921
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:38:01 CST 2013 Requests fulfilled: 67955
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:39:01 CST 2013 Requests fulfilled: 67991
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:40:01 CST 2013 Requests fulfilled: 68042
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:41:01 CST 2013 Requests fulfilled: 68086
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:42:01 CST 2013 Requests fulfilled: 68125
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:43:01 CST 2013 Requests fulfilled: 68163
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:44:01 CST 2013 Requests fulfilled: 68199
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:45:01 CST 2013 Requests fulfilled: 68242
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:46:01 CST 2013 Requests fulfilled: 68283
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:47:01 CST 2013 Requests fulfilled: 68315
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:48:01 CST 2013 Requests fulfilled: 68349
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:49:01 CST 2013 Requests fulfilled: 68380
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:50:01 CST 2013 Requests fulfilled: 68420
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:51:01 CST 2013 Requests fulfilled: 68462
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:52:01 CST 2013 Requests fulfilled: 68510
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:53:01 CST 2013 Requests fulfilled: 68550
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:54:01 CST 2013 Requests fulfilled: 68589
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:55:01 CST 2013 Requests fulfilled: 68631
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:56:01 CST 2013 Requests fulfilled: 68663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:57:01 CST 2013 Requests fulfilled: 68707
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:58:01 CST 2013 Requests fulfilled: 68754
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 13:59:01 CST 2013 Requests fulfilled: 68799
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:00:01 CST 2013 Requests fulfilled: 68847
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:01:01 CST 2013 Requests fulfilled: 68873
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:02:01 CST 2013 Requests fulfilled: 68913
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:03:01 CST 2013 Requests fulfilled: 68944
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:04:01 CST 2013 Requests fulfilled: 68984
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:05:01 CST 2013 Requests fulfilled: 69025
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:06:01 CST 2013 Requests fulfilled: 69065
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:07:01 CST 2013 Requests fulfilled: 69112
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:08:01 CST 2013 Requests fulfilled: 69131
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:09:01 CST 2013 Requests fulfilled: 69175
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:10:01 CST 2013 Requests fulfilled: 69219
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:11:01 CST 2013 Requests fulfilled: 69262
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:12:01 CST 2013 Requests fulfilled: 69301
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:13:01 CST 2013 Requests fulfilled: 69345
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:14:01 CST 2013 Requests fulfilled: 69387
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:15:01 CST 2013 Requests fulfilled: 69427
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:16:01 CST 2013 Requests fulfilled: 69465
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:17:01 CST 2013 Requests fulfilled: 69505
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:18:01 CST 2013 Requests fulfilled: 69544
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:19:01 CST 2013 Requests fulfilled: 69582
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:20:01 CST 2013 Requests fulfilled: 69622
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:21:01 CST 2013 Requests fulfilled: 69663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:22:01 CST 2013 Requests fulfilled: 69701
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:23:01 CST 2013 Requests fulfilled: 69741
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:24:01 CST 2013 Requests fulfilled: 69779
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:25:01 CST 2013 Requests fulfilled: 69816
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:26:01 CST 2013 Requests fulfilled: 69855
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:27:01 CST 2013 Requests fulfilled: 69886
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:28:01 CST 2013 Requests fulfilled: 69920
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:29:01 CST 2013 Requests fulfilled: 69970
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:30:01 CST 2013 Requests fulfilled: 70006
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:31:01 CST 2013 Requests fulfilled: 70055
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:32:01 CST 2013 Requests fulfilled: 70097
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:33:01 CST 2013 Requests fulfilled: 70137
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:34:01 CST 2013 Requests fulfilled: 70172
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:35:01 CST 2013 Requests fulfilled: 70204
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:36:01 CST 2013 Requests fulfilled: 70239
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:37:01 CST 2013 Requests fulfilled: 70279
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:38:01 CST 2013 Requests fulfilled: 70322
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:39:01 CST 2013 Requests fulfilled: 70368
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:40:01 CST 2013 Requests fulfilled: 70403
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:41:01 CST 2013 Requests fulfilled: 70439
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:42:01 CST 2013 Requests fulfilled: 70485
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:43:01 CST 2013 Requests fulfilled: 70519
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:44:01 CST 2013 Requests fulfilled: 70558
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:45:01 CST 2013 Requests fulfilled: 70591
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:46:01 CST 2013 Requests fulfilled: 70628
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:47:01 CST 2013 Requests fulfilled: 70669
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:48:01 CST 2013 Requests fulfilled: 70722
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:49:01 CST 2013 Requests fulfilled: 70757
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:50:01 CST 2013 Requests fulfilled: 70787
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:51:01 CST 2013 Requests fulfilled: 70822
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:52:01 CST 2013 Requests fulfilled: 70848
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:53:01 CST 2013 Requests fulfilled: 70885
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:54:01 CST 2013 Requests fulfilled: 70935
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:55:01 CST 2013 Requests fulfilled: 70972
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:56:01 CST 2013 Requests fulfilled: 71015
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:57:01 CST 2013 Requests fulfilled: 71060
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:58:01 CST 2013 Requests fulfilled: 71098
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 14:59:01 CST 2013 Requests fulfilled: 71143
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:00:01 CST 2013 Requests fulfilled: 71182
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:01:01 CST 2013 Requests fulfilled: 71216
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:02:01 CST 2013 Requests fulfilled: 71250
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:03:01 CST 2013 Requests fulfilled: 71298
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:04:01 CST 2013 Requests fulfilled: 71337
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:05:01 CST 2013 Requests fulfilled: 71381
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:06:01 CST 2013 Requests fulfilled: 71412
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:07:01 CST 2013 Requests fulfilled: 71456
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:08:01 CST 2013 Requests fulfilled: 71490
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:09:01 CST 2013 Requests fulfilled: 71537
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:10:01 CST 2013 Requests fulfilled: 71584
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:11:01 CST 2013 Requests fulfilled: 71624
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:12:01 CST 2013 Requests fulfilled: 71655
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:13:01 CST 2013 Requests fulfilled: 71703
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:14:01 CST 2013 Requests fulfilled: 71742
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:15:01 CST 2013 Requests fulfilled: 71783
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:16:01 CST 2013 Requests fulfilled: 71818
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:17:01 CST 2013 Requests fulfilled: 71851
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:18:01 CST 2013 Requests fulfilled: 71889
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:19:01 CST 2013 Requests fulfilled: 71919
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:20:01 CST 2013 Requests fulfilled: 71965
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:21:01 CST 2013 Requests fulfilled: 71999
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:22:01 CST 2013 Requests fulfilled: 72033
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:23:01 CST 2013 Requests fulfilled: 72072
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:24:01 CST 2013 Requests fulfilled: 72104
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:25:01 CST 2013 Requests fulfilled: 72139
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:26:01 CST 2013 Requests fulfilled: 72180
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:27:01 CST 2013 Requests fulfilled: 72213
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:28:01 CST 2013 Requests fulfilled: 72253
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:29:01 CST 2013 Requests fulfilled: 72291
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:30:01 CST 2013 Requests fulfilled: 72316
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:31:01 CST 2013 Requests fulfilled: 72365
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:32:01 CST 2013 Requests fulfilled: 72404
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:33:01 CST 2013 Requests fulfilled: 72449
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:34:01 CST 2013 Requests fulfilled: 72483
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:35:01 CST 2013 Requests fulfilled: 72530
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:36:01 CST 2013 Requests fulfilled: 72561
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:37:01 CST 2013 Requests fulfilled: 72592
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:38:01 CST 2013 Requests fulfilled: 72639
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:39:01 CST 2013 Requests fulfilled: 72675
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:40:01 CST 2013 Requests fulfilled: 72712
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:41:01 CST 2013 Requests fulfilled: 72742
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:42:01 CST 2013 Requests fulfilled: 72778
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:43:01 CST 2013 Requests fulfilled: 72817
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:44:01 CST 2013 Requests fulfilled: 72854
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:45:01 CST 2013 Requests fulfilled: 72895
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:46:01 CST 2013 Requests fulfilled: 72934
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:47:01 CST 2013 Requests fulfilled: 72972
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:48:01 CST 2013 Requests fulfilled: 73011
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:49:01 CST 2013 Requests fulfilled: 73040
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:50:01 CST 2013 Requests fulfilled: 73089
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:51:01 CST 2013 Requests fulfilled: 73124
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:52:01 CST 2013 Requests fulfilled: 73153
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:53:01 CST 2013 Requests fulfilled: 73196
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:54:01 CST 2013 Requests fulfilled: 73233
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:55:01 CST 2013 Requests fulfilled: 73270
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:56:01 CST 2013 Requests fulfilled: 73303
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:57:01 CST 2013 Requests fulfilled: 73347
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:58:01 CST 2013 Requests fulfilled: 73381
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 15:59:01 CST 2013 Requests fulfilled: 73415
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:00:01 CST 2013 Requests fulfilled: 73448
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:01:01 CST 2013 Requests fulfilled: 73495
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:02:01 CST 2013 Requests fulfilled: 73532
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:03:01 CST 2013 Requests fulfilled: 73565
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:04:01 CST 2013 Requests fulfilled: 73606
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:05:01 CST 2013 Requests fulfilled: 73633
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:06:01 CST 2013 Requests fulfilled: 73669
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:07:01 CST 2013 Requests fulfilled: 73695
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:08:01 CST 2013 Requests fulfilled: 73734
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:09:01 CST 2013 Requests fulfilled: 73773
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:10:01 CST 2013 Requests fulfilled: 73812
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:11:01 CST 2013 Requests fulfilled: 73845
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:12:01 CST 2013 Requests fulfilled: 73881
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:13:01 CST 2013 Requests fulfilled: 73908
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:14:01 CST 2013 Requests fulfilled: 73947
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:15:01 CST 2013 Requests fulfilled: 73980
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:16:01 CST 2013 Requests fulfilled: 74008
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:17:01 CST 2013 Requests fulfilled: 74048
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:18:01 CST 2013 Requests fulfilled: 74083
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:19:01 CST 2013 Requests fulfilled: 74126
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:20:01 CST 2013 Requests fulfilled: 74158
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:21:01 CST 2013 Requests fulfilled: 74201
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:22:01 CST 2013 Requests fulfilled: 74242
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:23:01 CST 2013 Requests fulfilled: 74284
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:24:01 CST 2013 Requests fulfilled: 74327
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:25:01 CST 2013 Requests fulfilled: 74358
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:26:01 CST 2013 Requests fulfilled: 74386
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:27:01 CST 2013 Requests fulfilled: 74430
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:28:01 CST 2013 Requests fulfilled: 74465
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:29:01 CST 2013 Requests fulfilled: 74499
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:30:01 CST 2013 Requests fulfilled: 74521
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:31:01 CST 2013 Requests fulfilled: 74554
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:32:01 CST 2013 Requests fulfilled: 74574
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:33:01 CST 2013 Requests fulfilled: 74619
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:34:01 CST 2013 Requests fulfilled: 74663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:35:01 CST 2013 Requests fulfilled: 74699
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:36:01 CST 2013 Requests fulfilled: 74731
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:37:01 CST 2013 Requests fulfilled: 74761
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:38:01 CST 2013 Requests fulfilled: 74810
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:39:01 CST 2013 Requests fulfilled: 74844
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:40:01 CST 2013 Requests fulfilled: 74874
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:41:01 CST 2013 Requests fulfilled: 74910
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:42:01 CST 2013 Requests fulfilled: 74944
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:43:01 CST 2013 Requests fulfilled: 74978
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:44:01 CST 2013 Requests fulfilled: 75015
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:45:01 CST 2013 Requests fulfilled: 75054
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:46:01 CST 2013 Requests fulfilled: 75094
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:47:01 CST 2013 Requests fulfilled: 75122
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:48:01 CST 2013 Requests fulfilled: 75158
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:49:01 CST 2013 Requests fulfilled: 75192
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:50:01 CST 2013 Requests fulfilled: 75226
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:51:01 CST 2013 Requests fulfilled: 75256
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:52:01 CST 2013 Requests fulfilled: 75291
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:53:01 CST 2013 Requests fulfilled: 75333
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:54:01 CST 2013 Requests fulfilled: 75363
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:55:01 CST 2013 Requests fulfilled: 75396
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:56:01 CST 2013 Requests fulfilled: 75427
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:57:01 CST 2013 Requests fulfilled: 75460
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:58:01 CST 2013 Requests fulfilled: 75497
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 16:59:01 CST 2013 Requests fulfilled: 75527
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:00:01 CST 2013 Requests fulfilled: 75560
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:01:01 CST 2013 Requests fulfilled: 75590
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:02:01 CST 2013 Requests fulfilled: 75630
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:03:01 CST 2013 Requests fulfilled: 75655
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:04:01 CST 2013 Requests fulfilled: 75691
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:05:01 CST 2013 Requests fulfilled: 75735
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:06:01 CST 2013 Requests fulfilled: 75765
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:07:01 CST 2013 Requests fulfilled: 75807
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:08:01 CST 2013 Requests fulfilled: 75839
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:09:01 CST 2013 Requests fulfilled: 75871
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:10:01 CST 2013 Requests fulfilled: 75906
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:11:01 CST 2013 Requests fulfilled: 75946
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:12:01 CST 2013 Requests fulfilled: 75986
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:13:01 CST 2013 Requests fulfilled: 76026
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:14:01 CST 2013 Requests fulfilled: 76051
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:15:01 CST 2013 Requests fulfilled: 76089
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:16:01 CST 2013 Requests fulfilled: 76122
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:17:01 CST 2013 Requests fulfilled: 76159
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:18:01 CST 2013 Requests fulfilled: 76197
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:19:01 CST 2013 Requests fulfilled: 76234
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:20:01 CST 2013 Requests fulfilled: 76271
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:21:01 CST 2013 Requests fulfilled: 76303
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:22:01 CST 2013 Requests fulfilled: 76334
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:23:01 CST 2013 Requests fulfilled: 76371
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:24:01 CST 2013 Requests fulfilled: 76402
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:25:01 CST 2013 Requests fulfilled: 76442
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:26:01 CST 2013 Requests fulfilled: 76479
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:27:01 CST 2013 Requests fulfilled: 76521
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:28:01 CST 2013 Requests fulfilled: 76560
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:29:01 CST 2013 Requests fulfilled: 76588
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:30:01 CST 2013 Requests fulfilled: 76621
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:31:01 CST 2013 Requests fulfilled: 76663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:32:01 CST 2013 Requests fulfilled: 76704
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:33:01 CST 2013 Requests fulfilled: 76741
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:34:01 CST 2013 Requests fulfilled: 76787
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:35:01 CST 2013 Requests fulfilled: 76823
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:36:01 CST 2013 Requests fulfilled: 76858
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:37:01 CST 2013 Requests fulfilled: 76891
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:38:01 CST 2013 Requests fulfilled: 76936
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:39:01 CST 2013 Requests fulfilled: 76966
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:40:01 CST 2013 Requests fulfilled: 77009
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:41:01 CST 2013 Requests fulfilled: 77043
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:42:01 CST 2013 Requests fulfilled: 77086
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:43:01 CST 2013 Requests fulfilled: 77129
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:44:01 CST 2013 Requests fulfilled: 77173
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:45:01 CST 2013 Requests fulfilled: 77213
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:46:01 CST 2013 Requests fulfilled: 77252
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:47:01 CST 2013 Requests fulfilled: 77301
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:48:01 CST 2013 Requests fulfilled: 77336
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:49:01 CST 2013 Requests fulfilled: 77379
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:50:01 CST 2013 Requests fulfilled: 77419
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:51:01 CST 2013 Requests fulfilled: 77455
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:52:01 CST 2013 Requests fulfilled: 77488
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:53:01 CST 2013 Requests fulfilled: 77529
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:54:01 CST 2013 Requests fulfilled: 77568
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:55:01 CST 2013 Requests fulfilled: 77603
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:56:01 CST 2013 Requests fulfilled: 77644
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:57:01 CST 2013 Requests fulfilled: 77688
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:58:01 CST 2013 Requests fulfilled: 77736
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 17:59:01 CST 2013 Requests fulfilled: 77773
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:00:01 CST 2013 Requests fulfilled: 77818
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:01:01 CST 2013 Requests fulfilled: 77852
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:02:01 CST 2013 Requests fulfilled: 77886
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:03:01 CST 2013 Requests fulfilled: 77918
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:04:01 CST 2013 Requests fulfilled: 77960
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:05:01 CST 2013 Requests fulfilled: 77997
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:06:01 CST 2013 Requests fulfilled: 78047
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:07:01 CST 2013 Requests fulfilled: 78098
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:08:01 CST 2013 Requests fulfilled: 78143
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:09:01 CST 2013 Requests fulfilled: 78182
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:10:01 CST 2013 Requests fulfilled: 78223
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:11:01 CST 2013 Requests fulfilled: 78257
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:12:01 CST 2013 Requests fulfilled: 78304
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:13:01 CST 2013 Requests fulfilled: 78340
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:14:01 CST 2013 Requests fulfilled: 78383
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:15:01 CST 2013 Requests fulfilled: 78426
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:16:01 CST 2013 Requests fulfilled: 78464
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:17:01 CST 2013 Requests fulfilled: 78500
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:18:01 CST 2013 Requests fulfilled: 78544
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:19:01 CST 2013 Requests fulfilled: 78589
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:20:01 CST 2013 Requests fulfilled: 78628
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:21:01 CST 2013 Requests fulfilled: 78681
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:22:01 CST 2013 Requests fulfilled: 78721
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:23:01 CST 2013 Requests fulfilled: 78764
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:24:01 CST 2013 Requests fulfilled: 78805
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:25:01 CST 2013 Requests fulfilled: 78850
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:26:01 CST 2013 Requests fulfilled: 78900
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:27:01 CST 2013 Requests fulfilled: 78946
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:28:01 CST 2013 Requests fulfilled: 78980
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:29:01 CST 2013 Requests fulfilled: 79025
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:30:01 CST 2013 Requests fulfilled: 79078
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:31:01 CST 2013 Requests fulfilled: 79129
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:32:01 CST 2013 Requests fulfilled: 79173
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:33:01 CST 2013 Requests fulfilled: 79209
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:34:01 CST 2013 Requests fulfilled: 79254
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:35:01 CST 2013 Requests fulfilled: 79291
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:36:01 CST 2013 Requests fulfilled: 79343
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:37:01 CST 2013 Requests fulfilled: 79389
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:38:01 CST 2013 Requests fulfilled: 79438
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:39:01 CST 2013 Requests fulfilled: 79470
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:40:01 CST 2013 Requests fulfilled: 79510
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:41:01 CST 2013 Requests fulfilled: 79549
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:42:01 CST 2013 Requests fulfilled: 79597
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:43:01 CST 2013 Requests fulfilled: 79647
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:44:01 CST 2013 Requests fulfilled: 79694
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:45:01 CST 2013 Requests fulfilled: 79737
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:46:01 CST 2013 Requests fulfilled: 79774
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:47:01 CST 2013 Requests fulfilled: 79814
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:48:01 CST 2013 Requests fulfilled: 79850
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:49:01 CST 2013 Requests fulfilled: 79895
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:50:01 CST 2013 Requests fulfilled: 79938
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:51:01 CST 2013 Requests fulfilled: 79972
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:52:01 CST 2013 Requests fulfilled: 80028
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:53:01 CST 2013 Requests fulfilled: 80062
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:54:01 CST 2013 Requests fulfilled: 80108
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:55:01 CST 2013 Requests fulfilled: 80155
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:56:01 CST 2013 Requests fulfilled: 80193
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:57:01 CST 2013 Requests fulfilled: 80238
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:58:01 CST 2013 Requests fulfilled: 80288
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 18:59:01 CST 2013 Requests fulfilled: 80331
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:00:01 CST 2013 Requests fulfilled: 80377
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:01:01 CST 2013 Requests fulfilled: 80420
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:02:01 CST 2013 Requests fulfilled: 80479
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:03:01 CST 2013 Requests fulfilled: 80511
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:04:01 CST 2013 Requests fulfilled: 80557
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:05:01 CST 2013 Requests fulfilled: 80595
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:06:01 CST 2013 Requests fulfilled: 80633
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:07:01 CST 2013 Requests fulfilled: 80690
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:08:01 CST 2013 Requests fulfilled: 80737
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:09:01 CST 2013 Requests fulfilled: 80779
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:10:01 CST 2013 Requests fulfilled: 80839
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:11:01 CST 2013 Requests fulfilled: 80886
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:12:01 CST 2013 Requests fulfilled: 80927
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:13:01 CST 2013 Requests fulfilled: 80969
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:14:01 CST 2013 Requests fulfilled: 81008
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:15:01 CST 2013 Requests fulfilled: 81051
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:16:01 CST 2013 Requests fulfilled: 81094
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:17:01 CST 2013 Requests fulfilled: 81137
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:18:01 CST 2013 Requests fulfilled: 81180
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:19:01 CST 2013 Requests fulfilled: 81224
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:20:01 CST 2013 Requests fulfilled: 81267
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:21:01 CST 2013 Requests fulfilled: 81318
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:22:01 CST 2013 Requests fulfilled: 81366
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:23:01 CST 2013 Requests fulfilled: 81419
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:24:01 CST 2013 Requests fulfilled: 81464
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:25:01 CST 2013 Requests fulfilled: 81518
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:26:01 CST 2013 Requests fulfilled: 81557
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:27:01 CST 2013 Requests fulfilled: 81598
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:28:01 CST 2013 Requests fulfilled: 81637
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:29:01 CST 2013 Requests fulfilled: 81679
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:30:01 CST 2013 Requests fulfilled: 81712
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:31:01 CST 2013 Requests fulfilled: 81755
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:32:01 CST 2013 Requests fulfilled: 81805
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:33:01 CST 2013 Requests fulfilled: 81851
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:34:01 CST 2013 Requests fulfilled: 81897
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:35:01 CST 2013 Requests fulfilled: 81950
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:36:01 CST 2013 Requests fulfilled: 81997
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:37:01 CST 2013 Requests fulfilled: 82049
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:38:01 CST 2013 Requests fulfilled: 82088
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:39:01 CST 2013 Requests fulfilled: 82128
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:40:01 CST 2013 Requests fulfilled: 82171
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:41:01 CST 2013 Requests fulfilled: 82219
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:42:01 CST 2013 Requests fulfilled: 82275
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:43:01 CST 2013 Requests fulfilled: 82309
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:44:01 CST 2013 Requests fulfilled: 82362
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:45:01 CST 2013 Requests fulfilled: 82405
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:46:01 CST 2013 Requests fulfilled: 82442
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:47:01 CST 2013 Requests fulfilled: 82500
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:48:01 CST 2013 Requests fulfilled: 82534
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:49:01 CST 2013 Requests fulfilled: 82584
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:50:01 CST 2013 Requests fulfilled: 82632
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:51:01 CST 2013 Requests fulfilled: 82679
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:52:01 CST 2013 Requests fulfilled: 82724
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:53:01 CST 2013 Requests fulfilled: 82762
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:54:01 CST 2013 Requests fulfilled: 82803
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:55:01 CST 2013 Requests fulfilled: 82840
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:56:01 CST 2013 Requests fulfilled: 82894
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:57:01 CST 2013 Requests fulfilled: 82947
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:58:01 CST 2013 Requests fulfilled: 82993
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 19:59:01 CST 2013 Requests fulfilled: 83036
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:00:01 CST 2013 Requests fulfilled: 83076
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:01:01 CST 2013 Requests fulfilled: 83116
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:02:01 CST 2013 Requests fulfilled: 83157
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:03:01 CST 2013 Requests fulfilled: 83209
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:04:01 CST 2013 Requests fulfilled: 83248
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:05:01 CST 2013 Requests fulfilled: 83300
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:06:01 CST 2013 Requests fulfilled: 83357
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:07:01 CST 2013 Requests fulfilled: 83407
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:08:01 CST 2013 Requests fulfilled: 83448
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:09:01 CST 2013 Requests fulfilled: 83490
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:10:01 CST 2013 Requests fulfilled: 83536
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:11:01 CST 2013 Requests fulfilled: 83569
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:12:01 CST 2013 Requests fulfilled: 83609
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:13:01 CST 2013 Requests fulfilled: 83654
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:14:01 CST 2013 Requests fulfilled: 83694
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:15:01 CST 2013 Requests fulfilled: 83740
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:16:01 CST 2013 Requests fulfilled: 83792
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:17:01 CST 2013 Requests fulfilled: 83842
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:18:01 CST 2013 Requests fulfilled: 83881
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:19:01 CST 2013 Requests fulfilled: 83924
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:20:01 CST 2013 Requests fulfilled: 83968
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:21:01 CST 2013 Requests fulfilled: 84010
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:22:01 CST 2013 Requests fulfilled: 84047
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:23:01 CST 2013 Requests fulfilled: 84091
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:24:01 CST 2013 Requests fulfilled: 84147
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:25:01 CST 2013 Requests fulfilled: 84190
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:26:01 CST 2013 Requests fulfilled: 84241
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:27:01 CST 2013 Requests fulfilled: 84284
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:28:01 CST 2013 Requests fulfilled: 84321
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:29:01 CST 2013 Requests fulfilled: 84363
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:30:01 CST 2013 Requests fulfilled: 84404
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:31:01 CST 2013 Requests fulfilled: 84448
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:32:01 CST 2013 Requests fulfilled: 84490
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:33:01 CST 2013 Requests fulfilled: 84535
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:34:01 CST 2013 Requests fulfilled: 84588
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:35:01 CST 2013 Requests fulfilled: 84638
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:36:01 CST 2013 Requests fulfilled: 84672
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:37:01 CST 2013 Requests fulfilled: 84717
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:38:01 CST 2013 Requests fulfilled: 84765
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:39:01 CST 2013 Requests fulfilled: 84810
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:40:01 CST 2013 Requests fulfilled: 84860
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:41:01 CST 2013 Requests fulfilled: 84903
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:42:01 CST 2013 Requests fulfilled: 84935
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:43:01 CST 2013 Requests fulfilled: 84985
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:44:01 CST 2013 Requests fulfilled: 85033
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:45:01 CST 2013 Requests fulfilled: 85081
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:46:01 CST 2013 Requests fulfilled: 85126
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:47:01 CST 2013 Requests fulfilled: 85174
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:48:01 CST 2013 Requests fulfilled: 85226
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:49:01 CST 2013 Requests fulfilled: 85266
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:50:01 CST 2013 Requests fulfilled: 85307
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:51:01 CST 2013 Requests fulfilled: 85350
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:52:01 CST 2013 Requests fulfilled: 85392
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:53:01 CST 2013 Requests fulfilled: 85441
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:54:01 CST 2013 Requests fulfilled: 85486
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:55:01 CST 2013 Requests fulfilled: 85518
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:56:01 CST 2013 Requests fulfilled: 85569
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:57:01 CST 2013 Requests fulfilled: 85611
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:58:01 CST 2013 Requests fulfilled: 85663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 20:59:01 CST 2013 Requests fulfilled: 85709
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:00:01 CST 2013 Requests fulfilled: 85762
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:01:01 CST 2013 Requests fulfilled: 85806
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:02:01 CST 2013 Requests fulfilled: 85858
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:03:01 CST 2013 Requests fulfilled: 85895
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:04:01 CST 2013 Requests fulfilled: 85941
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:05:01 CST 2013 Requests fulfilled: 85984
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:06:01 CST 2013 Requests fulfilled: 86022
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:07:01 CST 2013 Requests fulfilled: 86086
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:08:01 CST 2013 Requests fulfilled: 86133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:09:01 CST 2013 Requests fulfilled: 86195
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:10:01 CST 2013 Requests fulfilled: 86240
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:11:01 CST 2013 Requests fulfilled: 86277
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:12:01 CST 2013 Requests fulfilled: 86318
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:13:01 CST 2013 Requests fulfilled: 86359
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:14:01 CST 2013 Requests fulfilled: 86403
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:15:01 CST 2013 Requests fulfilled: 86460
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:16:01 CST 2013 Requests fulfilled: 86501
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:17:01 CST 2013 Requests fulfilled: 86546
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:18:01 CST 2013 Requests fulfilled: 86592
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:19:01 CST 2013 Requests fulfilled: 86629
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:20:01 CST 2013 Requests fulfilled: 86685
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:21:01 CST 2013 Requests fulfilled: 86740
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:22:01 CST 2013 Requests fulfilled: 86799
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:23:01 CST 2013 Requests fulfilled: 86830
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:24:01 CST 2013 Requests fulfilled: 86863
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:25:01 CST 2013 Requests fulfilled: 86897
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:26:01 CST 2013 Requests fulfilled: 86937
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:27:01 CST 2013 Requests fulfilled: 86983
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:28:01 CST 2013 Requests fulfilled: 87013
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:29:01 CST 2013 Requests fulfilled: 87035
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:30:01 CST 2013 Requests fulfilled: 87052
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:31:01 CST 2013 Requests fulfilled: 87064
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:32:01 CST 2013 Requests fulfilled: 87079
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:33:01 CST 2013 Requests fulfilled: 87090
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:34:01 CST 2013 Requests fulfilled: 87105
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:35:01 CST 2013 Requests fulfilled: 87111
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:36:01 CST 2013 Requests fulfilled: 87114
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:37:01 CST 2013 Requests fulfilled: 87119
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:38:01 CST 2013 Requests fulfilled: 87122
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:39:01 CST 2013 Requests fulfilled: 87124
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:40:01 CST 2013 Requests fulfilled: 87125
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:41:01 CST 2013 Requests fulfilled: 87127
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:42:01 CST 2013 Requests fulfilled: 87130
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:43:01 CST 2013 Requests fulfilled: 87132
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:44:01 CST 2013 Requests fulfilled: 87133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:45:01 CST 2013 Requests fulfilled: 87133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 21:46:01 CST 2013 Requests fulfilled: 87133
+Test run length: 00:17:10
+Request Stats:
+Fulfilled: 87135/87135(100%)
+Idle: 1936361398 seconds.  MAX(43712) MIN(59) AVG(22222)
+Vehicle Stats:
+Driving distance: 814697843 meters.  MAX(65385) MIN(0) AVG(4674)
+Driving time: 60044768 seconds.  MAX(3274) MIN(0) AVG(344)
+Parked: 760732 seconds.  MAX(1661) MIN(0) AVG(4)

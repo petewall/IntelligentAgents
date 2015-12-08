@@ -1,0 +1,1955 @@
+[INFO] [TAXI SYSTEM] Loading properties from ../testConfigs/distance-auction-500.properties
+[INFO] [TAXI SYSTEM] Creating AI Stragegy DistanceAuctionStrategy
+[INFO] [ENVIRONMENT] Creating new taxi simulation environment
+[INFO] [VEHICLE FACTORY] Generating 500 vehicles
+[INFO] [ENVIRONMENT] Starting to generate taxi trip requests in a background thread
+[INFO] [ENVIRONMENT] Starting time simulation
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:00:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:01:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:02:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:03:01 CST 2013 Requests fulfilled: 0
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:04:01 CST 2013 Requests fulfilled: 3
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:05:01 CST 2013 Requests fulfilled: 9
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:06:01 CST 2013 Requests fulfilled: 13
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:07:01 CST 2013 Requests fulfilled: 14
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:08:01 CST 2013 Requests fulfilled: 23
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:09:01 CST 2013 Requests fulfilled: 35
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:10:01 CST 2013 Requests fulfilled: 47
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:11:01 CST 2013 Requests fulfilled: 52
+[INFO] [ENVIRONMENT] Waiting for request generator
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:12:01 CST 2013 Requests fulfilled: 69
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:13:01 CST 2013 Requests fulfilled: 87
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:14:01 CST 2013 Requests fulfilled: 108
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:15:01 CST 2013 Requests fulfilled: 143
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:16:01 CST 2013 Requests fulfilled: 183
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:17:01 CST 2013 Requests fulfilled: 227
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:18:01 CST 2013 Requests fulfilled: 270
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:19:01 CST 2013 Requests fulfilled: 315
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:20:01 CST 2013 Requests fulfilled: 371
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:21:01 CST 2013 Requests fulfilled: 440
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:22:01 CST 2013 Requests fulfilled: 501
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:23:01 CST 2013 Requests fulfilled: 557
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:24:01 CST 2013 Requests fulfilled: 637
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:25:01 CST 2013 Requests fulfilled: 702
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:26:01 CST 2013 Requests fulfilled: 777
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:27:01 CST 2013 Requests fulfilled: 857
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:28:01 CST 2013 Requests fulfilled: 948
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:29:01 CST 2013 Requests fulfilled: 1030
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:30:01 CST 2013 Requests fulfilled: 1113
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:31:01 CST 2013 Requests fulfilled: 1194
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:32:01 CST 2013 Requests fulfilled: 1273
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:33:01 CST 2013 Requests fulfilled: 1355
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:34:01 CST 2013 Requests fulfilled: 1440
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:35:01 CST 2013 Requests fulfilled: 1524
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:36:01 CST 2013 Requests fulfilled: 1604
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:37:01 CST 2013 Requests fulfilled: 1696
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:38:01 CST 2013 Requests fulfilled: 1764
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:39:01 CST 2013 Requests fulfilled: 1842
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:40:01 CST 2013 Requests fulfilled: 1923
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:41:01 CST 2013 Requests fulfilled: 2006
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:42:01 CST 2013 Requests fulfilled: 2093
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:43:01 CST 2013 Requests fulfilled: 2152
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:44:01 CST 2013 Requests fulfilled: 2215
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:45:01 CST 2013 Requests fulfilled: 2299
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:46:01 CST 2013 Requests fulfilled: 2366
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:47:01 CST 2013 Requests fulfilled: 2452
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:48:01 CST 2013 Requests fulfilled: 2542
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:49:01 CST 2013 Requests fulfilled: 2628
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:50:01 CST 2013 Requests fulfilled: 2693
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:51:01 CST 2013 Requests fulfilled: 2772
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:52:01 CST 2013 Requests fulfilled: 2857
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:53:01 CST 2013 Requests fulfilled: 2933
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:54:01 CST 2013 Requests fulfilled: 3006
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:55:01 CST 2013 Requests fulfilled: 3095
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:56:01 CST 2013 Requests fulfilled: 3181
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:57:01 CST 2013 Requests fulfilled: 3254
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:58:01 CST 2013 Requests fulfilled: 3325
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 12:59:01 CST 2013 Requests fulfilled: 3411
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:00:01 CST 2013 Requests fulfilled: 3472
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:01:01 CST 2013 Requests fulfilled: 3553
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:02:01 CST 2013 Requests fulfilled: 3640
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:03:01 CST 2013 Requests fulfilled: 3716
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:04:01 CST 2013 Requests fulfilled: 3778
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:05:01 CST 2013 Requests fulfilled: 3836
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:06:01 CST 2013 Requests fulfilled: 3925
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:07:01 CST 2013 Requests fulfilled: 3986
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:08:01 CST 2013 Requests fulfilled: 4049
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:09:01 CST 2013 Requests fulfilled: 4117
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:10:01 CST 2013 Requests fulfilled: 4181
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:11:01 CST 2013 Requests fulfilled: 4234
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:12:01 CST 2013 Requests fulfilled: 4297
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:13:01 CST 2013 Requests fulfilled: 4366
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:14:01 CST 2013 Requests fulfilled: 4427
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:15:01 CST 2013 Requests fulfilled: 4504
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:16:01 CST 2013 Requests fulfilled: 4582
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:17:01 CST 2013 Requests fulfilled: 4656
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:18:01 CST 2013 Requests fulfilled: 4731
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:19:01 CST 2013 Requests fulfilled: 4808
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:20:01 CST 2013 Requests fulfilled: 4889
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:21:01 CST 2013 Requests fulfilled: 4964
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:22:01 CST 2013 Requests fulfilled: 5038
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:23:01 CST 2013 Requests fulfilled: 5106
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:24:01 CST 2013 Requests fulfilled: 5171
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:25:01 CST 2013 Requests fulfilled: 5235
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:26:01 CST 2013 Requests fulfilled: 5309
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:27:01 CST 2013 Requests fulfilled: 5372
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:28:01 CST 2013 Requests fulfilled: 5449
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:29:01 CST 2013 Requests fulfilled: 5512
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:30:01 CST 2013 Requests fulfilled: 5591
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:31:01 CST 2013 Requests fulfilled: 5650
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:32:01 CST 2013 Requests fulfilled: 5714
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:33:01 CST 2013 Requests fulfilled: 5787
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:34:01 CST 2013 Requests fulfilled: 5853
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:35:01 CST 2013 Requests fulfilled: 5921
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:36:01 CST 2013 Requests fulfilled: 6008
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:37:01 CST 2013 Requests fulfilled: 6073
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:38:01 CST 2013 Requests fulfilled: 6142
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:39:01 CST 2013 Requests fulfilled: 6212
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:40:01 CST 2013 Requests fulfilled: 6290
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:41:01 CST 2013 Requests fulfilled: 6368
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:42:01 CST 2013 Requests fulfilled: 6432
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:43:01 CST 2013 Requests fulfilled: 6496
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:44:01 CST 2013 Requests fulfilled: 6576
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:45:01 CST 2013 Requests fulfilled: 6640
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:46:01 CST 2013 Requests fulfilled: 6707
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:47:01 CST 2013 Requests fulfilled: 6776
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:48:01 CST 2013 Requests fulfilled: 6835
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:49:01 CST 2013 Requests fulfilled: 6899
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:50:01 CST 2013 Requests fulfilled: 6965
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:51:01 CST 2013 Requests fulfilled: 7037
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:52:01 CST 2013 Requests fulfilled: 7120
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:53:01 CST 2013 Requests fulfilled: 7197
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:54:01 CST 2013 Requests fulfilled: 7271
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:55:01 CST 2013 Requests fulfilled: 7358
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:56:01 CST 2013 Requests fulfilled: 7439
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:57:01 CST 2013 Requests fulfilled: 7523
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:58:01 CST 2013 Requests fulfilled: 7581
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 13:59:01 CST 2013 Requests fulfilled: 7657
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:00:01 CST 2013 Requests fulfilled: 7719
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:01:01 CST 2013 Requests fulfilled: 7778
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:02:01 CST 2013 Requests fulfilled: 7838
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:03:01 CST 2013 Requests fulfilled: 7907
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:04:01 CST 2013 Requests fulfilled: 7968
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:05:01 CST 2013 Requests fulfilled: 8037
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:06:01 CST 2013 Requests fulfilled: 8095
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:07:01 CST 2013 Requests fulfilled: 8154
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:08:01 CST 2013 Requests fulfilled: 8233
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:09:01 CST 2013 Requests fulfilled: 8286
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:10:01 CST 2013 Requests fulfilled: 8344
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:11:01 CST 2013 Requests fulfilled: 8413
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:12:01 CST 2013 Requests fulfilled: 8474
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:13:01 CST 2013 Requests fulfilled: 8534
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:14:01 CST 2013 Requests fulfilled: 8617
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:15:01 CST 2013 Requests fulfilled: 8691
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:16:01 CST 2013 Requests fulfilled: 8760
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:17:01 CST 2013 Requests fulfilled: 8827
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:18:01 CST 2013 Requests fulfilled: 8889
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:19:01 CST 2013 Requests fulfilled: 8961
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:20:01 CST 2013 Requests fulfilled: 9037
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:21:01 CST 2013 Requests fulfilled: 9098
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:22:01 CST 2013 Requests fulfilled: 9175
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:23:01 CST 2013 Requests fulfilled: 9237
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:24:01 CST 2013 Requests fulfilled: 9325
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:25:01 CST 2013 Requests fulfilled: 9390
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:26:01 CST 2013 Requests fulfilled: 9448
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:27:01 CST 2013 Requests fulfilled: 9506
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:28:01 CST 2013 Requests fulfilled: 9562
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:29:01 CST 2013 Requests fulfilled: 9624
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:30:01 CST 2013 Requests fulfilled: 9699
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:31:01 CST 2013 Requests fulfilled: 9757
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:32:01 CST 2013 Requests fulfilled: 9820
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:33:01 CST 2013 Requests fulfilled: 9875
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:34:01 CST 2013 Requests fulfilled: 9943
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:35:01 CST 2013 Requests fulfilled: 10004
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:36:01 CST 2013 Requests fulfilled: 10075
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:37:01 CST 2013 Requests fulfilled: 10145
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:38:01 CST 2013 Requests fulfilled: 10225
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:39:01 CST 2013 Requests fulfilled: 10294
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:40:01 CST 2013 Requests fulfilled: 10370
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:41:01 CST 2013 Requests fulfilled: 10432
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:42:01 CST 2013 Requests fulfilled: 10492
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:43:01 CST 2013 Requests fulfilled: 10569
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:44:01 CST 2013 Requests fulfilled: 10621
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:45:01 CST 2013 Requests fulfilled: 10687
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:46:01 CST 2013 Requests fulfilled: 10759
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:47:01 CST 2013 Requests fulfilled: 10820
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:48:01 CST 2013 Requests fulfilled: 10888
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:49:01 CST 2013 Requests fulfilled: 10968
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:50:01 CST 2013 Requests fulfilled: 11026
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:51:01 CST 2013 Requests fulfilled: 11102
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:52:01 CST 2013 Requests fulfilled: 11174
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:53:01 CST 2013 Requests fulfilled: 11238
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:54:01 CST 2013 Requests fulfilled: 11317
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:55:01 CST 2013 Requests fulfilled: 11374
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:56:01 CST 2013 Requests fulfilled: 11458
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:57:01 CST 2013 Requests fulfilled: 11553
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:58:01 CST 2013 Requests fulfilled: 11623
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 14:59:01 CST 2013 Requests fulfilled: 11693
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:00:01 CST 2013 Requests fulfilled: 11779
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:01:01 CST 2013 Requests fulfilled: 11848
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:02:01 CST 2013 Requests fulfilled: 11926
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:03:01 CST 2013 Requests fulfilled: 11987
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:04:01 CST 2013 Requests fulfilled: 12061
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:05:01 CST 2013 Requests fulfilled: 12120
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:06:01 CST 2013 Requests fulfilled: 12181
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:07:01 CST 2013 Requests fulfilled: 12244
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:08:01 CST 2013 Requests fulfilled: 12292
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:09:01 CST 2013 Requests fulfilled: 12360
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:10:01 CST 2013 Requests fulfilled: 12421
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:11:01 CST 2013 Requests fulfilled: 12497
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:12:01 CST 2013 Requests fulfilled: 12559
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:13:01 CST 2013 Requests fulfilled: 12629
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:14:01 CST 2013 Requests fulfilled: 12700
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:15:01 CST 2013 Requests fulfilled: 12783
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:16:01 CST 2013 Requests fulfilled: 12864
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:17:01 CST 2013 Requests fulfilled: 12943
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:18:01 CST 2013 Requests fulfilled: 13007
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:19:01 CST 2013 Requests fulfilled: 13071
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:20:01 CST 2013 Requests fulfilled: 13145
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:21:01 CST 2013 Requests fulfilled: 13212
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:22:01 CST 2013 Requests fulfilled: 13262
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:23:01 CST 2013 Requests fulfilled: 13333
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:24:01 CST 2013 Requests fulfilled: 13405
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:25:01 CST 2013 Requests fulfilled: 13465
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:26:01 CST 2013 Requests fulfilled: 13536
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:27:01 CST 2013 Requests fulfilled: 13610
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:28:01 CST 2013 Requests fulfilled: 13683
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:29:01 CST 2013 Requests fulfilled: 13742
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:30:01 CST 2013 Requests fulfilled: 13817
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:31:01 CST 2013 Requests fulfilled: 13879
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:32:01 CST 2013 Requests fulfilled: 13950
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:33:01 CST 2013 Requests fulfilled: 14018
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:34:01 CST 2013 Requests fulfilled: 14089
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:35:01 CST 2013 Requests fulfilled: 14150
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:36:01 CST 2013 Requests fulfilled: 14220
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:37:01 CST 2013 Requests fulfilled: 14292
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:38:01 CST 2013 Requests fulfilled: 14365
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:39:01 CST 2013 Requests fulfilled: 14439
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:40:01 CST 2013 Requests fulfilled: 14521
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:41:01 CST 2013 Requests fulfilled: 14589
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:42:01 CST 2013 Requests fulfilled: 14664
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:43:01 CST 2013 Requests fulfilled: 14725
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:44:01 CST 2013 Requests fulfilled: 14791
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:45:01 CST 2013 Requests fulfilled: 14864
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:46:01 CST 2013 Requests fulfilled: 14929
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:47:01 CST 2013 Requests fulfilled: 14990
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:48:01 CST 2013 Requests fulfilled: 15080
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:49:01 CST 2013 Requests fulfilled: 15152
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:50:01 CST 2013 Requests fulfilled: 15239
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:51:01 CST 2013 Requests fulfilled: 15312
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:52:01 CST 2013 Requests fulfilled: 15378
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:53:01 CST 2013 Requests fulfilled: 15454
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:54:01 CST 2013 Requests fulfilled: 15531
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:55:01 CST 2013 Requests fulfilled: 15597
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:56:01 CST 2013 Requests fulfilled: 15674
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:57:01 CST 2013 Requests fulfilled: 15745
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:58:01 CST 2013 Requests fulfilled: 15816
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 15:59:01 CST 2013 Requests fulfilled: 15877
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:00:01 CST 2013 Requests fulfilled: 15946
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:01:01 CST 2013 Requests fulfilled: 16014
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:02:01 CST 2013 Requests fulfilled: 16084
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:03:01 CST 2013 Requests fulfilled: 16157
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:04:01 CST 2013 Requests fulfilled: 16224
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:05:01 CST 2013 Requests fulfilled: 16288
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:06:01 CST 2013 Requests fulfilled: 16361
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:07:01 CST 2013 Requests fulfilled: 16434
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:08:01 CST 2013 Requests fulfilled: 16500
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:09:01 CST 2013 Requests fulfilled: 16565
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:10:01 CST 2013 Requests fulfilled: 16645
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:11:01 CST 2013 Requests fulfilled: 16714
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:12:01 CST 2013 Requests fulfilled: 16794
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:13:01 CST 2013 Requests fulfilled: 16876
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:14:01 CST 2013 Requests fulfilled: 16946
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:15:01 CST 2013 Requests fulfilled: 17023
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:16:01 CST 2013 Requests fulfilled: 17074
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:17:01 CST 2013 Requests fulfilled: 17131
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:18:01 CST 2013 Requests fulfilled: 17200
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:19:01 CST 2013 Requests fulfilled: 17253
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:20:01 CST 2013 Requests fulfilled: 17307
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:21:01 CST 2013 Requests fulfilled: 17380
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:22:01 CST 2013 Requests fulfilled: 17454
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:23:01 CST 2013 Requests fulfilled: 17521
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:24:01 CST 2013 Requests fulfilled: 17592
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:25:01 CST 2013 Requests fulfilled: 17663
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:26:01 CST 2013 Requests fulfilled: 17729
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:27:01 CST 2013 Requests fulfilled: 17797
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:28:01 CST 2013 Requests fulfilled: 17871
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:29:01 CST 2013 Requests fulfilled: 17917
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:30:01 CST 2013 Requests fulfilled: 17990
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:31:01 CST 2013 Requests fulfilled: 18054
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:32:01 CST 2013 Requests fulfilled: 18119
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:33:01 CST 2013 Requests fulfilled: 18180
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:34:01 CST 2013 Requests fulfilled: 18240
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:35:01 CST 2013 Requests fulfilled: 18300
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:36:01 CST 2013 Requests fulfilled: 18364
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:37:01 CST 2013 Requests fulfilled: 18440
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:38:01 CST 2013 Requests fulfilled: 18507
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:39:01 CST 2013 Requests fulfilled: 18574
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:40:01 CST 2013 Requests fulfilled: 18646
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:41:01 CST 2013 Requests fulfilled: 18724
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:42:01 CST 2013 Requests fulfilled: 18775
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:43:01 CST 2013 Requests fulfilled: 18845
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:44:01 CST 2013 Requests fulfilled: 18912
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:45:01 CST 2013 Requests fulfilled: 18981
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:46:01 CST 2013 Requests fulfilled: 19053
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:47:01 CST 2013 Requests fulfilled: 19126
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:48:01 CST 2013 Requests fulfilled: 19183
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:49:01 CST 2013 Requests fulfilled: 19249
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:50:01 CST 2013 Requests fulfilled: 19311
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:51:01 CST 2013 Requests fulfilled: 19370
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:52:01 CST 2013 Requests fulfilled: 19428
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:53:01 CST 2013 Requests fulfilled: 19477
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:54:01 CST 2013 Requests fulfilled: 19556
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:55:01 CST 2013 Requests fulfilled: 19615
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:56:01 CST 2013 Requests fulfilled: 19676
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:57:01 CST 2013 Requests fulfilled: 19728
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:58:01 CST 2013 Requests fulfilled: 19789
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 16:59:01 CST 2013 Requests fulfilled: 19863
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:00:01 CST 2013 Requests fulfilled: 19923
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:01:01 CST 2013 Requests fulfilled: 19990
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:02:01 CST 2013 Requests fulfilled: 20051
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:03:01 CST 2013 Requests fulfilled: 20122
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:04:01 CST 2013 Requests fulfilled: 20184
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:05:01 CST 2013 Requests fulfilled: 20259
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:06:01 CST 2013 Requests fulfilled: 20327
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:07:01 CST 2013 Requests fulfilled: 20400
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:08:01 CST 2013 Requests fulfilled: 20460
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:09:01 CST 2013 Requests fulfilled: 20534
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:10:01 CST 2013 Requests fulfilled: 20583
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:11:01 CST 2013 Requests fulfilled: 20648
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:12:01 CST 2013 Requests fulfilled: 20700
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:13:01 CST 2013 Requests fulfilled: 20763
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:14:01 CST 2013 Requests fulfilled: 20823
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:15:01 CST 2013 Requests fulfilled: 20889
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:16:01 CST 2013 Requests fulfilled: 20955
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:17:01 CST 2013 Requests fulfilled: 21020
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:18:01 CST 2013 Requests fulfilled: 21078
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:19:01 CST 2013 Requests fulfilled: 21139
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:20:01 CST 2013 Requests fulfilled: 21229
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:21:01 CST 2013 Requests fulfilled: 21297
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:22:01 CST 2013 Requests fulfilled: 21371
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:23:01 CST 2013 Requests fulfilled: 21447
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:24:01 CST 2013 Requests fulfilled: 21528
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:25:01 CST 2013 Requests fulfilled: 21615
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:26:01 CST 2013 Requests fulfilled: 21692
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:27:01 CST 2013 Requests fulfilled: 21754
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:28:01 CST 2013 Requests fulfilled: 21823
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:29:01 CST 2013 Requests fulfilled: 21891
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:30:01 CST 2013 Requests fulfilled: 21962
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:31:01 CST 2013 Requests fulfilled: 22036
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:32:01 CST 2013 Requests fulfilled: 22119
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:33:01 CST 2013 Requests fulfilled: 22177
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:34:01 CST 2013 Requests fulfilled: 22238
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:35:01 CST 2013 Requests fulfilled: 22304
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:36:01 CST 2013 Requests fulfilled: 22391
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:37:01 CST 2013 Requests fulfilled: 22472
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:38:01 CST 2013 Requests fulfilled: 22554
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:39:01 CST 2013 Requests fulfilled: 22640
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:40:01 CST 2013 Requests fulfilled: 22719
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:41:01 CST 2013 Requests fulfilled: 22784
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:42:01 CST 2013 Requests fulfilled: 22860
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:43:01 CST 2013 Requests fulfilled: 22943
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:44:01 CST 2013 Requests fulfilled: 23014
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:45:01 CST 2013 Requests fulfilled: 23089
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:46:01 CST 2013 Requests fulfilled: 23167
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:47:01 CST 2013 Requests fulfilled: 23233
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:48:01 CST 2013 Requests fulfilled: 23311
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:49:01 CST 2013 Requests fulfilled: 23393
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:50:01 CST 2013 Requests fulfilled: 23475
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:51:01 CST 2013 Requests fulfilled: 23557
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:52:01 CST 2013 Requests fulfilled: 23627
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:53:01 CST 2013 Requests fulfilled: 23698
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:54:01 CST 2013 Requests fulfilled: 23786
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:55:01 CST 2013 Requests fulfilled: 23868
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:56:01 CST 2013 Requests fulfilled: 23954
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:57:01 CST 2013 Requests fulfilled: 24050
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:58:01 CST 2013 Requests fulfilled: 24131
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 17:59:01 CST 2013 Requests fulfilled: 24221
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:00:01 CST 2013 Requests fulfilled: 24296
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:01:01 CST 2013 Requests fulfilled: 24377
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:02:01 CST 2013 Requests fulfilled: 24466
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:03:01 CST 2013 Requests fulfilled: 24543
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:04:01 CST 2013 Requests fulfilled: 24628
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:05:01 CST 2013 Requests fulfilled: 24705
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:06:01 CST 2013 Requests fulfilled: 24781
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:07:01 CST 2013 Requests fulfilled: 24880
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:08:01 CST 2013 Requests fulfilled: 24963
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:09:01 CST 2013 Requests fulfilled: 25039
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:10:01 CST 2013 Requests fulfilled: 25115
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:11:01 CST 2013 Requests fulfilled: 25199
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:12:01 CST 2013 Requests fulfilled: 25275
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:13:01 CST 2013 Requests fulfilled: 25363
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:14:01 CST 2013 Requests fulfilled: 25444
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:15:01 CST 2013 Requests fulfilled: 25514
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:16:01 CST 2013 Requests fulfilled: 25588
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:17:01 CST 2013 Requests fulfilled: 25687
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:18:01 CST 2013 Requests fulfilled: 25785
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:19:01 CST 2013 Requests fulfilled: 25864
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:20:01 CST 2013 Requests fulfilled: 25946
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:21:01 CST 2013 Requests fulfilled: 26022
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:22:01 CST 2013 Requests fulfilled: 26105
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:23:01 CST 2013 Requests fulfilled: 26188
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:24:01 CST 2013 Requests fulfilled: 26275
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:25:01 CST 2013 Requests fulfilled: 26370
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:26:01 CST 2013 Requests fulfilled: 26450
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:27:01 CST 2013 Requests fulfilled: 26518
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:28:01 CST 2013 Requests fulfilled: 26599
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:29:01 CST 2013 Requests fulfilled: 26680
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:30:01 CST 2013 Requests fulfilled: 26746
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:31:01 CST 2013 Requests fulfilled: 26840
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:32:01 CST 2013 Requests fulfilled: 26927
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:33:01 CST 2013 Requests fulfilled: 27021
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:34:01 CST 2013 Requests fulfilled: 27106
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:35:01 CST 2013 Requests fulfilled: 27184
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:36:01 CST 2013 Requests fulfilled: 27268
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:37:01 CST 2013 Requests fulfilled: 27347
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:38:01 CST 2013 Requests fulfilled: 27430
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:39:01 CST 2013 Requests fulfilled: 27506
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:40:01 CST 2013 Requests fulfilled: 27580
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:41:01 CST 2013 Requests fulfilled: 27675
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:42:01 CST 2013 Requests fulfilled: 27755
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:43:01 CST 2013 Requests fulfilled: 27840
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:44:01 CST 2013 Requests fulfilled: 27924
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:45:01 CST 2013 Requests fulfilled: 28013
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:46:01 CST 2013 Requests fulfilled: 28095
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:47:01 CST 2013 Requests fulfilled: 28168
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:48:01 CST 2013 Requests fulfilled: 28247
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:49:01 CST 2013 Requests fulfilled: 28333
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:50:01 CST 2013 Requests fulfilled: 28417
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:51:01 CST 2013 Requests fulfilled: 28496
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:52:01 CST 2013 Requests fulfilled: 28570
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:53:01 CST 2013 Requests fulfilled: 28645
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:54:01 CST 2013 Requests fulfilled: 28737
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:55:01 CST 2013 Requests fulfilled: 28829
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:56:01 CST 2013 Requests fulfilled: 28927
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:57:01 CST 2013 Requests fulfilled: 29011
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:58:01 CST 2013 Requests fulfilled: 29089
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 18:59:01 CST 2013 Requests fulfilled: 29163
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:00:01 CST 2013 Requests fulfilled: 29255
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:01:01 CST 2013 Requests fulfilled: 29334
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:02:01 CST 2013 Requests fulfilled: 29407
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:03:01 CST 2013 Requests fulfilled: 29495
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:04:01 CST 2013 Requests fulfilled: 29569
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:05:01 CST 2013 Requests fulfilled: 29666
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:06:01 CST 2013 Requests fulfilled: 29756
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:07:01 CST 2013 Requests fulfilled: 29839
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:08:01 CST 2013 Requests fulfilled: 29908
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:09:01 CST 2013 Requests fulfilled: 29977
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:10:01 CST 2013 Requests fulfilled: 30046
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:11:01 CST 2013 Requests fulfilled: 30125
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:12:01 CST 2013 Requests fulfilled: 30219
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:13:01 CST 2013 Requests fulfilled: 30299
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:14:01 CST 2013 Requests fulfilled: 30377
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:15:01 CST 2013 Requests fulfilled: 30455
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:16:01 CST 2013 Requests fulfilled: 30539
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:17:01 CST 2013 Requests fulfilled: 30630
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:18:01 CST 2013 Requests fulfilled: 30719
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:19:01 CST 2013 Requests fulfilled: 30789
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:20:01 CST 2013 Requests fulfilled: 30862
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:21:01 CST 2013 Requests fulfilled: 30942
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:22:01 CST 2013 Requests fulfilled: 31033
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:23:01 CST 2013 Requests fulfilled: 31125
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:24:01 CST 2013 Requests fulfilled: 31210
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:25:01 CST 2013 Requests fulfilled: 31304
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:26:01 CST 2013 Requests fulfilled: 31391
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:27:01 CST 2013 Requests fulfilled: 31467
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:28:01 CST 2013 Requests fulfilled: 31552
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:29:01 CST 2013 Requests fulfilled: 31630
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:30:01 CST 2013 Requests fulfilled: 31711
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:31:01 CST 2013 Requests fulfilled: 31786
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:32:01 CST 2013 Requests fulfilled: 31874
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:33:01 CST 2013 Requests fulfilled: 31963
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:34:01 CST 2013 Requests fulfilled: 32057
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:35:01 CST 2013 Requests fulfilled: 32157
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:36:01 CST 2013 Requests fulfilled: 32243
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:37:01 CST 2013 Requests fulfilled: 32324
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:38:01 CST 2013 Requests fulfilled: 32407
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:39:01 CST 2013 Requests fulfilled: 32502
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:40:01 CST 2013 Requests fulfilled: 32576
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:41:01 CST 2013 Requests fulfilled: 32661
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:42:01 CST 2013 Requests fulfilled: 32718
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:43:01 CST 2013 Requests fulfilled: 32812
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:44:01 CST 2013 Requests fulfilled: 32897
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:45:01 CST 2013 Requests fulfilled: 32988
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:46:01 CST 2013 Requests fulfilled: 33095
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:47:01 CST 2013 Requests fulfilled: 33179
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:48:01 CST 2013 Requests fulfilled: 33251
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:49:01 CST 2013 Requests fulfilled: 33344
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:50:01 CST 2013 Requests fulfilled: 33432
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:51:01 CST 2013 Requests fulfilled: 33509
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:52:01 CST 2013 Requests fulfilled: 33593
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:53:01 CST 2013 Requests fulfilled: 33678
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:54:01 CST 2013 Requests fulfilled: 33773
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:55:01 CST 2013 Requests fulfilled: 33876
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:56:01 CST 2013 Requests fulfilled: 33966
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:57:01 CST 2013 Requests fulfilled: 34041
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:58:01 CST 2013 Requests fulfilled: 34131
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 19:59:01 CST 2013 Requests fulfilled: 34210
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:00:01 CST 2013 Requests fulfilled: 34299
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:01:01 CST 2013 Requests fulfilled: 34408
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:02:01 CST 2013 Requests fulfilled: 34483
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:03:01 CST 2013 Requests fulfilled: 34556
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:04:01 CST 2013 Requests fulfilled: 34657
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:05:01 CST 2013 Requests fulfilled: 34746
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:06:01 CST 2013 Requests fulfilled: 34823
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:07:01 CST 2013 Requests fulfilled: 34899
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:08:01 CST 2013 Requests fulfilled: 34979
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:09:01 CST 2013 Requests fulfilled: 35057
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:10:01 CST 2013 Requests fulfilled: 35141
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:11:01 CST 2013 Requests fulfilled: 35224
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:12:01 CST 2013 Requests fulfilled: 35296
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:13:01 CST 2013 Requests fulfilled: 35378
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:14:01 CST 2013 Requests fulfilled: 35472
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:15:01 CST 2013 Requests fulfilled: 35548
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:16:01 CST 2013 Requests fulfilled: 35632
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:17:01 CST 2013 Requests fulfilled: 35731
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:18:01 CST 2013 Requests fulfilled: 35801
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:19:01 CST 2013 Requests fulfilled: 35884
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:20:01 CST 2013 Requests fulfilled: 35967
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:21:01 CST 2013 Requests fulfilled: 36050
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:22:01 CST 2013 Requests fulfilled: 36126
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:23:01 CST 2013 Requests fulfilled: 36194
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:24:01 CST 2013 Requests fulfilled: 36279
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:25:01 CST 2013 Requests fulfilled: 36368
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:26:01 CST 2013 Requests fulfilled: 36459
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:27:01 CST 2013 Requests fulfilled: 36546
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:28:01 CST 2013 Requests fulfilled: 36627
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:29:01 CST 2013 Requests fulfilled: 36705
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:30:01 CST 2013 Requests fulfilled: 36775
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:31:01 CST 2013 Requests fulfilled: 36856
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:32:01 CST 2013 Requests fulfilled: 36934
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:33:01 CST 2013 Requests fulfilled: 37021
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:34:01 CST 2013 Requests fulfilled: 37088
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:35:01 CST 2013 Requests fulfilled: 37167
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:36:01 CST 2013 Requests fulfilled: 37246
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:37:01 CST 2013 Requests fulfilled: 37327
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:38:01 CST 2013 Requests fulfilled: 37391
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:39:01 CST 2013 Requests fulfilled: 37464
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:40:01 CST 2013 Requests fulfilled: 37537
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:41:01 CST 2013 Requests fulfilled: 37606
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:42:01 CST 2013 Requests fulfilled: 37684
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:43:01 CST 2013 Requests fulfilled: 37774
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:44:01 CST 2013 Requests fulfilled: 37868
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:45:01 CST 2013 Requests fulfilled: 37934
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:46:01 CST 2013 Requests fulfilled: 38014
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:47:01 CST 2013 Requests fulfilled: 38081
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:48:01 CST 2013 Requests fulfilled: 38155
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:49:01 CST 2013 Requests fulfilled: 38234
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:50:01 CST 2013 Requests fulfilled: 38309
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:51:01 CST 2013 Requests fulfilled: 38384
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:52:01 CST 2013 Requests fulfilled: 38468
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:53:01 CST 2013 Requests fulfilled: 38557
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:54:01 CST 2013 Requests fulfilled: 38631
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:55:01 CST 2013 Requests fulfilled: 38706
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:56:01 CST 2013 Requests fulfilled: 38781
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:57:01 CST 2013 Requests fulfilled: 38877
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:58:01 CST 2013 Requests fulfilled: 38957
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 20:59:01 CST 2013 Requests fulfilled: 39026
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:00:01 CST 2013 Requests fulfilled: 39112
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:01:01 CST 2013 Requests fulfilled: 39181
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:02:01 CST 2013 Requests fulfilled: 39253
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:03:01 CST 2013 Requests fulfilled: 39325
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:04:01 CST 2013 Requests fulfilled: 39390
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:05:01 CST 2013 Requests fulfilled: 39482
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:06:01 CST 2013 Requests fulfilled: 39557
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:07:01 CST 2013 Requests fulfilled: 39629
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:08:01 CST 2013 Requests fulfilled: 39712
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:09:01 CST 2013 Requests fulfilled: 39792
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:10:01 CST 2013 Requests fulfilled: 39862
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:11:01 CST 2013 Requests fulfilled: 39934
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:12:01 CST 2013 Requests fulfilled: 40007
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:13:01 CST 2013 Requests fulfilled: 40068
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:14:01 CST 2013 Requests fulfilled: 40142
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:15:01 CST 2013 Requests fulfilled: 40226
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:16:01 CST 2013 Requests fulfilled: 40303
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:17:01 CST 2013 Requests fulfilled: 40382
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:18:01 CST 2013 Requests fulfilled: 40455
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:19:01 CST 2013 Requests fulfilled: 40537
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:20:01 CST 2013 Requests fulfilled: 40606
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:21:01 CST 2013 Requests fulfilled: 40681
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:22:01 CST 2013 Requests fulfilled: 40747
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:23:01 CST 2013 Requests fulfilled: 40834
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:24:01 CST 2013 Requests fulfilled: 40909
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:25:01 CST 2013 Requests fulfilled: 40988
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:26:01 CST 2013 Requests fulfilled: 41080
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:27:01 CST 2013 Requests fulfilled: 41148
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:28:01 CST 2013 Requests fulfilled: 41240
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:29:01 CST 2013 Requests fulfilled: 41309
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:30:01 CST 2013 Requests fulfilled: 41399
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:31:01 CST 2013 Requests fulfilled: 41485
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:32:01 CST 2013 Requests fulfilled: 41550
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:33:01 CST 2013 Requests fulfilled: 41639
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:34:01 CST 2013 Requests fulfilled: 41722
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:35:01 CST 2013 Requests fulfilled: 41805
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:36:01 CST 2013 Requests fulfilled: 41893
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:37:01 CST 2013 Requests fulfilled: 41977
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:38:01 CST 2013 Requests fulfilled: 42049
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:39:01 CST 2013 Requests fulfilled: 42111
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:40:01 CST 2013 Requests fulfilled: 42190
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:41:01 CST 2013 Requests fulfilled: 42264
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:42:01 CST 2013 Requests fulfilled: 42337
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:43:01 CST 2013 Requests fulfilled: 42431
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:44:01 CST 2013 Requests fulfilled: 42515
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:45:01 CST 2013 Requests fulfilled: 42596
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:46:01 CST 2013 Requests fulfilled: 42670
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:47:01 CST 2013 Requests fulfilled: 42743
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:48:01 CST 2013 Requests fulfilled: 42825
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:49:01 CST 2013 Requests fulfilled: 42907
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:50:01 CST 2013 Requests fulfilled: 42985
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:51:01 CST 2013 Requests fulfilled: 43083
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:52:01 CST 2013 Requests fulfilled: 43162
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:53:01 CST 2013 Requests fulfilled: 43237
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:54:01 CST 2013 Requests fulfilled: 43320
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:55:01 CST 2013 Requests fulfilled: 43404
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:56:01 CST 2013 Requests fulfilled: 43489
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:57:01 CST 2013 Requests fulfilled: 43569
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:58:01 CST 2013 Requests fulfilled: 43656
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 21:59:01 CST 2013 Requests fulfilled: 43731
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:00:01 CST 2013 Requests fulfilled: 43804
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:01:01 CST 2013 Requests fulfilled: 43882
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:02:01 CST 2013 Requests fulfilled: 43962
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:03:01 CST 2013 Requests fulfilled: 44031
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:04:01 CST 2013 Requests fulfilled: 44107
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:05:01 CST 2013 Requests fulfilled: 44205
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:06:01 CST 2013 Requests fulfilled: 44286
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:07:01 CST 2013 Requests fulfilled: 44359
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:08:01 CST 2013 Requests fulfilled: 44447
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:09:01 CST 2013 Requests fulfilled: 44523
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:10:01 CST 2013 Requests fulfilled: 44602
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:11:01 CST 2013 Requests fulfilled: 44684
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:12:01 CST 2013 Requests fulfilled: 44743
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:13:01 CST 2013 Requests fulfilled: 44827
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:14:01 CST 2013 Requests fulfilled: 44911
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:15:01 CST 2013 Requests fulfilled: 44990
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:16:01 CST 2013 Requests fulfilled: 45077
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:17:01 CST 2013 Requests fulfilled: 45171
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:18:01 CST 2013 Requests fulfilled: 45255
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:19:01 CST 2013 Requests fulfilled: 45343
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:20:01 CST 2013 Requests fulfilled: 45427
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:21:01 CST 2013 Requests fulfilled: 45497
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:22:01 CST 2013 Requests fulfilled: 45578
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:23:01 CST 2013 Requests fulfilled: 45640
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:24:01 CST 2013 Requests fulfilled: 45730
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:25:01 CST 2013 Requests fulfilled: 45808
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:26:01 CST 2013 Requests fulfilled: 45880
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:27:01 CST 2013 Requests fulfilled: 45969
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:28:01 CST 2013 Requests fulfilled: 46051
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:29:01 CST 2013 Requests fulfilled: 46124
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:30:01 CST 2013 Requests fulfilled: 46200
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:31:01 CST 2013 Requests fulfilled: 46266
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:32:01 CST 2013 Requests fulfilled: 46340
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:33:01 CST 2013 Requests fulfilled: 46427
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:34:01 CST 2013 Requests fulfilled: 46500
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:35:01 CST 2013 Requests fulfilled: 46581
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:36:01 CST 2013 Requests fulfilled: 46672
+[INFO] [ENVIRONMENT] Done generating 87135 trip requests
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:37:01 CST 2013 Requests fulfilled: 46748
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:38:01 CST 2013 Requests fulfilled: 46833
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:39:01 CST 2013 Requests fulfilled: 46917
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:40:01 CST 2013 Requests fulfilled: 46993
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:41:01 CST 2013 Requests fulfilled: 47068
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:42:01 CST 2013 Requests fulfilled: 47146
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:43:01 CST 2013 Requests fulfilled: 47221
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:44:01 CST 2013 Requests fulfilled: 47291
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:45:01 CST 2013 Requests fulfilled: 47373
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:46:01 CST 2013 Requests fulfilled: 47454
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:47:01 CST 2013 Requests fulfilled: 47536
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:48:01 CST 2013 Requests fulfilled: 47621
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:49:01 CST 2013 Requests fulfilled: 47702
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:50:01 CST 2013 Requests fulfilled: 47782
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:51:01 CST 2013 Requests fulfilled: 47853
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:52:01 CST 2013 Requests fulfilled: 47922
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:53:01 CST 2013 Requests fulfilled: 47990
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:54:01 CST 2013 Requests fulfilled: 48067
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:55:01 CST 2013 Requests fulfilled: 48152
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:56:01 CST 2013 Requests fulfilled: 48237
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:57:01 CST 2013 Requests fulfilled: 48323
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:58:01 CST 2013 Requests fulfilled: 48393
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 22:59:01 CST 2013 Requests fulfilled: 48479
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:00:01 CST 2013 Requests fulfilled: 48571
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:01:01 CST 2013 Requests fulfilled: 48652
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:02:01 CST 2013 Requests fulfilled: 48729
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:03:01 CST 2013 Requests fulfilled: 48796
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:04:01 CST 2013 Requests fulfilled: 48868
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:05:01 CST 2013 Requests fulfilled: 48949
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:06:01 CST 2013 Requests fulfilled: 49015
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:07:01 CST 2013 Requests fulfilled: 49093
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:08:01 CST 2013 Requests fulfilled: 49187
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:09:01 CST 2013 Requests fulfilled: 49281
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:10:01 CST 2013 Requests fulfilled: 49368
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:11:01 CST 2013 Requests fulfilled: 49437
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:12:01 CST 2013 Requests fulfilled: 49521
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:13:01 CST 2013 Requests fulfilled: 49592
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:14:01 CST 2013 Requests fulfilled: 49672
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:15:01 CST 2013 Requests fulfilled: 49760
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:16:01 CST 2013 Requests fulfilled: 49827
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:17:01 CST 2013 Requests fulfilled: 49910
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:18:01 CST 2013 Requests fulfilled: 49978
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:19:01 CST 2013 Requests fulfilled: 50078
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:20:01 CST 2013 Requests fulfilled: 50167
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:21:01 CST 2013 Requests fulfilled: 50245
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:22:01 CST 2013 Requests fulfilled: 50314
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:23:01 CST 2013 Requests fulfilled: 50375
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:24:01 CST 2013 Requests fulfilled: 50465
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:25:01 CST 2013 Requests fulfilled: 50539
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:26:01 CST 2013 Requests fulfilled: 50605
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:27:01 CST 2013 Requests fulfilled: 50689
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:28:01 CST 2013 Requests fulfilled: 50772
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:29:01 CST 2013 Requests fulfilled: 50859
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:30:01 CST 2013 Requests fulfilled: 50925
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:31:01 CST 2013 Requests fulfilled: 50998
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:32:01 CST 2013 Requests fulfilled: 51071
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:33:01 CST 2013 Requests fulfilled: 51145
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:34:01 CST 2013 Requests fulfilled: 51225
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:35:01 CST 2013 Requests fulfilled: 51312
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:36:01 CST 2013 Requests fulfilled: 51378
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:37:01 CST 2013 Requests fulfilled: 51449
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:38:01 CST 2013 Requests fulfilled: 51542
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:39:01 CST 2013 Requests fulfilled: 51639
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:40:01 CST 2013 Requests fulfilled: 51715
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:41:01 CST 2013 Requests fulfilled: 51788
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:42:01 CST 2013 Requests fulfilled: 51882
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:43:01 CST 2013 Requests fulfilled: 51947
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:44:01 CST 2013 Requests fulfilled: 52028
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:45:01 CST 2013 Requests fulfilled: 52117
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:46:01 CST 2013 Requests fulfilled: 52174
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:47:01 CST 2013 Requests fulfilled: 52246
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:48:01 CST 2013 Requests fulfilled: 52321
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:49:01 CST 2013 Requests fulfilled: 52392
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:50:01 CST 2013 Requests fulfilled: 52479
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:51:01 CST 2013 Requests fulfilled: 52541
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:52:01 CST 2013 Requests fulfilled: 52612
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:53:01 CST 2013 Requests fulfilled: 52685
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:54:01 CST 2013 Requests fulfilled: 52769
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:55:01 CST 2013 Requests fulfilled: 52843
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:56:01 CST 2013 Requests fulfilled: 52915
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:57:01 CST 2013 Requests fulfilled: 52991
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:58:01 CST 2013 Requests fulfilled: 53066
+[INFO] [ENVIRONMENT] Time: Sat Jan 05 23:59:01 CST 2013 Requests fulfilled: 53133
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:00:01 CST 2013 Requests fulfilled: 53226
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:01:01 CST 2013 Requests fulfilled: 53305
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:02:01 CST 2013 Requests fulfilled: 53374
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:03:01 CST 2013 Requests fulfilled: 53445
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:04:01 CST 2013 Requests fulfilled: 53520
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:05:01 CST 2013 Requests fulfilled: 53597
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:06:01 CST 2013 Requests fulfilled: 53665
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:07:01 CST 2013 Requests fulfilled: 53739
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:08:01 CST 2013 Requests fulfilled: 53817
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:09:01 CST 2013 Requests fulfilled: 53903
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:10:01 CST 2013 Requests fulfilled: 53973
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:11:01 CST 2013 Requests fulfilled: 54041
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:12:01 CST 2013 Requests fulfilled: 54118
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:13:01 CST 2013 Requests fulfilled: 54190
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:14:01 CST 2013 Requests fulfilled: 54267
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:15:01 CST 2013 Requests fulfilled: 54339
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:16:01 CST 2013 Requests fulfilled: 54419
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:17:01 CST 2013 Requests fulfilled: 54506
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:18:01 CST 2013 Requests fulfilled: 54563
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:19:01 CST 2013 Requests fulfilled: 54627
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:20:01 CST 2013 Requests fulfilled: 54694
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:21:01 CST 2013 Requests fulfilled: 54767
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:22:01 CST 2013 Requests fulfilled: 54852
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:23:01 CST 2013 Requests fulfilled: 54916
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:24:01 CST 2013 Requests fulfilled: 54996
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:25:01 CST 2013 Requests fulfilled: 55068
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:26:01 CST 2013 Requests fulfilled: 55153
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:27:01 CST 2013 Requests fulfilled: 55230
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:28:01 CST 2013 Requests fulfilled: 55309
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:29:01 CST 2013 Requests fulfilled: 55373
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:30:01 CST 2013 Requests fulfilled: 55451
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:31:01 CST 2013 Requests fulfilled: 55532
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:32:01 CST 2013 Requests fulfilled: 55600
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:33:01 CST 2013 Requests fulfilled: 55654
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:34:01 CST 2013 Requests fulfilled: 55742
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:35:01 CST 2013 Requests fulfilled: 55815
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:36:01 CST 2013 Requests fulfilled: 55883
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:37:01 CST 2013 Requests fulfilled: 55954
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:38:01 CST 2013 Requests fulfilled: 56035
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:39:01 CST 2013 Requests fulfilled: 56112
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:40:01 CST 2013 Requests fulfilled: 56172
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:41:01 CST 2013 Requests fulfilled: 56250
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:42:01 CST 2013 Requests fulfilled: 56315
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:43:01 CST 2013 Requests fulfilled: 56387
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:44:01 CST 2013 Requests fulfilled: 56458
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:45:01 CST 2013 Requests fulfilled: 56538
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:46:01 CST 2013 Requests fulfilled: 56603
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:47:01 CST 2013 Requests fulfilled: 56663
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:48:01 CST 2013 Requests fulfilled: 56733
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:49:01 CST 2013 Requests fulfilled: 56794
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:50:01 CST 2013 Requests fulfilled: 56857
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:51:01 CST 2013 Requests fulfilled: 56946
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:52:01 CST 2013 Requests fulfilled: 56995
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:53:01 CST 2013 Requests fulfilled: 57071
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:54:01 CST 2013 Requests fulfilled: 57149
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:55:01 CST 2013 Requests fulfilled: 57221
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:56:01 CST 2013 Requests fulfilled: 57304
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:57:01 CST 2013 Requests fulfilled: 57373
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:58:01 CST 2013 Requests fulfilled: 57447
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 00:59:01 CST 2013 Requests fulfilled: 57509
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:00:01 CST 2013 Requests fulfilled: 57574
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:01:01 CST 2013 Requests fulfilled: 57632
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:02:01 CST 2013 Requests fulfilled: 57714
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:03:01 CST 2013 Requests fulfilled: 57782
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:04:01 CST 2013 Requests fulfilled: 57847
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:05:01 CST 2013 Requests fulfilled: 57913
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:06:01 CST 2013 Requests fulfilled: 57997
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:07:01 CST 2013 Requests fulfilled: 58053
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:08:01 CST 2013 Requests fulfilled: 58136
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:09:01 CST 2013 Requests fulfilled: 58202
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:10:01 CST 2013 Requests fulfilled: 58272
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:11:01 CST 2013 Requests fulfilled: 58340
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:12:01 CST 2013 Requests fulfilled: 58415
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:13:01 CST 2013 Requests fulfilled: 58477
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:14:01 CST 2013 Requests fulfilled: 58553
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:15:01 CST 2013 Requests fulfilled: 58623
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:16:01 CST 2013 Requests fulfilled: 58683
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:17:01 CST 2013 Requests fulfilled: 58764
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:18:01 CST 2013 Requests fulfilled: 58830
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:19:01 CST 2013 Requests fulfilled: 58913
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:20:01 CST 2013 Requests fulfilled: 58971
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:21:01 CST 2013 Requests fulfilled: 59039
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:22:01 CST 2013 Requests fulfilled: 59115
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:23:01 CST 2013 Requests fulfilled: 59195
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:24:01 CST 2013 Requests fulfilled: 59251
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:25:01 CST 2013 Requests fulfilled: 59318
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:26:01 CST 2013 Requests fulfilled: 59396
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:27:01 CST 2013 Requests fulfilled: 59471
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:28:01 CST 2013 Requests fulfilled: 59536
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:29:01 CST 2013 Requests fulfilled: 59592
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:30:01 CST 2013 Requests fulfilled: 59661
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:31:01 CST 2013 Requests fulfilled: 59732
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:32:01 CST 2013 Requests fulfilled: 59802
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:33:01 CST 2013 Requests fulfilled: 59862
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:34:01 CST 2013 Requests fulfilled: 59935
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:35:01 CST 2013 Requests fulfilled: 59999
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:36:01 CST 2013 Requests fulfilled: 60063
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:37:01 CST 2013 Requests fulfilled: 60118
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:38:01 CST 2013 Requests fulfilled: 60193
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:39:01 CST 2013 Requests fulfilled: 60252
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:40:01 CST 2013 Requests fulfilled: 60336
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:41:01 CST 2013 Requests fulfilled: 60393
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:42:01 CST 2013 Requests fulfilled: 60450
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:43:01 CST 2013 Requests fulfilled: 60519
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:44:01 CST 2013 Requests fulfilled: 60601
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:45:01 CST 2013 Requests fulfilled: 60659
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:46:01 CST 2013 Requests fulfilled: 60720
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:47:01 CST 2013 Requests fulfilled: 60784
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:48:01 CST 2013 Requests fulfilled: 60844
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:49:01 CST 2013 Requests fulfilled: 60908
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:50:01 CST 2013 Requests fulfilled: 60960
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:51:01 CST 2013 Requests fulfilled: 61016
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:52:01 CST 2013 Requests fulfilled: 61081
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:53:01 CST 2013 Requests fulfilled: 61145
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:54:01 CST 2013 Requests fulfilled: 61215
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:55:01 CST 2013 Requests fulfilled: 61289
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:56:01 CST 2013 Requests fulfilled: 61364
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:57:01 CST 2013 Requests fulfilled: 61405
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:58:01 CST 2013 Requests fulfilled: 61477
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 01:59:01 CST 2013 Requests fulfilled: 61541
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:00:01 CST 2013 Requests fulfilled: 61600
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:01:01 CST 2013 Requests fulfilled: 61659
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:02:01 CST 2013 Requests fulfilled: 61715
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:03:01 CST 2013 Requests fulfilled: 61785
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:04:01 CST 2013 Requests fulfilled: 61857
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:05:01 CST 2013 Requests fulfilled: 61921
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:06:01 CST 2013 Requests fulfilled: 61983
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:07:01 CST 2013 Requests fulfilled: 62062
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:08:01 CST 2013 Requests fulfilled: 62134
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:09:01 CST 2013 Requests fulfilled: 62199
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:10:01 CST 2013 Requests fulfilled: 62267
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:11:01 CST 2013 Requests fulfilled: 62335
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:12:01 CST 2013 Requests fulfilled: 62396
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:13:01 CST 2013 Requests fulfilled: 62461
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:14:01 CST 2013 Requests fulfilled: 62519
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:15:01 CST 2013 Requests fulfilled: 62582
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:16:01 CST 2013 Requests fulfilled: 62651
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:17:01 CST 2013 Requests fulfilled: 62736
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:18:01 CST 2013 Requests fulfilled: 62803
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:19:01 CST 2013 Requests fulfilled: 62876
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:20:01 CST 2013 Requests fulfilled: 62942
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:21:01 CST 2013 Requests fulfilled: 63001
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:22:01 CST 2013 Requests fulfilled: 63051
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:23:01 CST 2013 Requests fulfilled: 63117
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:24:01 CST 2013 Requests fulfilled: 63180
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:25:01 CST 2013 Requests fulfilled: 63252
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:26:01 CST 2013 Requests fulfilled: 63314
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:27:01 CST 2013 Requests fulfilled: 63374
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:28:01 CST 2013 Requests fulfilled: 63435
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:29:01 CST 2013 Requests fulfilled: 63502
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:30:01 CST 2013 Requests fulfilled: 63564
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:31:01 CST 2013 Requests fulfilled: 63615
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:32:01 CST 2013 Requests fulfilled: 63677
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:33:01 CST 2013 Requests fulfilled: 63748
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:34:01 CST 2013 Requests fulfilled: 63802
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:35:01 CST 2013 Requests fulfilled: 63867
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:36:01 CST 2013 Requests fulfilled: 63933
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:37:01 CST 2013 Requests fulfilled: 63984
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:38:01 CST 2013 Requests fulfilled: 64037
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:39:01 CST 2013 Requests fulfilled: 64104
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:40:01 CST 2013 Requests fulfilled: 64178
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:41:01 CST 2013 Requests fulfilled: 64246
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:42:01 CST 2013 Requests fulfilled: 64314
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:43:01 CST 2013 Requests fulfilled: 64367
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:44:01 CST 2013 Requests fulfilled: 64424
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:45:01 CST 2013 Requests fulfilled: 64496
+[ERROR] [TAXI AGENT] Vehicle's current location does not match the pickup location
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:46:01 CST 2013 Requests fulfilled: 64549
+[INFO] [ENVIRONMENT] Time: Sun Jan 06 02:47:01 CST 2013 Requests fulfilled: 64614
+Exception in thread "main" java.lang.StackOverflowError
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.spi.DefaultProxySelector.select(DefaultProxySelector.java:207)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1097)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:997)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1511)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1439)
+	at edu.umn.kylepete.env.OSRM.sendRequest(OSRM.java:200)
+	at edu.umn.kylepete.env.OSRM.viaRoute(OSRM.java:98)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:75)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.startNextRequest(TaxiAgent.java:59)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.assignRequest(TaxiAgent.java:99)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.processRequests(DistanceAuctionDispatcher.java:53)
+	at edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher.requestComplete(DistanceAuctionDispatcher.java:37)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.completeRequest(TaxiAgent.java:85)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:92)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.driveRequestToDestination(TaxiAgent.java:68)
+	at edu.umn.kylepete.ai.agents.TaxiAgent.arriveAtLoc(TaxiAgent.java:90)
+	at edu.umn.kylepete.env.vehicles.Vehicle.ariveAtTime(Vehicle.java:95)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveRoute(Vehicle.java:63)
+	at edu.umn.kylepete.env.vehicles.Vehicle.driveToLoc(Vehicle.java:79)
