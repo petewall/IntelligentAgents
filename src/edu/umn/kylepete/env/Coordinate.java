@@ -106,6 +106,9 @@ public class Coordinate {
 		return result;
 	}
 
+	/**
+	 * Checks the equality of two coordinates with precision of about 1 meter.
+	 */
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -114,9 +117,9 @@ public class Coordinate {
 		if (getClass() != obj.getClass())
 			return false;
 		Coordinate other = (Coordinate) obj;
-		if (Double.doubleToLongBits(latitude) != Double.doubleToLongBits(other.latitude))
+		if (Math.abs(latitude - other.latitude) > 0.00001)
 			return false;
-		if (Double.doubleToLongBits(longitude) != Double.doubleToLongBits(other.longitude))
+        if (Math.abs(longitude - other.longitude) > 0.00001)
 			return false;
 		return true;
 	}
