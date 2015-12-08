@@ -47,8 +47,10 @@ public class DistanceAuctionWithReassignmentDispatcher extends TaxiDispatch {
         List<Bid> allBids = new ArrayList<Bid>();
         Auction auction = new Auction(taxis, new DistanceWithReassignmentBiddingStrategy());
         for (Request request : requestQueue) {
-            AuctionResult results = auction.offer(request);
-            allBids.addAll(results.bids);
+            if (!assignments.containsKey(request) || assignments.get(request).getStatus() != TaxiAgent.Status.DRIVING) {
+                AuctionResult results = auction.offer(request);
+                allBids.addAll(results.bids);
+            }
         }
 
         Collections.sort(allBids);
