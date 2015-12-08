@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import edu.umn.kylepete.ai.agents.TaxiAgent;
-import edu.umn.kylepete.ai.dispatchers.SingleAuctionDispatcher;
+import edu.umn.kylepete.ai.dispatchers.DistanceAuctionDispatcher;
 import edu.umn.kylepete.env.RequestListener;
 import edu.umn.kylepete.env.vehicles.Vehicle;
 
-public class SingleAuctionStrategy implements AIStrategy {
+public class DistanceAuctionStrategy implements AIStrategy {
 
-	SingleAuctionDispatcher dispatch = new SingleAuctionDispatcher();
+	DistanceAuctionDispatcher dispatch = new DistanceAuctionDispatcher();
 
 	public void addVehicles(Collection<Vehicle> vehicles) {
 		for (Vehicle vehicle : vehicles) {

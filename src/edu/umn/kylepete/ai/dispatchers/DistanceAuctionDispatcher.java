@@ -9,15 +9,15 @@ import edu.umn.kylepete.auctions.Auction;
 import edu.umn.kylepete.env.Request;
 
 /**
- * The SingleAuctionDispatcher runs an auction for a single request.
+ * The DistanceAuctionDispatcher runs an auction for a single request.
  * @author pwall
  *
  */
-public class SingleAuctionDispatcher extends TaxiDispatch {
+public class DistanceAuctionDispatcher extends TaxiDispatch {
 
     private Set<TaxiAgent> taxis;
     
-    public SingleAuctionDispatcher() {
+    public DistanceAuctionDispatcher() {
         taxis = new HashSet<TaxiAgent>();
     }
     
