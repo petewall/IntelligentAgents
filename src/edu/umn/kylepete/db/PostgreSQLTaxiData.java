@@ -53,7 +53,7 @@ public class PostgreSQLTaxiData extends TaxiData {
 			Logger.error("DATABASE", Logger.stackTraceToString(e));
         }
 		this.pageSize = pageSize;
-		this.prevPickupTime = startTime;
+		this.prevPickupTime = new Timestamp(startTime.getTime() + 1000);
 		this.prevId = 0;
 		this.nthRow = 100 / percentOfRequests;
 		this.limit = nthRow * pageSize;
