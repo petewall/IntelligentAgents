@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import edu.umn.kylepete.Logger;
 import edu.umn.kylepete.ai.agents.BiddingStrategy;
 import edu.umn.kylepete.ai.agents.TaxiAgent;
 import edu.umn.kylepete.env.Request;
@@ -26,6 +27,7 @@ public class Auction {
             }
         }
         
+        Logger.debug("AUCTION", "Auction complete. " + bids.size() + "/" + bidders.size() + " bidders");
         return new AuctionResult(bids);
     }
 }

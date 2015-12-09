@@ -1,6 +1,7 @@
 package edu.umn.kylepete.ai.agents;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import edu.umn.kylepete.Logger;
@@ -99,6 +100,11 @@ public class TaxiAgent implements VehicleListener {
 	        startNextRequest();
 	    }
 	}
+	
+    public void assignRequests(List<Request> newRequests) {
+        requests.addAll(newRequests);
+        startNextRequest();
+    }
 
     public void clearRequests() {
         vehicle.cancelCurrentRoute();
