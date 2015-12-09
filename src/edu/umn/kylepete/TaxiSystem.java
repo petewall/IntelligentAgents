@@ -38,6 +38,7 @@ public class TaxiSystem {
 		SystemStats.report();
 		RequestStats.report();
 		VehicleStats.report();
+		System.exit(0);
 	}
 
 	private static TaxiSystemProperties loadProperties(String[] args) throws IOException {
